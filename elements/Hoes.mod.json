@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:HochiymToolsHoe"
+      },
+      {
+        "value": "CUSTOM:Akvamarine1Hoe"
+      },
+      {
+        "value": "CUSTOM:InfinitiiHoe"
+      },
+      {
+        "value": "CUSTOM:RubyyHoe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "hoes",
+    "namespace": "mod"
+  }
+}

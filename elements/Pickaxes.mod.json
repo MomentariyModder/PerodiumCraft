@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:HochiymToolsPickaxe"
+      },
+      {
+        "value": "CUSTOM:Akvamarine1Pickaxe"
+      },
+      {
+        "value": "CUSTOM:InfinitiiPickaxe"
+      },
+      {
+        "value": "CUSTOM:RubyyPickaxe"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "pickaxes",
+    "namespace": "mod"
+  }
+}

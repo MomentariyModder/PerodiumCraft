@@ -272,15 +272,6 @@
       "registry_name": "akvamarine_birch_planks_rec"
     },
     {
-      "name": "BirchRec",
-      "type": "recipe",
-      "sortid": 144,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "birch_rec"
-    },
-    {
       "name": "AkvamarineGrass",
       "type": "block",
       "sortid": 67,
@@ -796,15 +787,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ruby_jungle_planks_rec"
-    },
-    {
-      "name": "JungleRec",
-      "type": "recipe",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "jungle_rec"
     },
     {
       "name": "RubyJungleLeaves",
@@ -1705,15 +1687,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "perodium_oak_plant_rec"
-    },
-    {
-      "name": "PerodiumOakPlanttoOakPlant",
-      "type": "recipe",
-      "sortid": 227,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "perodium_oak_plantto_oak_plant"
     },
     {
       "name": "PerodiumOakSlab",
@@ -2866,6 +2839,51 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "boots"
+    },
+    {
+      "name": "Swords",
+      "type": "tag",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "swords"
+    },
+    {
+      "name": "Pickaxes",
+      "type": "tag",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pickaxes"
+    },
+    {
+      "name": "Axes",
+      "type": "tag",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "axes"
+    },
+    {
+      "name": "Shovels",
+      "type": "tag",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shovels"
+    },
+    {
+      "name": "Hoes",
+      "type": "tag",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hoes"
     }
   ],
   "variable_elements": [],
@@ -2878,16 +2896,16 @@
       "block.perodiumcraft2.ruby_jungle": "§4Ruby Jungle",
       "item.perodiumcraft2.infinitii_armor_boots": "§2Infiniti Boots",
       "biome.perodiumcraft2.akvamarine_plains": "§3Akvamarine Plains",
-      "block.perodiumcraft2.perodium_oak_door": "§8Perodium Oak Door",
-      "block.perodiumcraft2.perodium_quartz_pillar": "§8Perodium Quartz Pillar",
       "block.perodiumcraft2.perodium_quartz_block": "§8Perodium Quartz Block",
+      "block.perodiumcraft2.perodium_quartz_pillar": "§8Perodium Quartz Pillar",
+      "block.perodiumcraft2.perodium_oak_door": "§8Perodium Oak Door",
       "biome.perodiumcraft2.perodium_oak_plains": "§8Perodium Oak Plains",
       "biome.perodiumcraft2.perodium_desert": "§8Perodium Desert",
       "block.perodiumcraft2.ruby_jungle_door": "§4Ruby Jungle Door",
       "block.perodiumcraft2.ruby_jungle_leaves": "§4Ruby Jungle Leaves",
       "item.perodiumcraft2.akvamarine_1_sword": "§3Akvamarine Sword",
-      "block.perodiumcraft2.perodium_lantern": "§8Perodium Lantern",
       "item.perodiumcraft2.hochiym_tools_hoe": "§1Hochiym Hoe",
+      "block.perodiumcraft2.perodium_lantern": "§8Perodium Lantern",
       "biome.perodiumcraft2.perodium_oak_forest": "§8Perodium Oak Forest",
       "block.perodiumcraft2.perodium_cobblestone_stairs": "§8Perodium Cobblestone Stairs",
       "block.perodiumcraft2.perodium_dirt": "§8Perodium Dirt",
@@ -2932,7 +2950,7 @@
       "block.perodiumcraft2.perodium_oak_plant": "§8Perodium Oak Planks",
       "block.perodiumcraft2.ruby_jungle_stairs": "§4Ruby Jungle Stairs",
       "block.perodiumcraft2.perodium_quartz_ore": "§8Perodium Quartz Ore",
-      "item.perodiumcraft2.hochiym_armor_armor_helmet": "Hochiym Helmet",
+      "item.perodiumcraft2.hochiym_armor_armor_helmet": "§1Hochiym Helmet",
       "item.perodiumcraft2.rubyy_axe": "§4Ruby Axe",
       "block.perodiumcraft2.nether_infiniti_ore": "§2Nether Infiniti Ore",
       "item.perodiumcraft2.akvamarine_1_shovel": "§3Akvamarine Shovel",
@@ -2964,12 +2982,12 @@
       "block.perodiumcraft2.perodium_stone_stairs": "§8Perodium Stone Stairs",
       "item.perodiumcraft2.rubyy_armor_leggings": "§4Ruby Leggings",
       "item.perodiumcraft2.akvamarine_berries": "§3Akvamarine Berries",
-      "item.perodiumcraft2.perodium_nuggets": "Perodium Nuggets",
+      "item.perodiumcraft2.perodium_nuggets": "§8Perodium Nuggets",
       "item.perodiumcraft2.hochiym_tools_pickaxe": "§1Hochiym Pickaxe",
       "item.perodiumcraft2.infinitii_hoe": "§2Infiniti Hoe",
       "block.perodiumcraft2.perodium_hochiym_ore": "§8Perodium Hochiym Ore",
       "block.perodiumcraft2.perodium_block": "§8Perodium Block",
-      "item.perodiumcraft2.hochiym_armor_armor_chestplate": "Hochiym Chestplate",
+      "item.perodiumcraft2.hochiym_armor_armor_chestplate": "§1Hochiym Chestplate",
       "block.perodiumcraft2.perodium_cobblestone_slab": "§8Perodium Cobblestone Slab",
       "block.perodiumcraft2.perodium_quartz_stairs": "§8Perodium Quartz Stairs",
       "block.perodiumcraft2.perodium_oak_fence_gate": "§8Perodium Oak Fence Gate",
@@ -2988,7 +3006,7 @@
       "item.perodiumcraft2.perodium_land": "§8Perodium Key",
       "itemGroup.tabperodium_craft_item": "§8PerodiumCraft2[§7Item§8]",
       "block.perodiumcraft2.akvamarine_birch_fence_gate": "§3Akvamarine Birch Fence Gate",
-      "item.perodiumcraft2.hochiym_armor_armor_boots": "Hochiym Boots",
+      "item.perodiumcraft2.hochiym_armor_armor_boots": "§1Hochiym Boots",
       "block.perodiumcraft2.infiniti_ore": "§2Infiniti Ore",
       "biome.perodiumcraft2.perodium_zombie_plains": "§8Perodium Zombie Plains",
       "block.perodiumcraft2.infiniti_dirt": "§2Infiniti Dirt",
@@ -3005,7 +3023,7 @@
       "block.perodiumcraft2.akvamarine_birch_stairs": "§3Akvamarine Birch Stairs",
       "block.perodiumcraft2.perodium_cobblestone": "§8Perodium Cobblestone",
       "block.perodiumcraft2.perodium_quartz_brick": "§8Perodium Quartz Brick",
-      "item.perodiumcraft2.hochiym_armor_armor_leggings": "Hochiym Leggings",
+      "item.perodiumcraft2.hochiym_armor_armor_leggings": "§1Hochiym Leggings",
       "block.perodiumcraft2.akvamarine_grass_plant": "§3Akvamarine Grass Plant",
       "block.perodiumcraft2.perodium_quartz_slab": "§8Perodium Quartz Slab",
       "block.perodiumcraft2.akvamarine_dirt": "§3Akvamarine Dirt",

@@ -2805,42 +2805,6 @@
       "registry_name": "rubyy_hoe_recipe"
     },
     {
-      "name": "Helmet",
-      "type": "tag",
-      "sortid": 308,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "helmet"
-    },
-    {
-      "name": "Chestplate",
-      "type": "tag",
-      "sortid": 309,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "chestplate"
-    },
-    {
-      "name": "Leggings",
-      "type": "tag",
-      "sortid": 310,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "leggings"
-    },
-    {
-      "name": "Boots",
-      "type": "tag",
-      "sortid": 311,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "boots"
-    },
-    {
       "name": "Swords",
       "type": "tag",
       "sortid": 312,
@@ -2935,6 +2899,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "perodium_boots_rec"
+    },
+    {
+      "name": "Helmetsrecperodiumarmors",
+      "type": "tag",
+      "sortid": 323,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "helmetsrecperodiumarmors"
+    },
+    {
+      "name": "Chestplacerecperodiumarmors",
+      "type": "tag",
+      "sortid": 324,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestplacerecperodiumarmors"
+    },
+    {
+      "name": "Leggingsrecperodiumarmors",
+      "type": "tag",
+      "sortid": 325,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leggingsrecperodiumarmors"
+    },
+    {
+      "name": "Bootsrecperodiumarmors",
+      "type": "tag",
+      "sortid": 326,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bootsrecperodiumarmors"
     }
   ],
   "variable_elements": [],

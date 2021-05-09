@@ -20,7 +20,7 @@
     "blocks": [],
     "functions": [],
     "entities": [],
-    "name": "chestplate",
-    "namespace": "mod"
+    "name": "chestplacerecperodiumarmors",
+    "namespace": "forge"
   }
 }

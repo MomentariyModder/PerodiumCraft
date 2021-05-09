@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "infinitii_shovel",
+    "customModelName": "Normal",
+    "name": "§2Infiniti Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PerodiumCraftToolsandArmors"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 4,
+    "efficiency": 16.0,
+    "attackSpeed": 1.0,
+    "enchantability": 12,
+    "damageVsEntity": 13.0,
+    "usageCount": 3124,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Infiniti"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

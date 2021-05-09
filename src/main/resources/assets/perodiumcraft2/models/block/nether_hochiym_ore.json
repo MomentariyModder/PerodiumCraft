@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft2:blocks/hochiymorenether",
+    "up": "perodiumcraft2:blocks/hochiymorenether",
+    "north": "perodiumcraft2:blocks/hochiymorenether",
+    "east": "perodiumcraft2:blocks/hochiymorenether",
+    "south": "perodiumcraft2:blocks/hochiymorenether",
+    "west": "perodiumcraft2:blocks/hochiymorenether",
+    "particle": "perodiumcraft2:blocks/hochiymorenether"
+  }
+}

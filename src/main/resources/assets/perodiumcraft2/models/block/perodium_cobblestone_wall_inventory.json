@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "perodiumcraft2:blocks/perodiumcobblestone",
+    "particle": "perodiumcraft2:blocks/perodiumcobblestone"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft2:blocks/netherrackrubyore",
+    "up": "perodiumcraft2:blocks/netherrackrubyore",
+    "north": "perodiumcraft2:blocks/netherrackrubyore",
+    "east": "perodiumcraft2:blocks/netherrackrubyore",
+    "south": "perodiumcraft2:blocks/netherrackrubyore",
+    "west": "perodiumcraft2:blocks/netherrackrubyore",
+    "particle": "perodiumcraft2:blocks/netherrackrubyore"
+  }
+}

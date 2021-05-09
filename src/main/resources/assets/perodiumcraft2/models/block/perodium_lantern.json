@@ -1,0 +1,7 @@
+{
+  "parent": "perodiumcraft2:custom/perodiumlantern",
+  "textures": {
+    "all": "perodiumcraft2:blocks/lantern",
+    "particle": "perodiumcraft2:blocks/lantern"
+  }
+}

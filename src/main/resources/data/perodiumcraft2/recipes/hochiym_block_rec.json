@@ -1,0 +1,42 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft2:hochiym"
+    },
+    "1": {
+      "item": "perodiumcraft2:hochiym"
+    },
+    "2": {
+      "item": "perodiumcraft2:hochiym"
+    },
+    "3": {
+      "item": "perodiumcraft2:hochiym"
+    },
+    "4": {
+      "item": "perodiumcraft2:hochiym"
+    },
+    "5": {
+      "item": "perodiumcraft2:hochiym"
+    },
+    "6": {
+      "item": "perodiumcraft2:hochiym"
+    },
+    "7": {
+      "item": "perodiumcraft2:hochiym"
+    },
+    "8": {
+      "item": "perodiumcraft2:hochiym"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft2:hochiym_block",
+    "count": 1
+  }
+}

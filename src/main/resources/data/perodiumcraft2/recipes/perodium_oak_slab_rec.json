@@ -1,0 +1,22 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft2:perodium_oak_plant"
+    },
+    "1": {
+      "item": "perodiumcraft2:perodium_oak_plant"
+    },
+    "2": {
+      "item": "perodiumcraft2:perodium_oak_plant"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft2:perodium_oak_slab",
+    "count": 6
+  }
+}

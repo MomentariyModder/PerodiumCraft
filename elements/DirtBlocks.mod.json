@@ -1,0 +1,29 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:HochiymDirt"
+      },
+      {
+        "value": "CUSTOM:AkvamarineDirt"
+      },
+      {
+        "value": "CUSTOM:InfinitiDirt"
+      },
+      {
+        "value": "CUSTOM:RubyDirt"
+      },
+      {
+        "value": "CUSTOM:PerodiumDirt"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "dirt",
+    "namespace": "forge"
+  }
+}

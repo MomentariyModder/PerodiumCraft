@@ -1,0 +1,9 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "perodiumcraft2:perodium_quartz_block"
+  },
+  "result": "perodiumcraft2:chiseld_perodium_quartz_block"
+}

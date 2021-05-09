@@ -1,0 +1,42 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft2:akvamarine"
+    },
+    "1": {
+      "item": "perodiumcraft2:akvamarine"
+    },
+    "2": {
+      "item": "perodiumcraft2:akvamarine"
+    },
+    "3": {
+      "item": "perodiumcraft2:akvamarine"
+    },
+    "4": {
+      "item": "perodiumcraft2:akvamarine"
+    },
+    "5": {
+      "item": "perodiumcraft2:akvamarine"
+    },
+    "6": {
+      "item": "perodiumcraft2:akvamarine"
+    },
+    "7": {
+      "item": "perodiumcraft2:akvamarine"
+    },
+    "8": {
+      "item": "perodiumcraft2:akvamarine"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft2:akvamarine_block",
+    "count": 1
+  }
+}

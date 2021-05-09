@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "rubyy_hoe",
+    "customModelName": "Normal",
+    "name": "§4Ruby Hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PerodiumCraftToolsandArmors"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 4,
+    "efficiency": 16.0,
+    "attackSpeed": 1.0,
+    "enchantability": 12,
+    "damageVsEntity": 8.0,
+    "usageCount": 1741,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

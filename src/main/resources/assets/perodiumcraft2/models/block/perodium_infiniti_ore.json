@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft2:blocks/infinitiorepw",
+    "up": "perodiumcraft2:blocks/infinitiorepw",
+    "north": "perodiumcraft2:blocks/infinitiorepw",
+    "east": "perodiumcraft2:blocks/infinitiorepw",
+    "south": "perodiumcraft2:blocks/infinitiorepw",
+    "west": "perodiumcraft2:blocks/infinitiorepw",
+    "particle": "perodiumcraft2:blocks/infinitiorepw"
+  }
+}

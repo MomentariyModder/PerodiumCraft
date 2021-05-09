@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_leggings"
+  },
+  "addition": {
+    "item": "perodiumcraft2:hochiym_block"
+  },
+  "result": {
+    "item": "perodiumcraft2:hochiym_armor_armor_leggings"
+  }
+}

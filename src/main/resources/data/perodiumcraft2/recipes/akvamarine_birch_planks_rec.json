@@ -1,0 +1,13 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft2:akvamarine_oak"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft2:akvamarine_birch_planks",
+    "count": 4
+  }
+}

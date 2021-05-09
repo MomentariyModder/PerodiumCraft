@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft2:blocks/rubyoreend",
+    "up": "perodiumcraft2:blocks/rubyoreend",
+    "north": "perodiumcraft2:blocks/rubyoreend",
+    "east": "perodiumcraft2:blocks/rubyoreend",
+    "south": "perodiumcraft2:blocks/rubyoreend",
+    "west": "perodiumcraft2:blocks/rubyoreend",
+    "particle": "perodiumcraft2:blocks/rubyoreend"
+  }
+}

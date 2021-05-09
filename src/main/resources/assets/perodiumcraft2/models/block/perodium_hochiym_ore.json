@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft2:blocks/nochiymorepw",
+    "up": "perodiumcraft2:blocks/nochiymorepw",
+    "north": "perodiumcraft2:blocks/nochiymorepw",
+    "east": "perodiumcraft2:blocks/nochiymorepw",
+    "south": "perodiumcraft2:blocks/nochiymorepw",
+    "west": "perodiumcraft2:blocks/nochiymorepw",
+    "particle": "perodiumcraft2:blocks/nochiymorepw"
+  }
+}

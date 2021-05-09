@@ -1,0 +1,22 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft2:perodium_sand"
+    },
+    {
+      "item": "perodiumcraft2:perodium_sand"
+    },
+    {
+      "item": "perodiumcraft2:perodium_sand"
+    },
+    {
+      "item": "perodiumcraft2:perodium_sand"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft2:perodium_sandstone",
+    "count": 1
+  }
+}

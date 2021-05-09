@@ -1,0 +1,33 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft2:akvamarine_birch_planks"
+    },
+    "1": {
+      "item": "perodiumcraft2:akvamarine_birch_planks"
+    },
+    "2": {
+      "item": "perodiumcraft2:akvamarine_birch_planks"
+    },
+    "3": {
+      "item": "perodiumcraft2:akvamarine_birch_planks"
+    },
+    "4": {
+      "item": "perodiumcraft2:akvamarine_birch_planks"
+    },
+    "5": {
+      "item": "perodiumcraft2:akvamarine_birch_planks"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft2:akvamarine_birch_door",
+    "count": 3
+  }
+}

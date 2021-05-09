@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "bottom": "perodiumcraft2:blocks/jungle_door_bottom",
+    "top": "perodiumcraft2:blocks/jungle_door_top"
+  }
+}

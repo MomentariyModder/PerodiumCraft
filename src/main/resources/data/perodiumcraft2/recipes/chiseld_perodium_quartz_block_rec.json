@@ -1,0 +1,22 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft2:perodium_quartz"
+    },
+    {
+      "item": "perodiumcraft2:perodium_quartz_block"
+    },
+    {
+      "item": "perodiumcraft2:perodium_quartz"
+    },
+    {
+      "item": "perodiumcraft2:perodium_quartz_block"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft2:chiseld_perodium_quartz_block",
+    "count": 2
+  }
+}

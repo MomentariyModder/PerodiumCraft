@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "§8PerodiumCraft2[§7Blocks§8]",
+    "icon": {
+      "value": "CUSTOM:PerodiumBlock"
+    },
+    "showSearch": true
+  }
+}

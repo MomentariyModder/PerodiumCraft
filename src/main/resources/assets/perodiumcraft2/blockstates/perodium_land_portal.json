@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "perodiumcraft2:block/perodium_land_portal_ew"
+    },
+    "axis=x": {
+      "model": "perodiumcraft2:block/perodium_land_portal_ns"
+    }
+  }
+}

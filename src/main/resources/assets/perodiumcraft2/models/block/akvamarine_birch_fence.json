@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "perodiumcraft2:blocks/akvamarinewoodplanks",
+    "particle": "perodiumcraft2:blocks/akvamarinewoodplanks"
+  }
+}

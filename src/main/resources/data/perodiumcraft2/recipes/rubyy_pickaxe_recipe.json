@@ -1,0 +1,30 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft2:ruby"
+    },
+    "1": {
+      "item": "perodiumcraft2:ruby"
+    },
+    "2": {
+      "item": "perodiumcraft2:ruby"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft2:rubyy_pickaxe",
+    "count": 1
+  }
+}

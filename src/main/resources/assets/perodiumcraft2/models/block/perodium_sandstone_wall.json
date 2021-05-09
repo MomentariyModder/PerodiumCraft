@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "perodiumcraft2:blocks/perodiumsandstone",
+    "particle": "perodiumcraft2:blocks/perodiumsandstone"
+  }
+}

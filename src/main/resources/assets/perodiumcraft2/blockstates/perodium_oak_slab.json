@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "perodiumcraft2:block/perodium_oak_slab"
+    },
+    "type=top": {
+      "model": "perodiumcraft2:block/perodium_oak_slab_top"
+    },
+    "type=double": {
+      "model": "perodiumcraft2:block/perodium_oak_slab_full"
+    }
+  }
+}

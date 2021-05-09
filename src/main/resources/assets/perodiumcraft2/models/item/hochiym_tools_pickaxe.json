@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "perodiumcraft2:items/hochiymtools_pickaxe"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft2:infiniti"
+    },
+    "2": {
+      "item": "perodiumcraft2:infiniti"
+    },
+    "3": {
+      "item": "perodiumcraft2:infiniti"
+    },
+    "5": {
+      "item": "perodiumcraft2:infiniti"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft2:infinitii_armor_boots",
+    "count": 1
+  }
+}

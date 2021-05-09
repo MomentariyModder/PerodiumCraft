@@ -1,0 +1,33 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft2:ruby_jungle_plant"
+    },
+    "1": {
+      "item": "perodiumcraft2:ruby_jungle_plant"
+    },
+    "2": {
+      "item": "perodiumcraft2:ruby_jungle_plant"
+    },
+    "3": {
+      "item": "perodiumcraft2:ruby_jungle_plant"
+    },
+    "4": {
+      "item": "perodiumcraft2:ruby_jungle_plant"
+    },
+    "5": {
+      "item": "perodiumcraft2:ruby_jungle_plant"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft2:ruby_jungle_door",
+    "count": 3
+  }
+}

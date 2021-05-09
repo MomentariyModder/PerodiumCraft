@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Not specified"
+
+[[mods]]
+modId="perodiumcraft2"
+version="DEV 1.0"
+displayName="PerodiumCraft2"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://vk.com/momentariy.modder"
+authors="Momentariy Modder,MRStapan"
+description='''
+§8A new main resource appears in the game - Perodium. It is possible to make super-tools and super-armor from it. It is not so easy to create a periodium. But you will be pleased with the result. And a new world is added.  
+'''
+
+[[dependencies.perodiumcraft2]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.perodiumcraft2]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36.1.0]"
+    ordering="NONE"
+    side="BOTH"
+
+
+

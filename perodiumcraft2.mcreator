@@ -1,0 +1,3027 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Hochiym",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym"
+    },
+    {
+      "name": "Akvamarine",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine"
+    },
+    {
+      "name": "Infiniti",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti"
+    },
+    {
+      "name": "Ruby",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby"
+    },
+    {
+      "name": "PerodiumQuartz",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz"
+    },
+    {
+      "name": "HochiymOre",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_ore"
+    },
+    {
+      "name": "NetherHochiymOre",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_hochiym_ore"
+    },
+    {
+      "name": "EndHochiymOre",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_hochiym_ore"
+    },
+    {
+      "name": "PerodiumHochiymOre",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_hochiym_ore"
+    },
+    {
+      "name": "HochiymRec",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_rec"
+    },
+    {
+      "name": "HochiymRec2",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_rec_2"
+    },
+    {
+      "name": "HochiymRec3",
+      "type": "recipe",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_rec_3"
+    },
+    {
+      "name": "HochiymRec4",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_rec_4"
+    },
+    {
+      "name": "HochiymBlock",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_block"
+    },
+    {
+      "name": "HochiymGrass",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_grass"
+    },
+    {
+      "name": "HochiymDirt",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_dirt"
+    },
+    {
+      "name": "HochiymGrassPlant",
+      "type": "plant",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_grass_plant"
+    },
+    {
+      "name": "AkvamarineOre",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_ore"
+    },
+    {
+      "name": "NetherAkvamarineOre",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_akvamarine_ore"
+    },
+    {
+      "name": "EndAkvamarineOre",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_akvamarine_ore"
+    },
+    {
+      "name": "PerodiumAkvamarineOre",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_akvamarine_ore"
+    },
+    {
+      "name": "AkvamarineOreRec",
+      "type": "recipe",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_ore_rec"
+    },
+    {
+      "name": "AkvamarineOreRec2",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_ore_rec_2"
+    },
+    {
+      "name": "AkvamarineOreRec3",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_ore_rec_3"
+    },
+    {
+      "name": "AkvamarineOreRec4",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_ore_rec_4"
+    },
+    {
+      "name": "AkvamarineLeaves",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_leaves"
+    },
+    {
+      "name": "AkvamarineOak",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_oak"
+    },
+    {
+      "name": "AkvamarineOakFUEL",
+      "type": "fuel",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_oak_fuel"
+    },
+    {
+      "name": "AkvamarineBirchPlanks",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_planks"
+    },
+    {
+      "name": "AkvamarineBirchPlanksRec",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_planks_rec"
+    },
+    {
+      "name": "BirchRec",
+      "type": "recipe",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "birch_rec"
+    },
+    {
+      "name": "AkvamarineGrass",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_grass"
+    },
+    {
+      "name": "AkvamarineDirt",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_dirt"
+    },
+    {
+      "name": "AkvamarineGrassPlant",
+      "type": "plant",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_grass_plant"
+    },
+    {
+      "name": "AkvamarineBush",
+      "type": "plant",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_bush"
+    },
+    {
+      "name": "AkvamarineBush2",
+      "type": "plant",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_bush_2"
+    },
+    {
+      "name": "AkvamarineBerries",
+      "type": "food",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_berries"
+    },
+    {
+      "name": "AkvamarineBushUpdateTick",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_bush_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AkvamarineBush2PlantRightClicked",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_bush_2_plant_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AkvamarineBlock",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_block"
+    },
+    {
+      "name": "AkvamarineDust",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_dust"
+    },
+    {
+      "name": "AkvamarineDustRec",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_dust_rec"
+    },
+    {
+      "name": "HochiymDust",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_dust"
+    },
+    {
+      "name": "HochiymDustRec",
+      "type": "recipe",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_dust_rec"
+    },
+    {
+      "name": "AkvamarineBirchForest",
+      "type": "biome",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_forest"
+    },
+    {
+      "name": "AkvamarinePlains",
+      "type": "biome",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_plains"
+    },
+    {
+      "name": "HochiymPlains",
+      "type": "biome",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_plains"
+    },
+    {
+      "name": "HochiymBlockRec",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_block_rec"
+    },
+    {
+      "name": "AkvamarineBlockRec",
+      "type": "recipe",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_block_rec"
+    },
+    {
+      "name": "InfinitiOre",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_ore"
+    },
+    {
+      "name": "AkvamarineZombiePlains",
+      "type": "biome",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_zombie_plains"
+    },
+    {
+      "name": "NetherInfinitiOre",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nether_infiniti_ore"
+    },
+    {
+      "name": "HochiymRec5",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_rec_5"
+    },
+    {
+      "name": "AkvamarineRec",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_rec"
+    },
+    {
+      "name": "EndInfinitiOre",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_infiniti_ore"
+    },
+    {
+      "name": "PerodiumInfinitiOre",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_infiniti_ore"
+    },
+    {
+      "name": "InfinitiRec",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_rec"
+    },
+    {
+      "name": "InfinitiRec2",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_rec_2"
+    },
+    {
+      "name": "InfinitiRec3",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_rec_3"
+    },
+    {
+      "name": "InfinitiRec4",
+      "type": "recipe",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_rec_4"
+    },
+    {
+      "name": "InfinitiGrass",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_grass"
+    },
+    {
+      "name": "InfinitiDirt",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_dirt"
+    },
+    {
+      "name": "InfinitiGrassPlant",
+      "type": "plant",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_grass_plant"
+    },
+    {
+      "name": "InfinitiSwamp",
+      "type": "biome",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_swamp"
+    },
+    {
+      "name": "InfinitiDust",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_dust"
+    },
+    {
+      "name": "InfinitiBlock",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_block"
+    },
+    {
+      "name": "InfinitiDustRec",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_dust_rec"
+    },
+    {
+      "name": "InfinitiBlockRec",
+      "type": "recipe",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_block_rec"
+    },
+    {
+      "name": "InfinitiRec5",
+      "type": "recipe",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infiniti_rec_5"
+    },
+    {
+      "name": "RubyOre",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_ore"
+    },
+    {
+      "name": "RubyOre2",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_ore_2"
+    },
+    {
+      "name": "EndRubyOre",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "end_ruby_ore"
+    },
+    {
+      "name": "PerodiumRubyOre",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_ruby_ore"
+    },
+    {
+      "name": "RubyRec",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_rec"
+    },
+    {
+      "name": "RubyRec2",
+      "type": "recipe",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_rec_2"
+    },
+    {
+      "name": "RubyRec3",
+      "type": "recipe",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_rec_3"
+    },
+    {
+      "name": "RubyRec4",
+      "type": "recipe",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_rec_4"
+    },
+    {
+      "name": "RubyBlock",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_block"
+    },
+    {
+      "name": "RubyGrass",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_grass"
+    },
+    {
+      "name": "RubyDirt",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_dirt"
+    },
+    {
+      "name": "RubyGrassPlant",
+      "type": "plant",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_grass_plant"
+    },
+    {
+      "name": "RubyJungle",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle"
+    },
+    {
+      "name": "RubyJunglePlant",
+      "type": "block",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_plant"
+    },
+    {
+      "name": "RubyJunglePlanksRec",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_planks_rec"
+    },
+    {
+      "name": "JungleRec",
+      "type": "recipe",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jungle_rec"
+    },
+    {
+      "name": "RubyJungleLeaves",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_leaves"
+    },
+    {
+      "name": "RubyJungleBiome",
+      "type": "biome",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_biome"
+    },
+    {
+      "name": "PerodiumSand",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sand"
+    },
+    {
+      "name": "PerodiumSandstone",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone"
+    },
+    {
+      "name": "PerodiumSandstoneRec",
+      "type": "recipe",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_rec"
+    },
+    {
+      "name": "PerodiumDeadBush",
+      "type": "plant",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_dead_bush"
+    },
+    {
+      "name": "PerodiumDesert",
+      "type": "biome",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_desert"
+    },
+    {
+      "name": "PerodiumGlass",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_glass"
+    },
+    {
+      "name": "PerodiumGlassPane",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_glass_pane"
+    },
+    {
+      "name": "PerodiumGlassRec",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_glass_rec"
+    },
+    {
+      "name": "PerodiumGlassPaneRec",
+      "type": "recipe",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_glass_pane_rec"
+    },
+    {
+      "name": "PerodiumLantern",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_lantern"
+    },
+    {
+      "name": "PerodiumLanternRec",
+      "type": "recipe",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_lantern_rec"
+    },
+    {
+      "name": "PerodiumQuartzOre",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_ore"
+    },
+    {
+      "name": "PerodiumQuartzOre2",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_ore_2"
+    },
+    {
+      "name": "PerodiumQuartzRec",
+      "type": "recipe",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_rec"
+    },
+    {
+      "name": "PerodiumQuartzRec2",
+      "type": "recipe",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_rec_2"
+    },
+    {
+      "name": "PerodiumQuartzBlock",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_block"
+    },
+    {
+      "name": "SmoothPerodiumQuartzBlock",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_perodium_quartz_block"
+    },
+    {
+      "name": "PerodiumQuartzBlockRec",
+      "type": "recipe",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_block_rec"
+    },
+    {
+      "name": "SmoothPerodiumQuartzBlockRec",
+      "type": "recipe",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_perodium_quartz_block_rec"
+    },
+    {
+      "name": "ChiseldPerodiumQuartzBlock",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseld_perodium_quartz_block"
+    },
+    {
+      "name": "ChiseldPerodiumQuartzBlockRec",
+      "type": "recipe",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseld_perodium_quartz_block_rec"
+    },
+    {
+      "name": "ChiseldPerodiumQuartzBlockRec2",
+      "type": "recipe",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chiseld_perodium_quartz_block_rec_2"
+    },
+    {
+      "name": "PerodiumQuartzBrick",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_brick"
+    },
+    {
+      "name": "PerodiumQuartzBrickRec",
+      "type": "recipe",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_brick_rec"
+    },
+    {
+      "name": "PerodiumQuartzBrickRec2",
+      "type": "recipe",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_brick_rec_2"
+    },
+    {
+      "name": "PerodiumQuartzPillar",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_pillar"
+    },
+    {
+      "name": "PerodiumQuartzPillarRec",
+      "type": "recipe",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_pillar_rec"
+    },
+    {
+      "name": "PerodiumQuartzPillarRec2",
+      "type": "recipe",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_pillar_rec_2"
+    },
+    {
+      "name": "PerodiumQuartzStairs",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_stairs"
+    },
+    {
+      "name": "PerodiumQuartzStairsRec",
+      "type": "recipe",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_stairs_rec"
+    },
+    {
+      "name": "PerodiumQuartzStairsRec2",
+      "type": "recipe",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_stairs_rec_2"
+    },
+    {
+      "name": "PerodiumQuartzSlab",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_slab"
+    },
+    {
+      "name": "PerodiumQuartzSlabRec",
+      "type": "recipe",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_slab_rec"
+    },
+    {
+      "name": "PerodiumQuartzSlabRec2",
+      "type": "recipe",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_quartz_slab_rec_2"
+    },
+    {
+      "name": "SmoothPerodiumQuartzStairs",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_perodium_quartz_stairs"
+    },
+    {
+      "name": "SpQStairsRec",
+      "type": "recipe",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_q_stairs_rec"
+    },
+    {
+      "name": "SpQStairsRec2",
+      "type": "recipe",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_q_stairs_rec_2"
+    },
+    {
+      "name": "SmoothPerodiumQuartzSlab",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smooth_perodium_quartz_slab"
+    },
+    {
+      "name": "SpQSlabRec",
+      "type": "recipe",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_q_slab_rec"
+    },
+    {
+      "name": "SpQSlabRec2",
+      "type": "recipe",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_q_slab_rec_2"
+    },
+    {
+      "name": "PerodiumSandstoneStairs",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_stairs"
+    },
+    {
+      "name": "PerodiumSandstoneStairsRec",
+      "type": "recipe",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_stairs_rec"
+    },
+    {
+      "name": "PerodiumSandstoneStairsRec2",
+      "type": "recipe",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_stairs_rec_2"
+    },
+    {
+      "name": "PerodiumSandstoneWall",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_wall"
+    },
+    {
+      "name": "PerodiumSandstoneWallRec",
+      "type": "recipe",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_wall_rec"
+    },
+    {
+      "name": "PerodiumSandstoneWallRec2",
+      "type": "recipe",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_wall_rec_2"
+    },
+    {
+      "name": "PerodiumSandstoneSlab",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_slab"
+    },
+    {
+      "name": "PerodiumSandstoneSlabRec",
+      "type": "recipe",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sandstone_slab_rec"
+    },
+    {
+      "name": "PerodiumSandStoneSlabRec2",
+      "type": "recipe",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_sand_stone_slab_rec_2"
+    },
+    {
+      "name": "PerodiumIngot",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_ingot"
+    },
+    {
+      "name": "PerodiumCraftItem",
+      "type": "tab",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_craft_item"
+    },
+    {
+      "name": "PerodiumIngotRec",
+      "type": "recipe",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_ingot_rec"
+    },
+    {
+      "name": "PerodiumBlock",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_block"
+    },
+    {
+      "name": "PerodiumCraftBlocks",
+      "type": "tab",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_craft_blocks"
+    },
+    {
+      "name": "PerodiumCraft2PPlant",
+      "type": "tab",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_craft_2_p_plant"
+    },
+    {
+      "name": "AkvamarineBirchFence",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_fence"
+    },
+    {
+      "name": "AkvamarineBirchFenceRec",
+      "type": "recipe",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_fence_rec"
+    },
+    {
+      "name": "AkvamarineBirchSlab",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_slab"
+    },
+    {
+      "name": "AkvamarineBirchSlabRec",
+      "type": "recipe",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_slab_rec"
+    },
+    {
+      "name": "AkvamarineBirchStairs",
+      "type": "block",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_stairs"
+    },
+    {
+      "name": "AkvamarineBirchStairsRec",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_stairs_rec"
+    },
+    {
+      "name": "RubyJungleFence",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_fence"
+    },
+    {
+      "name": "RubyJungleFenceRec",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_fence_rec"
+    },
+    {
+      "name": "RubyJungleSlab",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_slab"
+    },
+    {
+      "name": "RubyJungleSlabRec",
+      "type": "recipe",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_slab_rec"
+    },
+    {
+      "name": "RubyJungleStairs",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_stairs"
+    },
+    {
+      "name": "RubyJungleStairsRec",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_stairs_rec"
+    },
+    {
+      "name": "RubyDust",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_dust"
+    },
+    {
+      "name": "PerodiumPlate",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_plate"
+    },
+    {
+      "name": "PerodiumStone",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_stone"
+    },
+    {
+      "name": "PerodiumCobblestone",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone"
+    },
+    {
+      "name": "PerodiumSmoothStone",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_smooth_stone"
+    },
+    {
+      "name": "PerodiumStoneRec",
+      "type": "recipe",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_stone_rec"
+    },
+    {
+      "name": "PerodiumSmoothStoneRec",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_smooth_stone_rec"
+    },
+    {
+      "name": "PerodiumStoneSlab",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_stone_slab"
+    },
+    {
+      "name": "PerodiumCobblestoneSlab",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_slab"
+    },
+    {
+      "name": "PerodiumSmoothStoneSlab",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_smooth_stone_slab"
+    },
+    {
+      "name": "PerodiumStoneSlabRec",
+      "type": "recipe",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_stone_slab_rec"
+    },
+    {
+      "name": "PerodiumStoneSlabRec2",
+      "type": "recipe",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_stone_slab_rec_2"
+    },
+    {
+      "name": "PerodiumCobblestoneSlabRec",
+      "type": "recipe",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_slab_rec"
+    },
+    {
+      "name": "PerodiumCobblestoneSlabRec2",
+      "type": "recipe",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_slab_rec_2"
+    },
+    {
+      "name": "PerodiumSmoothStoneSlabRec",
+      "type": "recipe",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_smooth_stone_slab_rec"
+    },
+    {
+      "name": "PerodiumSmoothStoneSlabRec2",
+      "type": "recipe",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_smooth_stone_slab_rec_2"
+    },
+    {
+      "name": "PerodiumStoneStairs",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_stone_stairs"
+    },
+    {
+      "name": "PerodiumCobblestoneStairs",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_stairs"
+    },
+    {
+      "name": "PerodiumStoneStairsRec",
+      "type": "recipe",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_stone_stairs_rec"
+    },
+    {
+      "name": "PerodiumStoneStairsRec2",
+      "type": "recipe",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_stone_stairs_rec_2"
+    },
+    {
+      "name": "PerodiumCobblestoneStairsRec",
+      "type": "recipe",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_stairs_rec"
+    },
+    {
+      "name": "PerodiumCobblestoneStairsRec2",
+      "type": "recipe",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_stairs_rec_2"
+    },
+    {
+      "name": "PerodiumCobblestoneWall",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_wall"
+    },
+    {
+      "name": "PerodiumCobblestoneWallRec",
+      "type": "recipe",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_wall_rec"
+    },
+    {
+      "name": "PerodiumCobblestoneWallRec2",
+      "type": "recipe",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_cobblestone_wall_rec_2"
+    },
+    {
+      "name": "PerodiumGrass",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_grass"
+    },
+    {
+      "name": "PerodiumDirt",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_dirt"
+    },
+    {
+      "name": "PerodiumWater",
+      "type": "fluid",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_water"
+    },
+    {
+      "name": "PerodiumOak",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak"
+    },
+    {
+      "name": "PerodiumOakPlant",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_plant"
+    },
+    {
+      "name": "PerodiumOakPlantRec",
+      "type": "recipe",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_plant_rec"
+    },
+    {
+      "name": "PerodiumOakPlanttoOakPlant",
+      "type": "recipe",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_plantto_oak_plant"
+    },
+    {
+      "name": "PerodiumOakSlab",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_slab"
+    },
+    {
+      "name": "PerodiumOakStairs",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_stairs"
+    },
+    {
+      "name": "PerodiumOakFence",
+      "type": "block",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_fence"
+    },
+    {
+      "name": "PerodiumOakSlabRec",
+      "type": "recipe",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_slab_rec"
+    },
+    {
+      "name": "PerodiumOakStairsRec",
+      "type": "recipe",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_stairs_rec"
+    },
+    {
+      "name": "PerodiumOakFenceRec",
+      "type": "recipe",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_fence_rec"
+    },
+    {
+      "name": "PerodiumOakLeaves",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_leaves"
+    },
+    {
+      "name": "PerodiumOakForest",
+      "type": "biome",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_forest"
+    },
+    {
+      "name": "PerodiumOakPlains",
+      "type": "biome",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_plains"
+    },
+    {
+      "name": "PerodiumZombiePlains",
+      "type": "biome",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_zombie_plains"
+    },
+    {
+      "name": "RubyZombiePlains",
+      "type": "biome",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_zombie_plains"
+    },
+    {
+      "name": "PerodiumBlockRec",
+      "type": "recipe",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_block_rec"
+    },
+    {
+      "name": "PerodiumBrick",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_brick"
+    },
+    {
+      "name": "PerodiumBrickRec",
+      "type": "recipe",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_brick_rec"
+    },
+    {
+      "name": "PerodiumLand",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_land",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "PerodiumKeyRec",
+      "type": "recipe",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_key_rec"
+    },
+    {
+      "name": "PerodiumNuggets",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_nuggets"
+    },
+    {
+      "name": "PerodiumNuggetsRec",
+      "type": "recipe",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_nuggets_rec"
+    },
+    {
+      "name": "AkvamarinePlantFuel",
+      "type": "fuel",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_plant_fuel"
+    },
+    {
+      "name": "AkvamarineBirchPlantSlabFuel",
+      "type": "fuel",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_plant_slab_fuel"
+    },
+    {
+      "name": "AkvamarineBirchPlantSTairs",
+      "type": "fuel",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_plant_s_tairs"
+    },
+    {
+      "name": "AkvamarineBirchPlantFence",
+      "type": "fuel",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_plant_fence"
+    },
+    {
+      "name": "RubyJungleFuel",
+      "type": "fuel",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_fuel"
+    },
+    {
+      "name": "RubyJunglePlantFuel",
+      "type": "fuel",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_plant_fuel"
+    },
+    {
+      "name": "RubyJunglePlantFenceFuel",
+      "type": "fuel",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_plant_fence_fuel"
+    },
+    {
+      "name": "RubyJunglePlantSlabFuel",
+      "type": "fuel",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_plant_slab_fuel"
+    },
+    {
+      "name": "RubyJunglePlantStairsFuel",
+      "type": "fuel",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_plant_stairs_fuel"
+    },
+    {
+      "name": "PerodiumOakFuel",
+      "type": "fuel",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_fuel"
+    },
+    {
+      "name": "PerodiumOakPlantFuel",
+      "type": "fuel",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_plant_fuel"
+    },
+    {
+      "name": "PerodiumOakPlantSlab",
+      "type": "fuel",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_plant_slab"
+    },
+    {
+      "name": "PerodiumOakPlantSTairs",
+      "type": "fuel",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_plant_s_tairs"
+    },
+    {
+      "name": "PerodiumOakPlantFence",
+      "type": "fuel",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_plant_fence"
+    },
+    {
+      "name": "CharcoolRec",
+      "type": "recipe",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charcool_rec"
+    },
+    {
+      "name": "CharcoolRec2",
+      "type": "recipe",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charcool_rec_2"
+    },
+    {
+      "name": "CharcoolRec3",
+      "type": "recipe",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "charcool_rec_3"
+    },
+    {
+      "name": "PerodiumGrassPlant",
+      "type": "plant",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_grass_plant"
+    },
+    {
+      "name": "PerodiumOakDoor",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_door"
+    },
+    {
+      "name": "PerodiumOakDoorRec",
+      "type": "recipe",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_door_rec"
+    },
+    {
+      "name": "AkvamarineBirchDoor",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_door"
+    },
+    {
+      "name": "AkvamarineBirchDoorRec",
+      "type": "recipe",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_door_rec"
+    },
+    {
+      "name": "RubyJungleDoor",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_door"
+    },
+    {
+      "name": "RubyJungleDoorRec",
+      "type": "recipe",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_door_rec"
+    },
+    {
+      "name": "PerodiumDoor",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_door"
+    },
+    {
+      "name": "PerodiumDoorRec",
+      "type": "recipe",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_door_rec"
+    },
+    {
+      "name": "ReinforcedPeriodiumBricks",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_periodium_bricks"
+    },
+    {
+      "name": "PerodiumBars",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_bars"
+    },
+    {
+      "name": "RubyDustRec",
+      "type": "recipe",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_dust_rec"
+    },
+    {
+      "name": "PerodiumOakFenceGate",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_oak_fence_gate"
+    },
+    {
+      "name": "AkvamarineBirchFenceGate",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_birch_fence_gate"
+    },
+    {
+      "name": "RubyJungleFenceGate",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ruby_jungle_fence_gate"
+    },
+    {
+      "name": "PerodiumCraftToolsandArmors",
+      "type": "tab",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_craft_toolsand_armors"
+    },
+    {
+      "name": "HochiymToolsPickaxe",
+      "type": "tool",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_pickaxe"
+    },
+    {
+      "name": "HochiymToolsAxe",
+      "type": "tool",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_axe"
+    },
+    {
+      "name": "HochiymToolsSword",
+      "type": "tool",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_sword"
+    },
+    {
+      "name": "HochiymToolsShovel",
+      "type": "tool",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_shovel"
+    },
+    {
+      "name": "HochiymToolsHoe",
+      "type": "tool",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_hoe"
+    },
+    {
+      "name": "HochiymToolsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_pickaxe_recipe"
+    },
+    {
+      "name": "HochiymToolsAxeRecipe",
+      "type": "recipe",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_axe_recipe"
+    },
+    {
+      "name": "HochiymToolsSwordRecipe",
+      "type": "recipe",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_sword_recipe"
+    },
+    {
+      "name": "HochiymToolsShovelRecipe",
+      "type": "recipe",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_shovel_recipe"
+    },
+    {
+      "name": "HochiymToolsHoeRecipe",
+      "type": "recipe",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_tools_hoe_recipe"
+    },
+    {
+      "name": "HochiymArmorArmor",
+      "type": "armor",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "HochiymArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_armor_armor_helmet_recipe"
+    },
+    {
+      "name": "HochiymArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_armor_armor_body_recipe"
+    },
+    {
+      "name": "HochiymArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_armor_armor_leggings_recipe"
+    },
+    {
+      "name": "HochiymArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hochiym_armor_armor_boots_recipe"
+    },
+    {
+      "name": "Akvamarine2Armor",
+      "type": "armor",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_2_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Akvamarine2ArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_2_armor_helmet_recipe"
+    },
+    {
+      "name": "Akvamarine2ArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_2_armor_body_recipe"
+    },
+    {
+      "name": "Akvamarine2ArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_2_armor_leggings_recipe"
+    },
+    {
+      "name": "Akvamarine2ArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_2_armor_boots_recipe"
+    },
+    {
+      "name": "Akvamarine1Pickaxe",
+      "type": "tool",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_pickaxe"
+    },
+    {
+      "name": "Akvamarine1Axe",
+      "type": "tool",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_axe"
+    },
+    {
+      "name": "Akvamarine1Sword",
+      "type": "tool",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_sword"
+    },
+    {
+      "name": "Akvamarine1Shovel",
+      "type": "tool",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_shovel"
+    },
+    {
+      "name": "Akvamarine1Hoe",
+      "type": "tool",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_hoe"
+    },
+    {
+      "name": "Akvamarine1PickaxeRecipe",
+      "type": "recipe",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_pickaxe_recipe"
+    },
+    {
+      "name": "Akvamarine1AxeRecipe",
+      "type": "recipe",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_axe_recipe"
+    },
+    {
+      "name": "Akvamarine1SwordRecipe",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_sword_recipe"
+    },
+    {
+      "name": "Akvamarine1ShovelRecipe",
+      "type": "recipe",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_shovel_recipe"
+    },
+    {
+      "name": "Akvamarine1HoeRecipe",
+      "type": "recipe",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "akvamarine_1_hoe_recipe"
+    },
+    {
+      "name": "PerodiumBarsRec",
+      "type": "recipe",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "perodium_bars_rec"
+    },
+    {
+      "name": "ReinforcedPerodiumBricksRec",
+      "type": "recipe",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_perodium_bricks_rec"
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_blocks"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "log_blocks"
+    },
+    {
+      "name": "FenceBlocks",
+      "type": "tag",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fence_blocks"
+    },
+    {
+      "name": "WallBlocks",
+      "type": "tag",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wall_blocks"
+    },
+    {
+      "name": "SmallFlowerBlocks",
+      "type": "tag",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_flower_blocks"
+    },
+    {
+      "name": "LeaveBlocks",
+      "type": "tag",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leave_blocks"
+    },
+    {
+      "name": "PlankItems",
+      "type": "tag",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plank_items"
+    },
+    {
+      "name": "BeaconBaseBlockBlocks",
+      "type": "tag",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beacon_base_block_blocks"
+    },
+    {
+      "name": "InfinitiiArmor",
+      "type": "armor",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "InfinitiiArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_armor_helmet_recipe"
+    },
+    {
+      "name": "InfinitiiArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_armor_body_recipe"
+    },
+    {
+      "name": "InfinitiiArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_armor_leggings_recipe"
+    },
+    {
+      "name": "InfinitiiArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_armor_boots_recipe"
+    },
+    {
+      "name": "InfinitiiPickaxe",
+      "type": "tool",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_pickaxe"
+    },
+    {
+      "name": "InfinitiiAxe",
+      "type": "tool",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_axe"
+    },
+    {
+      "name": "InfinitiiSword",
+      "type": "tool",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_sword"
+    },
+    {
+      "name": "InfinitiiShovel",
+      "type": "tool",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_shovel"
+    },
+    {
+      "name": "InfinitiiHoe",
+      "type": "tool",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_hoe"
+    },
+    {
+      "name": "InfinitiiPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_pickaxe_recipe"
+    },
+    {
+      "name": "InfinitiiAxeRecipe",
+      "type": "recipe",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_axe_recipe"
+    },
+    {
+      "name": "InfinitiiSwordRecipe",
+      "type": "recipe",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_sword_recipe"
+    },
+    {
+      "name": "InfinitiiShovelRecipe",
+      "type": "recipe",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_shovel_recipe"
+    },
+    {
+      "name": "InfinitiiHoeRecipe",
+      "type": "recipe",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infinitii_hoe_recipe"
+    },
+    {
+      "name": "RubyyArmor",
+      "type": "armor",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "RubyyArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_armor_helmet_recipe"
+    },
+    {
+      "name": "RubyyArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_armor_body_recipe"
+    },
+    {
+      "name": "RubyyArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_armor_leggings_recipe"
+    },
+    {
+      "name": "RubyyArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_armor_boots_recipe"
+    },
+    {
+      "name": "RubyyPickaxe",
+      "type": "tool",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_pickaxe"
+    },
+    {
+      "name": "RubyyAxe",
+      "type": "tool",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_axe"
+    },
+    {
+      "name": "RubyySword",
+      "type": "tool",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_sword"
+    },
+    {
+      "name": "RubyyShovel",
+      "type": "tool",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_shovel"
+    },
+    {
+      "name": "RubyyHoe",
+      "type": "tool",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_hoe"
+    },
+    {
+      "name": "RubyyPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_pickaxe_recipe"
+    },
+    {
+      "name": "RubyyAxeRecipe",
+      "type": "recipe",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_axe_recipe"
+    },
+    {
+      "name": "RubyySwordRecipe",
+      "type": "recipe",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_sword_recipe"
+    },
+    {
+      "name": "RubyyShovelRecipe",
+      "type": "recipe",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_shovel_recipe"
+    },
+    {
+      "name": "RubyyHoeRecipe",
+      "type": "recipe",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rubyy_hoe_recipe"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.perodiumcraft2.akvamarine_oak": "§3Akvamarine Birch",
+      "block.perodiumcraft2.perodium_ruby_ore": "§8Perodium Ruby Ore",
+      "block.perodiumcraft2.perodium_sandstone_stairs": "§8Perodium Sandstone Stairs",
+      "block.perodiumcraft2.ruby_jungle": "§4Ruby Jungle",
+      "item.perodiumcraft2.infinitii_armor_boots": "§2Infiniti Boots",
+      "biome.perodiumcraft2.akvamarine_plains": "§3Akvamarine Plains",
+      "block.perodiumcraft2.perodium_quartz_block": "§8Perodium Quartz Block",
+      "block.perodiumcraft2.perodium_quartz_pillar": "§8Perodium Quartz Pillar",
+      "block.perodiumcraft2.perodium_oak_door": "§8Perodium Oak Door",
+      "biome.perodiumcraft2.perodium_oak_plains": "§8Perodium Oak Plains",
+      "biome.perodiumcraft2.perodium_desert": "§8Perodium Desert",
+      "block.perodiumcraft2.ruby_jungle_door": "§4Ruby Jungle Door",
+      "block.perodiumcraft2.ruby_jungle_leaves": "§4Ruby Jungle Leaves",
+      "item.perodiumcraft2.akvamarine_1_sword": "§3Akvamarine Sword",
+      "item.perodiumcraft2.hochiym_tools_hoe": "§1Hochiym Hoe",
+      "block.perodiumcraft2.perodium_lantern": "§8Perodium Lantern",
+      "biome.perodiumcraft2.perodium_oak_forest": "§8Perodium Oak Forest",
+      "block.perodiumcraft2.perodium_cobblestone_stairs": "§8Perodium Cobblestone Stairs",
+      "block.perodiumcraft2.perodium_dirt": "§8Perodium Dirt",
+      "block.perodiumcraft2.chiseld_perodium_quartz_block": "§8Chiseld Perodium Quartz Block",
+      "item.perodiumcraft2.akvamarine_1_axe": "§3Akvamarine Axe",
+      "item.perodiumcraft2.infinitii_sword": "§2Infiniti Sword",
+      "item.perodiumcraft2.akvamarine_2_armor_chestplate": "§3Akvamarine Chestplate",
+      "block.perodiumcraft2.perodium_sand": "§8Perodium Sand",
+      "block.perodiumcraft2.perodium_cobblestone_wall": "§8Perodium Cobblestone Wall",
+      "biome.perodiumcraft2.infiniti_swamp": "§2Infiniti Swamp",
+      "item.perodiumcraft2.perodium_plate": "§8Perodium Plate",
+      "block.perodiumcraft2.perodium_sandstone_slab": "§8Perodium Sandstone Slab",
+      "item.perodiumcraft2.akvamarine_2_armor_helmet": "§3Akvamarine Helmet",
+      "biome.perodiumcraft2.ruby_jungle_biome": "§4Ruby Jungle Biome",
+      "block.perodiumcraft2.nether_hochiym_ore": "§1Nether Hochiym Ore",
+      "item.perodiumcraft2.rubyy_hoe": "§4Ruby Hoe",
+      "block.perodiumcraft2.infiniti_grass_plant": "§2Infiniti Grass Plant",
+      "item.perodiumcraft2.infinitii_armor_chestplate": "§2Infiniti Chestplate",
+      "block.perodiumcraft2.akvamarine_birch_door": "§3Akvamarine Birch Door",
+      "block.perodiumcraft2.akvamarine_birch_slab": "§3Akvamarine Birch Slab",
+      "item.perodiumcraft2.infiniti_dust": "§2Infiniti Dust",
+      "item.perodiumcraft2.infinitii_pickaxe": "§2Infiniti Pickaxe",
+      "biome.perodiumcraft2.akvamarine_birch_forest": "§3Akvamarine Birch Forest",
+      "item.perodiumcraft2.perodium_ingot": "§8Perodium Ingot",
+      "block.perodiumcraft2.perodium_oak_fence": "§8Perodium Oak Fence",
+      "block.perodiumcraft2.akvamarine_birch_planks": "§3Akvamarine Birch Planks",
+      "block.perodiumcraft2.hochiym_ore": "§1Hochiym Ore",
+      "block.perodiumcraft2.perodium_quartz_ore_2": "§8Perodium Quartz Ore ",
+      "block.perodiumcraft2.perodium_oak_stairs": "§8Perodium Oak Stairs",
+      "block.perodiumcraft2.perodium_door": "§8Perodium Door",
+      "block.perodiumcraft2.perodium_sandstone_wall": "§8Perodium Sandstone Wall",
+      "block.perodiumcraft2.infiniti_grass": "§2Infiniti Grass",
+      "block.perodiumcraft2.perodium_glass": "§8Perodium Glass",
+      "biome.perodiumcraft2.akvamarine_zombie_plains": "§3Akvamarine Zombie Plains",
+      "block.perodiumcraft2.perodium_bars": "§8Perodium Bars",
+      "item.perodiumcraft2.hochiym_tools_shovel": "§1Hochiym Shovel",
+      "item.perodiumcraft2.akvamarine_2_armor_leggings": "§3Akvamarine Leggings",
+      "block.perodiumcraft2.ruby_block": "§4Ruby Block",
+      "item.perodiumcraft2.hochiym_tools_sword": "§1Hochiym Sword",
+      "block.perodiumcraft2.smooth_perodium_quartz_slab": "§8Smooth Perodium Quartz Slab",
+      "block.perodiumcraft2.ruby_ore": "§4Ruby Ore",
+      "block.perodiumcraft2.perodium_oak_plant": "§8Perodium Oak Planks",
+      "block.perodiumcraft2.ruby_jungle_stairs": "§4Ruby Jungle Stairs",
+      "block.perodiumcraft2.perodium_quartz_ore": "§8Perodium Quartz Ore",
+      "item.perodiumcraft2.hochiym_armor_armor_helmet": "Hochiym Helmet",
+      "item.perodiumcraft2.rubyy_axe": "§4Ruby Axe",
+      "block.perodiumcraft2.nether_infiniti_ore": "§2Nether Infiniti Ore",
+      "item.perodiumcraft2.akvamarine_1_shovel": "§3Akvamarine Shovel",
+      "itemGroup.tabperodium_craft_blocks": "§8PerodiumCraft2[§7Blocks§8]",
+      "item.perodiumcraft2.ruby_dust": "§4Ruby Dust",
+      "block.perodiumcraft2.hochiym_grass_plant": "§1Hochiym Grass Plant",
+      "block.perodiumcraft2.ruby_jungle_fence": "§4Ruby Jungle Fence",
+      "item.perodiumcraft2.rubyy_sword": "§4Ruby Sword",
+      "item.perodiumcraft2.infinitii_armor_leggings": "§2Infiniti Leggings",
+      "block.perodiumcraft2.akvamarine_bush": "§3Akvamarine Bush",
+      "item.perodiumcraft2.rubyy_armor_chestplate": "§4Ruby Chestplate",
+      "block.perodiumcraft2.end_hochiym_ore": "§1End Hochiym Ore",
+      "item.perodiumcraft2.perodium_water_bucket": "PerodiumWater Bucket",
+      "item.perodiumcraft2.perodium_quartz": "§8Perodium Quartz",
+      "block.perodiumcraft2.nether_akvamarine_ore": "§3Nether Akvamarine Ore",
+      "block.perodiumcraft2.akvamarine_ore": "§3Akvamarine Ore",
+      "item.perodiumcraft2.infiniti": "§2Infiniti",
+      "block.perodiumcraft2.perodium_oak_slab": "§8Perodium Oak Slab",
+      "block.perodiumcraft2.hochiym_grass": "§1Hochiym Grass",
+      "biome.perodiumcraft2.ruby_zombie_plains": "§4Ruby Zombie Plains",
+      "block.perodiumcraft2.perodium_oak": "§8Perodium Oak",
+      "block.perodiumcraft2.hochiym_dirt": "§1Hochiym Dirt",
+      "block.perodiumcraft2.perodium_smooth_stone": "§8Perodium Smooth Stone",
+      "block.perodiumcraft2.akvamarine_birch_fence": "§3Akvamarine Birch Fence",
+      "block.perodiumcraft2.end_ruby_ore": "§4End Ruby Ore",
+      "block.perodiumcraft2.perodium_grass_plant": "§8Perodium Grass Plant",
+      "block.perodiumcraft2.akvamarine_bush_2": "§3Akvamarine Bush",
+      "block.perodiumcraft2.perodium_dead_bush": "§8Perodium Dead Bush",
+      "block.perodiumcraft2.perodium_stone_stairs": "§8Perodium Stone Stairs",
+      "item.perodiumcraft2.rubyy_armor_leggings": "§4Ruby Leggings",
+      "item.perodiumcraft2.akvamarine_berries": "§3Akvamarine Berries",
+      "item.perodiumcraft2.perodium_nuggets": "Perodium Nuggets",
+      "item.perodiumcraft2.hochiym_tools_pickaxe": "§1Hochiym Pickaxe",
+      "item.perodiumcraft2.infinitii_hoe": "§2Infiniti Hoe",
+      "block.perodiumcraft2.perodium_hochiym_ore": "§8Perodium Hochiym Ore",
+      "block.perodiumcraft2.perodium_block": "§8Perodium Block",
+      "item.perodiumcraft2.hochiym_armor_armor_chestplate": "Hochiym Chestplate",
+      "block.perodiumcraft2.perodium_cobblestone_slab": "§8Perodium Cobblestone Slab",
+      "block.perodiumcraft2.perodium_quartz_stairs": "§8Perodium Quartz Stairs",
+      "block.perodiumcraft2.perodium_oak_fence_gate": "§8Perodium Oak Fence Gate",
+      "item.perodiumcraft2.infinitii_axe": "§2Infiniti Axe",
+      "block.perodiumcraft2.smooth_perodium_quartz_block": "§8Smooth Perodium Quartz Block",
+      "block.perodiumcraft2.perodium_stone": "§8Perodium Stone",
+      "block.perodiumcraft2.ruby_dirt": "§4Ruby Dirt",
+      "block.perodiumcraft2.akvamarine_block": "§3Akvamarine Block",
+      "block.perodiumcraft2.perodium_akvamarine_ore": "§8Perodium Akvamarine Ore",
+      "block.perodiumcraft2.ruby_jungle_slab": "§4Ruby Jungle Slab",
+      "block.perodiumcraft2.ruby_jungle_fence_gate": "§4Ruby Jungle Fence Gate",
+      "block.perodiumcraft2.perodium_grass": "§8Perodium Grass",
+      "itemGroup.tabperodium_craft_toolsand_armors": "§8PerodiumCraft2[§7Tools and Armors§8]",
+      "block.perodiumcraft2.end_infiniti_ore": "§2End Infiniti Ore",
+      "block.perodiumcraft2.smooth_perodium_quartz_stairs": "§8Smooth Perodium Quartz Stairs",
+      "item.perodiumcraft2.perodium_land": "§8Perodium Key",
+      "itemGroup.tabperodium_craft_item": "§8PerodiumCraft2[§7Item§8]",
+      "block.perodiumcraft2.akvamarine_birch_fence_gate": "§3Akvamarine Birch Fence Gate",
+      "item.perodiumcraft2.hochiym_armor_armor_boots": "Hochiym Boots",
+      "block.perodiumcraft2.infiniti_ore": "§2Infiniti Ore",
+      "biome.perodiumcraft2.perodium_zombie_plains": "§8Perodium Zombie Plains",
+      "block.perodiumcraft2.infiniti_dirt": "§2Infiniti Dirt",
+      "block.perodiumcraft2.ruby_ore_2": "§4Nether Ruby Ore",
+      "block.perodiumcraft2.ruby_jungle_plant": "§4Ruby Jungle Planks",
+      "item.perodiumcraft2.rubyy_pickaxe": "§4Ruby Pickaxe",
+      "block.perodiumcraft2.akvamarine_grass": "§3Akvamarine Grass",
+      "block.perodiumcraft2.perodium_infiniti_ore": "§8Perodium Infiniti Ore",
+      "block.perodiumcraft2.perodium_sandstone": "§8Perodium Sandstone",
+      "block.perodiumcraft2.infiniti_block": "§2Infiniti Block",
+      "item.perodiumcraft2.infinitii_armor_helmet": "§2Infiniti Helmet",
+      "block.perodiumcraft2.ruby_grass": "§4Ruby Grass",
+      "item.perodiumcraft2.rubyy_armor_boots": "§4Ruby Boots",
+      "block.perodiumcraft2.akvamarine_birch_stairs": "§3Akvamarine Birch Stairs",
+      "block.perodiumcraft2.perodium_cobblestone": "§8Perodium Cobblestone",
+      "block.perodiumcraft2.perodium_quartz_brick": "§8Perodium Quartz Brick",
+      "item.perodiumcraft2.hochiym_armor_armor_leggings": "Hochiym Leggings",
+      "block.perodiumcraft2.akvamarine_grass_plant": "§3Akvamarine Grass Plant",
+      "block.perodiumcraft2.perodium_quartz_slab": "§8Perodium Quartz Slab",
+      "block.perodiumcraft2.akvamarine_dirt": "§3Akvamarine Dirt",
+      "item.perodiumcraft2.akvamarine_1_hoe": "§3Akvamarine Hoe",
+      "item.perodiumcraft2.hochiym_dust": "§1Hochiym Dust",
+      "block.perodiumcraft2.akvamarine_leaves": "§3Akvamarine Leaves",
+      "block.perodiumcraft2.ruby_grass_plant": "§4Ruby Grass Plant",
+      "item.perodiumcraft2.infinitii_shovel": "§2Infiniti Shovel",
+      "item.perodiumcraft2.hochiym": "§1Hochiym",
+      "item.perodiumcraft2.ruby": "§4Ruby",
+      "biome.perodiumcraft2.hochiym_plains": "§1Hochiym Plains",
+      "item.perodiumcraft2.akvamarine_dust": "§3Akvamarine Dust",
+      "item.perodiumcraft2.akvamarine_1_pickaxe": "§3Akvamarine Pickaxe",
+      "block.perodiumcraft2.perodium_oak_leaves": "§8Perodium Oak Leaves",
+      "block.perodiumcraft2.perodium_smooth_stone_slab": "§8Perodium Smooth Stone Slab",
+      "item.perodiumcraft2.akvamarine": "§3Akvamarine",
+      "block.perodiumcraft2.hochiym_block": "§1Hochiym Block",
+      "item.perodiumcraft2.hochiym_tools_axe": "§1Hochiym Axe",
+      "block.perodiumcraft2.perodium_brick": "§8Perodium Brick",
+      "item.perodiumcraft2.rubyy_armor_helmet": "§4Ruby Helmet",
+      "block.perodiumcraft2.perodium_glass_pane": "§8Perodium Glass Pane",
+      "fluid.perodium_water": "PerodiumWater",
+      "item.perodiumcraft2.rubyy_shovel": "§4Ruby Shovel",
+      "block.perodiumcraft2.reinforced_periodium_bricks": "§8Reinforced Periodium Bricks",
+      "item.perodiumcraft2.akvamarine_2_armor_boots": "§3Akvamarine Boots",
+      "block.perodiumcraft2.perodium_stone_slab": "§8Perodium Stone Slab",
+      "itemGroup.tabperodium_craft_2_p_plant": "§8PerodiumCraft2[§7Plant§8]",
+      "block.perodiumcraft2.end_akvamarine_ore": "§3End Akvamarine Ore"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "perodiumcraft2",
+    "modName": "PerodiumCraft2",
+    "version": "DEV 1.0",
+    "description": "§8A new main resource appears in the game - Perodium. It is possible to make super-tools and super-armor from it. It is not so easy to create a periodium. But you will be pleased with the result. And a new world is added.  ",
+    "author": "Momentariy Modder,MRStapan",
+    "websiteURL": "https://vk.com/momentariy.modder",
+    "license": "Not specified",
+    "disableForgeVersionCheck": false,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.perodiumcraft2",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

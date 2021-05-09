@@ -1,0 +1,9 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "perodiumcraft2:perodium_quartz_block"
+  },
+  "result": "perodiumcraft2:perodium_quartz_slab"
+}

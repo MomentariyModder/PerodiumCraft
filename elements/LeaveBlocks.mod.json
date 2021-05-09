@@ -1,0 +1,23 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:AkvamarineLeaves"
+      },
+      {
+        "value": "CUSTOM:RubyJungleLeaves"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakLeaves"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "leaves",
+    "namespace": "minecraft"
+  }
+}

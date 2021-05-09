@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "§8PerodiumCraft2[§7Item§8]",
+    "icon": {
+      "value": "CUSTOM:PerodiumIngot"
+    },
+    "showSearch": true
+  }
+}

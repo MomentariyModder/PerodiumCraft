@@ -1,0 +1,30 @@
+{
+  "group": "perodiumcraft2",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "perodiumcraft2:perodium_glass_pane"
+    },
+    "3": {
+      "item": "perodiumcraft2:perodium_glass_pane"
+    },
+    "4": {
+      "item": "minecraft:torch"
+    },
+    "5": {
+      "item": "perodiumcraft2:perodium_glass_pane"
+    },
+    "7": {
+      "item": "perodiumcraft2:perodium_glass_pane"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft2:perodium_lantern",
+    "count": 1
+  }
+}

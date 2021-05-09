@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "perodiumcraft2:block/perodium_sandstone"
+    },
+    "facing=east": {
+      "model": "perodiumcraft2:block/perodium_sandstone",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "perodiumcraft2:block/perodium_sandstone",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "perodiumcraft2:block/perodium_sandstone",
+      "y": 270
+    }
+  }
+}

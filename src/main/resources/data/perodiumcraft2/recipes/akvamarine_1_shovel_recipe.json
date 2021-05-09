@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_sword"
+  },
+  "addition": {
+    "item": "perodiumcraft2:akvamarine_block"
+  },
+  "result": {
+    "item": "perodiumcraft2:akvamarine_1_sword"
+  }
+}

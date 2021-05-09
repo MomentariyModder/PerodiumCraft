@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:HochiymArmorArmor.body"
+      },
+      {
+        "value": "CUSTOM:Akvamarine2Armor.body"
+      },
+      {
+        "value": "CUSTOM:InfinitiiArmor.body"
+      },
+      {
+        "value": "CUSTOM:RubyyArmor.body"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "chestplate",
+    "namespace": "mod"
+  }
+}

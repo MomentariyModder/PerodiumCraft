@@ -2,42 +2,19 @@
   "_fv": 18,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Smithing",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": "CUSTOM:Infiniti"
-      },
-      {
-        "value": "CUSTOM:Infiniti"
-      },
-      {
-        "value": "CUSTOM:Infiniti"
-      },
-      {
-        "value": "CUSTOM:Infiniti"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Infiniti"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_HELMET"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:InfinitiBlock"
+    },
+    "smithingReturnStack": {
       "value": "CUSTOM:InfinitiiArmor.helmet"
     },
     "name": "infinitii_armor_helmet_recipe",

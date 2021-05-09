@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:diamond_axe"
+    "item": "minecraft:netherite_axe"
   },
   "addition": {
     "item": "perodiumcraft2:hochiym_block"

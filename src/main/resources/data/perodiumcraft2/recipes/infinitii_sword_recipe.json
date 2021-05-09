@@ -1,24 +1,12 @@
 {
-  "group": "perodiumcraft2",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "0",
-    "1",
-    "2"
-  ],
-  "key": {
-    "0": {
-      "item": "perodiumcraft2:infiniti"
-    },
-    "1": {
-      "item": "perodiumcraft2:infiniti"
-    },
-    "2": {
-      "item": "minecraft:stick"
-    }
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "perodiumcraft2:infiniti_block"
   },
   "result": {
-    "item": "perodiumcraft2:infinitii_sword",
-    "count": 1
+    "item": "perodiumcraft2:infinitii_sword"
   }
 }

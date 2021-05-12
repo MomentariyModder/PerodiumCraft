@@ -29,7 +29,7 @@ public class PerodiumItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_boots")
 	public static final Item boots = null;
 	public PerodiumItem(PerodiumcraftModElements instance) {
-		super(instance, 141);
+		super(instance, 148);
 	}
 
 	@Override

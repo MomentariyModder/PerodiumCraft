@@ -17,7 +17,7 @@ public class HochiymToolsShovelItem extends PerodiumcraftModElements.ModElement 
 	@ObjectHolder("perodiumcraft:hochiym_tools_shovel")
 	public static final Item block = null;
 	public HochiymToolsShovelItem(PerodiumcraftModElements instance) {
-		super(instance, 121);
+		super(instance, 128);
 	}
 
 	@Override

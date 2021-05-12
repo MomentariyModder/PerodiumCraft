@@ -24,7 +24,7 @@ public class RubyBlockBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:ruby_block")
 	public static final Block block = null;
 	public RubyBlockBlock(PerodiumcraftModElements instance) {
-		super(instance, 59);
+		super(instance, 62);
 	}
 
 	@Override

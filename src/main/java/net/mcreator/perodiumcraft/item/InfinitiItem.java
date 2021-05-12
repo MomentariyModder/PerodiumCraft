@@ -16,7 +16,7 @@ public class InfinitiItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:infiniti")
 	public static final Item block = null;
 	public InfinitiItem(PerodiumcraftModElements instance) {
-		super(instance, 4);
+		super(instance, 6);
 	}
 
 	@Override

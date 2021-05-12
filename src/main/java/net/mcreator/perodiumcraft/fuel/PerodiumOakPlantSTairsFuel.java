@@ -13,7 +13,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 @PerodiumcraftModElements.ModElement.Tag
 public class PerodiumOakPlantSTairsFuel extends PerodiumcraftModElements.ModElement {
 	public PerodiumOakPlantSTairsFuel(PerodiumcraftModElements instance) {
-		super(instance, 253);
+		super(instance, 269);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

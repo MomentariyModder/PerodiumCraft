@@ -24,7 +24,7 @@ public class SmoothPerodiumQuartzBlockBlock extends PerodiumcraftModElements.Mod
 	@ObjectHolder("perodiumcraft:smooth_perodium_quartz_block")
 	public static final Block block = null;
 	public SmoothPerodiumQuartzBlockBlock(PerodiumcraftModElements instance) {
-		super(instance, 66);
+		super(instance, 69);
 	}
 
 	@Override

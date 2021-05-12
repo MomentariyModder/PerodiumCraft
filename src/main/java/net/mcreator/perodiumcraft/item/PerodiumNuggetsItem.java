@@ -16,7 +16,7 @@ public class PerodiumNuggetsItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_nuggets")
 	public static final Item block = null;
 	public PerodiumNuggetsItem(PerodiumcraftModElements instance) {
-		super(instance, 8);
+		super(instance, 10);
 	}
 
 	@Override

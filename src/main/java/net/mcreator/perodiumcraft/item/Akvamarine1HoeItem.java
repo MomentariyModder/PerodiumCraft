@@ -17,7 +17,7 @@ public class Akvamarine1HoeItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_1_hoe")
 	public static final Item block = null;
 	public Akvamarine1HoeItem(PerodiumcraftModElements instance) {
-		super(instance, 128);
+		super(instance, 135);
 	}
 
 	@Override

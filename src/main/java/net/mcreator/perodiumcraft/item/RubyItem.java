@@ -16,7 +16,7 @@ public class RubyItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:ruby")
 	public static final Item block = null;
 	public RubyItem(PerodiumcraftModElements instance) {
-		super(instance, 5);
+		super(instance, 7);
 	}
 
 	@Override

@@ -17,7 +17,7 @@ public class InfinitiiAxeItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:infinitii_axe")
 	public static final Item block = null;
 	public InfinitiiAxeItem(PerodiumcraftModElements instance) {
-		super(instance, 132);
+		super(instance, 139);
 	}
 
 	@Override

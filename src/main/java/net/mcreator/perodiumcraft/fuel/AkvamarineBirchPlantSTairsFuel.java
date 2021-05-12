@@ -13,7 +13,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 @PerodiumcraftModElements.ModElement.Tag
 public class AkvamarineBirchPlantSTairsFuel extends PerodiumcraftModElements.ModElement {
 	public AkvamarineBirchPlantSTairsFuel(PerodiumcraftModElements instance) {
-		super(instance, 243);
+		super(instance, 259);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

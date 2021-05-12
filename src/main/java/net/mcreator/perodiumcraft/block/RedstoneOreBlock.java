@@ -41,7 +41,7 @@ public class RedstoneOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:redstone_ore")
 	public static final Block block = null;
 	public RedstoneOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 53);
+		super(instance, 56);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

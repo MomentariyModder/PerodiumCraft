@@ -35,7 +35,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 public class AkvamarineBirchForestBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public AkvamarineBirchForestBiome(PerodiumcraftModElements instance) {
-		super(instance, 327);
+		super(instance, 343);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

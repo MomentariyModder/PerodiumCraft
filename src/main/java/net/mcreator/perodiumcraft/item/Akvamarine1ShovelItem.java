@@ -17,7 +17,7 @@ public class Akvamarine1ShovelItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_1_shovel")
 	public static final Item block = null;
 	public Akvamarine1ShovelItem(PerodiumcraftModElements instance) {
-		super(instance, 127);
+		super(instance, 134);
 	}
 
 	@Override

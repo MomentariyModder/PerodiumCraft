@@ -24,7 +24,7 @@ public class ChiseldPerodiumQuartzBlockBlock extends PerodiumcraftModElements.Mo
 	@ObjectHolder("perodiumcraft:chiseld_perodium_quartz_block")
 	public static final Block block = null;
 	public ChiseldPerodiumQuartzBlockBlock(PerodiumcraftModElements instance) {
-		super(instance, 69);
+		super(instance, 72);
 	}
 
 	@Override

@@ -54,7 +54,7 @@ public class PerodiumWaterBlock extends PerodiumcraftModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public PerodiumWaterBlock(PerodiumcraftModElements instance) {
-		super(instance, 14);
+		super(instance, 18);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FluidRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());

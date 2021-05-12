@@ -47,7 +47,7 @@ public class NetherHochiymOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:nether_hochiym_ore")
 	public static final Block block = null;
 	public NetherHochiymOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 36);
+		super(instance, 39);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

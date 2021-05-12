@@ -24,7 +24,7 @@ public class PerodiumBlockBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_block")
 	public static final Block block = null;
 	public PerodiumBlockBlock(PerodiumcraftModElements instance) {
-		super(instance, 60);
+		super(instance, 63);
 	}
 
 	@Override

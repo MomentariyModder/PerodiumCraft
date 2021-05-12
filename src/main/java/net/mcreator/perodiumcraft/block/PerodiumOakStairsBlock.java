@@ -25,7 +25,7 @@ public class PerodiumOakStairsBlock extends PerodiumcraftModElements.ModElement 
 	@ObjectHolder("perodiumcraft:perodium_oak_stairs")
 	public static final Block block = null;
 	public PerodiumOakStairsBlock(PerodiumcraftModElements instance) {
-		super(instance, 92);
+		super(instance, 95);
 	}
 
 	@Override

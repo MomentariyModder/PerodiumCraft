@@ -17,7 +17,7 @@ public class RubyyShovelItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:rubyy_shovel")
 	public static final Item block = null;
 	public RubyyShovelItem(PerodiumcraftModElements instance) {
-		super(instance, 139);
+		super(instance, 146);
 	}
 
 	@Override

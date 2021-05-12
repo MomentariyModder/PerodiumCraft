@@ -27,7 +27,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 public class PerodiumOakPlainsBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public PerodiumOakPlainsBiome(PerodiumcraftModElements instance) {
-		super(instance, 234);
+		super(instance, 250);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -43,7 +43,6 @@ public class PerodiumOakPlainsBiome extends PerodiumcraftModElements.ModElement 
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withMonsterRoom(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.PLAINS).depth(0f).scale(0f).temperature(0f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())

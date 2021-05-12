@@ -35,7 +35,7 @@ public class PerodiumGlassBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_glass")
 	public static final Block block = null;
 	public PerodiumGlassBlock(PerodiumcraftModElements instance) {
-		super(instance, 108);
+		super(instance, 111);
 	}
 
 	@Override

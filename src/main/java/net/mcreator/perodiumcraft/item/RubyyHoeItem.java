@@ -17,7 +17,7 @@ public class RubyyHoeItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:rubyy_hoe")
 	public static final Item block = null;
 	public RubyyHoeItem(PerodiumcraftModElements instance) {
-		super(instance, 140);
+		super(instance, 147);
 	}
 
 	@Override

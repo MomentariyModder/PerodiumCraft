@@ -101,8 +101,7 @@
     "defaultFeatures": [
       "Caves",
       "MonsterRooms",
-      "Ores",
-      "FrozenTopLayer"
+      "Ores"
     ],
     "spawnEntries": []
   }

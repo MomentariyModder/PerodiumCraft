@@ -57,7 +57,7 @@ import com.google.common.collect.ImmutableList;
 public class PerodiumDesertBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public PerodiumDesertBiome(PerodiumcraftModElements instance) {
-		super(instance, 178);
+		super(instance, 194);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

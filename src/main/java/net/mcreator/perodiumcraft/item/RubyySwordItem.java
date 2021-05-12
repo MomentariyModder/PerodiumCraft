@@ -17,7 +17,7 @@ public class RubyySwordItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:rubyy_sword")
 	public static final Item block = null;
 	public RubyySwordItem(PerodiumcraftModElements instance) {
-		super(instance, 136);
+		super(instance, 143);
 	}
 
 	@Override

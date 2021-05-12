@@ -34,7 +34,7 @@ public class PerodiumDoorBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_door")
 	public static final Block block = null;
 	public PerodiumDoorBlock(PerodiumcraftModElements instance) {
-		super(instance, 107);
+		super(instance, 110);
 	}
 
 	@Override

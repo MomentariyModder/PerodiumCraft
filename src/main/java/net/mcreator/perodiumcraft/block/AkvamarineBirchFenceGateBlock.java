@@ -32,7 +32,7 @@ public class AkvamarineBirchFenceGateBlock extends PerodiumcraftModElements.ModE
 	@ObjectHolder("perodiumcraft:akvamarine_birch_fence_gate")
 	public static final Block block = null;
 	public AkvamarineBirchFenceGateBlock(PerodiumcraftModElements instance) {
-		super(instance, 102);
+		super(instance, 105);
 	}
 
 	@Override

@@ -41,7 +41,7 @@ public class EmeraldOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:emerald_ore")
 	public static final Block block = null;
 	public EmeraldOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 54);
+		super(instance, 57);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

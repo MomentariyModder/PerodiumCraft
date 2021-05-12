@@ -26,7 +26,7 @@ public class PerodiumSmoothStoneSlabBlock extends PerodiumcraftModElements.ModEl
 	@ObjectHolder("perodiumcraft:perodium_smooth_stone_slab")
 	public static final Block block = null;
 	public PerodiumSmoothStoneSlabBlock(PerodiumcraftModElements instance) {
-		super(instance, 24);
+		super(instance, 27);
 	}
 
 	@Override

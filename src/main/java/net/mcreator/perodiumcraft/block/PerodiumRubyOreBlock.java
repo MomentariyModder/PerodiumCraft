@@ -46,7 +46,7 @@ public class PerodiumRubyOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_ruby_ore")
 	public static final Block block = null;
 	public PerodiumRubyOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 46);
+		super(instance, 49);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

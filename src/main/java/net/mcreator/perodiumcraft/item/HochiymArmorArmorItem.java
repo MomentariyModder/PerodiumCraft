@@ -29,7 +29,7 @@ public class HochiymArmorArmorItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:hochiym_armor_armor_boots")
 	public static final Item boots = null;
 	public HochiymArmorArmorItem(PerodiumcraftModElements instance) {
-		super(instance, 117);
+		super(instance, 124);
 	}
 
 	@Override

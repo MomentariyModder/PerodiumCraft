@@ -15,9 +15,7 @@ import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
-import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
@@ -46,7 +44,7 @@ import java.util.List;
 public class RubyZombiePlainsBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public RubyZombiePlainsBiome(PerodiumcraftModElements instance) {
-		super(instance, 236);
+		super(instance, 252);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {
@@ -59,10 +57,6 @@ public class RubyZombiePlainsBiome extends PerodiumcraftModElements.ModElement {
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(RubyDirtBlock.block.getDefaultState(),
 								RubyDirtBlock.block.getDefaultState(), RubyDirtBlock.block.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
-								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-								.func_242731_b(4));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withMonsterRoom(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);

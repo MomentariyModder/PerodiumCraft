@@ -35,7 +35,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 public class PerodiumOakForestBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public PerodiumOakForestBiome(PerodiumcraftModElements instance) {
-		super(instance, 326);
+		super(instance, 342);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

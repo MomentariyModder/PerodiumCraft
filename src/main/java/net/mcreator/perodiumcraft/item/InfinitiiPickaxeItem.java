@@ -17,7 +17,7 @@ public class InfinitiiPickaxeItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:infinitii_pickaxe")
 	public static final Item block = null;
 	public InfinitiiPickaxeItem(PerodiumcraftModElements instance) {
-		super(instance, 131);
+		super(instance, 138);
 	}
 
 	@Override

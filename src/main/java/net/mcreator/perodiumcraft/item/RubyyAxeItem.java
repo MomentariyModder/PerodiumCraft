@@ -17,7 +17,7 @@ public class RubyyAxeItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:rubyy_axe")
 	public static final Item block = null;
 	public RubyyAxeItem(PerodiumcraftModElements instance) {
-		super(instance, 138);
+		super(instance, 145);
 	}
 
 	@Override

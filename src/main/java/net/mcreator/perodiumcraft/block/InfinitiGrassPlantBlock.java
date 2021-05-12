@@ -54,7 +54,7 @@ public class InfinitiGrassPlantBlock extends PerodiumcraftModElements.ModElement
 	@ObjectHolder("perodiumcraft:infiniti_grass_plant")
 	public static final Block block = null;
 	public InfinitiGrassPlantBlock(PerodiumcraftModElements instance) {
-		super(instance, 112);
+		super(instance, 115);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

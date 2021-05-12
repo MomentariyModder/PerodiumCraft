@@ -23,7 +23,7 @@ public class AkvamarineLeavesBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_leaves")
 	public static final Block block = null;
 	public AkvamarineLeavesBlock(PerodiumcraftModElements instance) {
-		super(instance, 84);
+		super(instance, 87);
 	}
 
 	@Override

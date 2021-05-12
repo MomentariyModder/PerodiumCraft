@@ -51,7 +51,7 @@ public class PerodiumPistolItem extends PerodiumcraftModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletperodium_pistol").setRegistryName("entitybulletperodium_pistol");
 	public PerodiumPistolItem(PerodiumcraftModElements instance) {
-		super(instance, 367);
+		super(instance, 156);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new PerodiumPistolRenderer.ModelRegisterHandler());
 	}
 

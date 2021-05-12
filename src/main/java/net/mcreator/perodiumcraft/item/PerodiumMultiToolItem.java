@@ -25,7 +25,7 @@ public class PerodiumMultiToolItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_multi_tool")
 	public static final Item block = null;
 	public PerodiumMultiToolItem(PerodiumcraftModElements instance) {
-		super(instance, 365);
+		super(instance, 154);
 	}
 
 	@Override

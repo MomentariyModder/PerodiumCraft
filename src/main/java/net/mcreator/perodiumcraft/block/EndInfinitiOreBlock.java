@@ -47,7 +47,7 @@ public class EndInfinitiOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:end_infiniti_ore")
 	public static final Block block = null;
 	public EndInfinitiOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 43);
+		super(instance, 46);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -17,7 +17,7 @@ public class HochiymToolsAxeItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:hochiym_tools_axe")
 	public static final Item block = null;
 	public HochiymToolsAxeItem(PerodiumcraftModElements instance) {
-		super(instance, 120);
+		super(instance, 127);
 	}
 
 	@Override

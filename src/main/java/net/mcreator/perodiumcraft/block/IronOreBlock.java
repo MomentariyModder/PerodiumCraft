@@ -41,7 +41,7 @@ public class IronOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:iron_ore")
 	public static final Block block = null;
 	public IronOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 49);
+		super(instance, 52);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

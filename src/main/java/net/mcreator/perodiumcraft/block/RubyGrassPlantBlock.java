@@ -54,7 +54,7 @@ public class RubyGrassPlantBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:ruby_grass_plant")
 	public static final Block block = null;
 	public RubyGrassPlantBlock(PerodiumcraftModElements instance) {
-		super(instance, 113);
+		super(instance, 116);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

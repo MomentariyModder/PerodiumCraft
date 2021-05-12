@@ -32,7 +32,7 @@ public class PerodiumOakFenceGateBlock extends PerodiumcraftModElements.ModEleme
 	@ObjectHolder("perodiumcraft:perodium_oak_fence_gate")
 	public static final Block block = null;
 	public PerodiumOakFenceGateBlock(PerodiumcraftModElements instance) {
-		super(instance, 101);
+		super(instance, 104);
 	}
 
 	@Override

@@ -47,7 +47,7 @@ public class NetherAkvamarineOreBlock extends PerodiumcraftModElements.ModElemen
 	@ObjectHolder("perodiumcraft:nether_akvamarine_ore")
 	public static final Block block = null;
 	public NetherAkvamarineOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 37);
+		super(instance, 40);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

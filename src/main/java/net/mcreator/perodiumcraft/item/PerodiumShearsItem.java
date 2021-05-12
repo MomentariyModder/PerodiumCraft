@@ -16,7 +16,7 @@ public class PerodiumShearsItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_shears")
 	public static final Item block = null;
 	public PerodiumShearsItem(PerodiumcraftModElements instance) {
-		super(instance, 366);
+		super(instance, 155);
 	}
 
 	@Override

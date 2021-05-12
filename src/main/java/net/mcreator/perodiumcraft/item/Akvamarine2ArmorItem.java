@@ -29,7 +29,7 @@ public class Akvamarine2ArmorItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_2_armor_boots")
 	public static final Item boots = null;
 	public Akvamarine2ArmorItem(PerodiumcraftModElements instance) {
-		super(instance, 123);
+		super(instance, 130);
 	}
 
 	@Override

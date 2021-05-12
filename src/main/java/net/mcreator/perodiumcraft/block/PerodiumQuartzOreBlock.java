@@ -47,7 +47,7 @@ public class PerodiumQuartzOreBlock extends PerodiumcraftModElements.ModElement 
 	@ObjectHolder("perodiumcraft:perodium_quartz_ore")
 	public static final Block block = null;
 	public PerodiumQuartzOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 35);
+		super(instance, 38);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

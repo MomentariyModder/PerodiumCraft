@@ -41,7 +41,7 @@ public class CoalOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:coal_ore")
 	public static final Block block = null;
 	public CoalOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 48);
+		super(instance, 51);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

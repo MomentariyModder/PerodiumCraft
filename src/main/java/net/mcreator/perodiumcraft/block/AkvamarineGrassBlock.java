@@ -28,7 +28,7 @@ public class AkvamarineGrassBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_grass")
 	public static final Block block = null;
 	public AkvamarineGrassBlock(PerodiumcraftModElements instance) {
-		super(instance, 74);
+		super(instance, 77);
 	}
 
 	@Override

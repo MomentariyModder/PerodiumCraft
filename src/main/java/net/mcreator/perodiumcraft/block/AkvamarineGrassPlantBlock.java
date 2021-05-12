@@ -54,7 +54,7 @@ public class AkvamarineGrassPlantBlock extends PerodiumcraftModElements.ModEleme
 	@ObjectHolder("perodiumcraft:akvamarine_grass_plant")
 	public static final Block block = null;
 	public AkvamarineGrassPlantBlock(PerodiumcraftModElements instance) {
-		super(instance, 111);
+		super(instance, 114);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -41,7 +41,7 @@ public class LapisLazuliOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:lapis_lazuli_ore")
 	public static final Block block = null;
 	public LapisLazuliOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 52);
+		super(instance, 55);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

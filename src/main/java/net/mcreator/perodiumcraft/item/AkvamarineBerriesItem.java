@@ -17,7 +17,7 @@ public class AkvamarineBerriesItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_berries")
 	public static final Item block = null;
 	public AkvamarineBerriesItem(PerodiumcraftModElements instance) {
-		super(instance, 15);
+		super(instance, 2);
 	}
 
 	@Override

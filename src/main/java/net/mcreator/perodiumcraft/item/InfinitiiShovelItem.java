@@ -17,7 +17,7 @@ public class InfinitiiShovelItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:infinitii_shovel")
 	public static final Item block = null;
 	public InfinitiiShovelItem(PerodiumcraftModElements instance) {
-		super(instance, 133);
+		super(instance, 140);
 	}
 
 	@Override

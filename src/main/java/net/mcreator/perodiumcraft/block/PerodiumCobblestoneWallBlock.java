@@ -45,7 +45,7 @@ public class PerodiumCobblestoneWallBlock extends PerodiumcraftModElements.ModEl
 	@ObjectHolder("perodiumcraft:perodium_cobblestone_wall")
 	public static final Block block = null;
 	public PerodiumCobblestoneWallBlock(PerodiumcraftModElements instance) {
-		super(instance, 29);
+		super(instance, 32);
 	}
 
 	@Override

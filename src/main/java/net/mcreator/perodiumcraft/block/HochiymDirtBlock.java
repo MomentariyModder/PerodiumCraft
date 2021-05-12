@@ -24,7 +24,7 @@ public class HochiymDirtBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:hochiym_dirt")
 	public static final Block block = null;
 	public HochiymDirtBlock(PerodiumcraftModElements instance) {
-		super(instance, 79);
+		super(instance, 82);
 	}
 
 	@Override

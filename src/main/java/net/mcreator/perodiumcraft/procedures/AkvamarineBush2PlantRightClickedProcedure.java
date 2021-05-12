@@ -17,7 +17,7 @@ import java.util.Map;
 @PerodiumcraftModElements.ModElement.Tag
 public class AkvamarineBush2PlantRightClickedProcedure extends PerodiumcraftModElements.ModElement {
 	public AkvamarineBush2PlantRightClickedProcedure(PerodiumcraftModElements instance) {
-		super(instance, 154);
+		super(instance, 170);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

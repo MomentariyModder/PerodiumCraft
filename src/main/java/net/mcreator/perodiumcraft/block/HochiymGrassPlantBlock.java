@@ -54,7 +54,7 @@ public class HochiymGrassPlantBlock extends PerodiumcraftModElements.ModElement 
 	@ObjectHolder("perodiumcraft:hochiym_grass_plant")
 	public static final Block block = null;
 	public HochiymGrassPlantBlock(PerodiumcraftModElements instance) {
-		super(instance, 110);
+		super(instance, 113);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

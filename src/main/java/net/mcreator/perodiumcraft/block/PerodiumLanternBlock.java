@@ -42,7 +42,7 @@ public class PerodiumLanternBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_lantern")
 	public static final Block block = null;
 	public PerodiumLanternBlock(PerodiumcraftModElements instance) {
-		super(instance, 17);
+		super(instance, 20);
 	}
 
 	@Override

@@ -41,7 +41,7 @@ public class GoldOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:gold_ore")
 	public static final Block block = null;
 	public GoldOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 50);
+		super(instance, 53);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

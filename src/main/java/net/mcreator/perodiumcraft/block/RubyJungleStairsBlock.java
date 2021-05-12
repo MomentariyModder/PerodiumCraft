@@ -25,7 +25,7 @@ public class RubyJungleStairsBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:ruby_jungle_stairs")
 	public static final Block block = null;
 	public RubyJungleStairsBlock(PerodiumcraftModElements instance) {
-		super(instance, 94);
+		super(instance, 97);
 	}
 
 	@Override

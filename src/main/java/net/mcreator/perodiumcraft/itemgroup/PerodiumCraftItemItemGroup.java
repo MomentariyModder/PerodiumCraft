@@ -13,7 +13,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 @PerodiumcraftModElements.ModElement.Tag
 public class PerodiumCraftItemItemGroup extends PerodiumcraftModElements.ModElement {
 	public PerodiumCraftItemItemGroup(PerodiumcraftModElements instance) {
-		super(instance, 206);
+		super(instance, 222);
 	}
 
 	@Override

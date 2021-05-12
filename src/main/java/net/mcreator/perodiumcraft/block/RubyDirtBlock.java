@@ -24,7 +24,7 @@ public class RubyDirtBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:ruby_dirt")
 	public static final Block block = null;
 	public RubyDirtBlock(PerodiumcraftModElements instance) {
-		super(instance, 82);
+		super(instance, 85);
 	}
 
 	@Override

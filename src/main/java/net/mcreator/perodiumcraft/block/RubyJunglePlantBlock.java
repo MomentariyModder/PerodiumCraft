@@ -24,7 +24,7 @@ public class RubyJunglePlantBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:ruby_jungle_plant")
 	public static final Block block = null;
 	public RubyJunglePlantBlock(PerodiumcraftModElements instance) {
-		super(instance, 91);
+		super(instance, 94);
 	}
 
 	@Override

@@ -13,7 +13,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 @PerodiumcraftModElements.ModElement.Tag
 public class RubyJungleFenceGateFuelFuel extends PerodiumcraftModElements.ModElement {
 	public RubyJungleFenceGateFuelFuel(PerodiumcraftModElements instance) {
-		super(instance, 334);
+		super(instance, 350);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

@@ -16,7 +16,7 @@ public class RubyDustItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:ruby_dust")
 	public static final Item block = null;
 	public RubyDustItem(PerodiumcraftModElements instance) {
-		super(instance, 13);
+		super(instance, 16);
 	}
 
 	@Override

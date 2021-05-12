@@ -24,7 +24,7 @@ public class ReinforcedPeriodiumBricksBlock extends PerodiumcraftModElements.Mod
 	@ObjectHolder("perodiumcraft:reinforced_periodium_bricks")
 	public static final Block block = null;
 	public ReinforcedPeriodiumBricksBlock(PerodiumcraftModElements instance) {
-		super(instance, 62);
+		super(instance, 65);
 	}
 
 	@Override

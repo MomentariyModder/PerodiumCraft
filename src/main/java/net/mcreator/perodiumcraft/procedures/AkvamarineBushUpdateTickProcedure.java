@@ -13,7 +13,7 @@ import java.util.Map;
 @PerodiumcraftModElements.ModElement.Tag
 public class AkvamarineBushUpdateTickProcedure extends PerodiumcraftModElements.ModElement {
 	public AkvamarineBushUpdateTickProcedure(PerodiumcraftModElements instance) {
-		super(instance, 153);
+		super(instance, 169);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

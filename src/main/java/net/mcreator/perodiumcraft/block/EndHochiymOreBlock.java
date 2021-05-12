@@ -47,7 +47,7 @@ public class EndHochiymOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:end_hochiym_ore")
 	public static final Block block = null;
 	public EndHochiymOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 40);
+		super(instance, 43);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

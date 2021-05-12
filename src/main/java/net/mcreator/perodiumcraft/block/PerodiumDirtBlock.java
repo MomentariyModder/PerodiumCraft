@@ -24,7 +24,7 @@ public class PerodiumDirtBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_dirt")
 	public static final Block block = null;
 	public PerodiumDirtBlock(PerodiumcraftModElements instance) {
-		super(instance, 77);
+		super(instance, 80);
 	}
 
 	@Override

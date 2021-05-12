@@ -34,7 +34,7 @@ public class AkvamarineBirchFenceBlock extends PerodiumcraftModElements.ModEleme
 	@ObjectHolder("perodiumcraft:akvamarine_birch_fence")
 	public static final Block block = null;
 	public AkvamarineBirchFenceBlock(PerodiumcraftModElements instance) {
-		super(instance, 99);
+		super(instance, 102);
 	}
 
 	@Override

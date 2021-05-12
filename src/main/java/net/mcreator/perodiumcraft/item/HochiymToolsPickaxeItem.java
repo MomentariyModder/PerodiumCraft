@@ -17,7 +17,7 @@ public class HochiymToolsPickaxeItem extends PerodiumcraftModElements.ModElement
 	@ObjectHolder("perodiumcraft:hochiym_tools_pickaxe")
 	public static final Item block = null;
 	public HochiymToolsPickaxeItem(PerodiumcraftModElements instance) {
-		super(instance, 119);
+		super(instance, 126);
 	}
 
 	@Override

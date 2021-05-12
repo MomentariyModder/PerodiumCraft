@@ -24,7 +24,7 @@ public class PerodiumOakPlantBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_oak_plant")
 	public static final Block block = null;
 	public PerodiumOakPlantBlock(PerodiumcraftModElements instance) {
-		super(instance, 89);
+		super(instance, 92);
 	}
 
 	@Override

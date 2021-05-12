@@ -30,7 +30,7 @@ public class PerodiumQuartzPillarBlock extends PerodiumcraftModElements.ModEleme
 	@ObjectHolder("perodiumcraft:perodium_quartz_pillar")
 	public static final Block block = null;
 	public PerodiumQuartzPillarBlock(PerodiumcraftModElements instance) {
-		super(instance, 71);
+		super(instance, 74);
 	}
 
 	@Override

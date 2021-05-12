@@ -44,7 +44,7 @@ import java.util.List;
 public class PerodiumZombiePlainsBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public PerodiumZombiePlainsBiome(PerodiumcraftModElements instance) {
-		super(instance, 235);
+		super(instance, 251);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

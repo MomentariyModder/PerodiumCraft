@@ -45,7 +45,7 @@ public class PerodiumCobblestoneBlock extends PerodiumcraftModElements.ModElemen
 	@ObjectHolder("perodiumcraft:perodium_cobblestone")
 	public static final Block block = null;
 	public PerodiumCobblestoneBlock(PerodiumcraftModElements instance) {
-		super(instance, 19);
+		super(instance, 22);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -16,7 +16,7 @@ public class InfinitiDustItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:infiniti_dust")
 	public static final Item block = null;
 	public InfinitiDustItem(PerodiumcraftModElements instance) {
-		super(instance, 12);
+		super(instance, 15);
 	}
 
 	@Override

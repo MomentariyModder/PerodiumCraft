@@ -16,7 +16,7 @@ public class HochiymItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:hochiym")
 	public static final Item block = null;
 	public HochiymItem(PerodiumcraftModElements instance) {
-		super(instance, 2);
+		super(instance, 4);
 	}
 
 	@Override

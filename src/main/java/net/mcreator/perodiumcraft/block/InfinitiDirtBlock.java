@@ -24,7 +24,7 @@ public class InfinitiDirtBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:infiniti_dirt")
 	public static final Block block = null;
 	public InfinitiDirtBlock(PerodiumcraftModElements instance) {
-		super(instance, 81);
+		super(instance, 84);
 	}
 
 	@Override

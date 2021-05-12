@@ -23,7 +23,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 public class HochiymPlainsBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public HochiymPlainsBiome(PerodiumcraftModElements instance) {
-		super(instance, 158);
+		super(instance, 174);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

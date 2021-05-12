@@ -16,7 +16,7 @@ public class PerodiumAmmoItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_ammo")
 	public static final Item block = null;
 	public PerodiumAmmoItem(PerodiumcraftModElements instance) {
-		super(instance, 368);
+		super(instance, 157);
 	}
 
 	@Override

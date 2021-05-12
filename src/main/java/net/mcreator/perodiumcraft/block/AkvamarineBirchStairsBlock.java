@@ -25,7 +25,7 @@ public class AkvamarineBirchStairsBlock extends PerodiumcraftModElements.ModElem
 	@ObjectHolder("perodiumcraft:akvamarine_birch_stairs")
 	public static final Block block = null;
 	public AkvamarineBirchStairsBlock(PerodiumcraftModElements instance) {
-		super(instance, 93);
+		super(instance, 96);
 	}
 
 	@Override

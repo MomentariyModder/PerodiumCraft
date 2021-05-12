@@ -41,7 +41,7 @@ public class DiamondoreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:diamondore")
 	public static final Block block = null;
 	public DiamondoreBlock(PerodiumcraftModElements instance) {
-		super(instance, 51);
+		super(instance, 54);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -41,7 +41,7 @@ public class AkvamarineBush2Block extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_bush_2")
 	public static final Block block = null;
 	public AkvamarineBush2Block(PerodiumcraftModElements instance) {
-		super(instance, 152);
+		super(instance, 168);
 	}
 
 	@Override

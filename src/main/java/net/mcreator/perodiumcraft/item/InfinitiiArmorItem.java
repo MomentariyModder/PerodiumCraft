@@ -29,7 +29,7 @@ public class InfinitiiArmorItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:infinitii_armor_boots")
 	public static final Item boots = null;
 	public InfinitiiArmorItem(PerodiumcraftModElements instance) {
-		super(instance, 129);
+		super(instance, 136);
 	}
 
 	@Override

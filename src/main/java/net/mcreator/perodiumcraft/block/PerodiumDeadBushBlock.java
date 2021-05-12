@@ -54,7 +54,7 @@ public class PerodiumDeadBushBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_dead_bush")
 	public static final Block block = null;
 	public PerodiumDeadBushBlock(PerodiumcraftModElements instance) {
-		super(instance, 115);
+		super(instance, 118);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -47,7 +47,7 @@ public class EndAkvamarineOreBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:end_akvamarine_ore")
 	public static final Block block = null;
 	public EndAkvamarineOreBlock(PerodiumcraftModElements instance) {
-		super(instance, 41);
+		super(instance, 44);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -16,7 +16,7 @@ public class PerodiumSlimeballItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_slimeball")
 	public static final Item block = null;
 	public PerodiumSlimeballItem(PerodiumcraftModElements instance) {
-		super(instance, 374);
+		super(instance, 3);
 	}
 
 	@Override

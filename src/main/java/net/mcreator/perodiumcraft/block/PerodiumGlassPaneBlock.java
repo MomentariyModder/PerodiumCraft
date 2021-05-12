@@ -29,7 +29,7 @@ public class PerodiumGlassPaneBlock extends PerodiumcraftModElements.ModElement 
 	@ObjectHolder("perodiumcraft:perodium_glass_pane")
 	public static final Block block = null;
 	public PerodiumGlassPaneBlock(PerodiumcraftModElements instance) {
-		super(instance, 109);
+		super(instance, 112);
 	}
 
 	@Override

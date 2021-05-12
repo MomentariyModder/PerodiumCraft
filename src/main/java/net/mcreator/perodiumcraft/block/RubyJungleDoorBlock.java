@@ -34,7 +34,7 @@ public class RubyJungleDoorBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:ruby_jungle_door")
 	public static final Block block = null;
 	public RubyJungleDoorBlock(PerodiumcraftModElements instance) {
-		super(instance, 106);
+		super(instance, 109);
 	}
 
 	@Override

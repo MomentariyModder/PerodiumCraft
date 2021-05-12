@@ -17,7 +17,7 @@ public class Akvamarine1PickaxeItem extends PerodiumcraftModElements.ModElement 
 	@ObjectHolder("perodiumcraft:akvamarine_1_pickaxe")
 	public static final Item block = null;
 	public Akvamarine1PickaxeItem(PerodiumcraftModElements instance) {
-		super(instance, 125);
+		super(instance, 132);
 	}
 
 	@Override

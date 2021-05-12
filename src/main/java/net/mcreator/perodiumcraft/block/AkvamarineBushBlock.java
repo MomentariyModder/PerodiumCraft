@@ -58,7 +58,7 @@ public class AkvamarineBushBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_bush")
 	public static final Block block = null;
 	public AkvamarineBushBlock(PerodiumcraftModElements instance) {
-		super(instance, 116);
+		super(instance, 119);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

@@ -16,7 +16,7 @@ public class HochiymDustItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:hochiym_dust")
 	public static final Item block = null;
 	public HochiymDustItem(PerodiumcraftModElements instance) {
-		super(instance, 10);
+		super(instance, 13);
 	}
 
 	@Override

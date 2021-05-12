@@ -30,7 +30,7 @@ public class AkvamarineOakBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_oak")
 	public static final Block block = null;
 	public AkvamarineOakBlock(PerodiumcraftModElements instance) {
-		super(instance, 87);
+		super(instance, 90);
 	}
 
 	@Override

@@ -32,7 +32,7 @@ public class PerodiumCactusBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:perodium_cactus")
 	public static final Block block = null;
 	public PerodiumCactusBlock(PerodiumcraftModElements instance) {
-		super(instance, 359);
+		super(instance, 120);
 	}
 
 	@Override

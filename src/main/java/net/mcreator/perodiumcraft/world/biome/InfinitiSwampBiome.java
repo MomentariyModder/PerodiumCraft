@@ -27,7 +27,7 @@ import net.mcreator.perodiumcraft.PerodiumcraftModElements;
 public class InfinitiSwampBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public InfinitiSwampBiome(PerodiumcraftModElements instance) {
-		super(instance, 168);
+		super(instance, 184);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

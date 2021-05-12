@@ -24,7 +24,7 @@ public class AkvamarineDirtBlock extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:akvamarine_dirt")
 	public static final Block block = null;
 	public AkvamarineDirtBlock(PerodiumcraftModElements instance) {
-		super(instance, 80);
+		super(instance, 83);
 	}
 
 	@Override

@@ -39,7 +39,7 @@ import com.google.common.collect.ImmutableList;
 public class RubyJungleForestBiome extends PerodiumcraftModElements.ModElement {
 	public static Biome biome;
 	public RubyJungleForestBiome(PerodiumcraftModElements instance) {
-		super(instance, 328);
+		super(instance, 344);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

@@ -29,7 +29,7 @@ public class RubyyArmorItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:rubyy_armor_boots")
 	public static final Item boots = null;
 	public RubyyArmorItem(PerodiumcraftModElements instance) {
-		super(instance, 135);
+		super(instance, 142);
 	}
 
 	@Override

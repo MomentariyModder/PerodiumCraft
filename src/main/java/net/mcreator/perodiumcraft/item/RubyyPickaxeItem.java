@@ -17,7 +17,7 @@ public class RubyyPickaxeItem extends PerodiumcraftModElements.ModElement {
 	@ObjectHolder("perodiumcraft:rubyy_pickaxe")
 	public static final Item block = null;
 	public RubyyPickaxeItem(PerodiumcraftModElements instance) {
-		super(instance, 137);
+		super(instance, 144);
 	}
 
 	@Override

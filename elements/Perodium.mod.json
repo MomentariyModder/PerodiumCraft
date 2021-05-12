@@ -38,16 +38,16 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 25,
+    "maxDamage": 60,
     "damageValueHelmet": 6,
     "damageValueBody": 18,
     "damageValueLeggings": 15,
     "damageValueBoots": 6,
     "enchantability": 24,
-    "toughness": 0.0,
-    "knockbackResistance": 0.0,
+    "toughness": 6.0,
+    "knockbackResistance": 0.4,
     "equipSound": {
-      "value": ""
+      "value": "CUSTOM:metalarmors"
     },
     "repairItems": []
   }

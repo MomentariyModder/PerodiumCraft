@@ -2,7 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "perodiumpistol"
+        "0": "perodiumpistol",
+        "missing": "perodiumpistol"
       },
       "name": "default"
     }

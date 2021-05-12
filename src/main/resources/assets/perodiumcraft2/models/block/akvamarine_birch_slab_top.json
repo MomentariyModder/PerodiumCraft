@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "perodiumcraft2:blocks/akvamarinewoodplanks",
-    "top": "perodiumcraft2:blocks/akvamarinewoodplanks",
-    "side": "perodiumcraft2:blocks/akvamarinewoodplanks"
-  }
-}

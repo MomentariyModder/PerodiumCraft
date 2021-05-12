@@ -1,0 +1,13 @@
+{
+  "group": "perodiumcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft:perodium_ingot"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft:perodium_nuggets",
+    "count": 9
+  }
+}

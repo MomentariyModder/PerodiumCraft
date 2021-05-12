@@ -1,0 +1,9 @@
+{
+  "group": "perodiumcraft",
+  "type": "minecraft:stonecutting",
+  "count": 9,
+  "ingredient": {
+    "item": "perodiumcraft:akvamarine_block"
+  },
+  "result": "perodiumcraft:akvamarine_dust"
+}

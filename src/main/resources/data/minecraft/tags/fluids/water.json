@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "perodiumcraft2:perodium_water",
-    "perodiumcraft2:perodium_water_flowing"
+    "perodiumcraft:perodium_water",
+    "perodiumcraft:perodium_water_flowing"
   ]
 }

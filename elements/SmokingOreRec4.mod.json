@@ -1,0 +1,20 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:GoldOre"
+    },
+    "smokingReturnStack": {
+      "value": "Items.GOLD_INGOT"
+    },
+    "name": "smoking_ore_rec_4",
+    "namespace": "mod"
+  }
+}

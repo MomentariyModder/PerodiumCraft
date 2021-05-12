@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "perodiumcraft:block/ruby_jungle"
+    },
+    "facing=north": {
+      "model": "perodiumcraft:block/ruby_jungle"
+    },
+    "facing=east": {
+      "model": "perodiumcraft:block/ruby_jungle",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "perodiumcraft:block/ruby_jungle",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "perodiumcraft:block/ruby_jungle",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "perodiumcraft:block/ruby_jungle",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

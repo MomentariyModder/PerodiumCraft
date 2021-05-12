@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "perodiumcraft2:hochiym_dirt",
-    "perodiumcraft2:akvamarine_dirt",
-    "perodiumcraft2:infiniti_dirt",
-    "perodiumcraft2:ruby_dirt",
-    "perodiumcraft2:perodium_dirt"
+    "perodiumcraft:hochiym_dirt",
+    "perodiumcraft:akvamarine_dirt",
+    "perodiumcraft:infiniti_dirt",
+    "perodiumcraft:ruby_dirt",
+    "perodiumcraft:perodium_dirt"
   ]
 }

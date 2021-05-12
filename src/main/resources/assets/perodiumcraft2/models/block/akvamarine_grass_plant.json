@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "perodiumcraft2:blocks/akvamarinegrassplant",
-    "particle": "perodiumcraft2:blocks/akvamarinegrassplant"
-  }
-}

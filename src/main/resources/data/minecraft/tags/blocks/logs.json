@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "perodiumcraft2:akvamarine_oak",
-    "perodiumcraft2:ruby_jungle",
-    "perodiumcraft2:perodium_oak"
+    "perodiumcraft:akvamarine_oak",
+    "perodiumcraft:ruby_jungle",
+    "perodiumcraft:perodium_oak"
   ]
 }

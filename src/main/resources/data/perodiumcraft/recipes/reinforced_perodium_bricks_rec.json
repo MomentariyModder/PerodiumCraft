@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "perodiumcraft:perodium_brick"
+  },
+  "addition": {
+    "item": "perodiumcraft:perodium_plate"
+  },
+  "result": {
+    "item": "perodiumcraft:reinforced_periodium_bricks"
+  }
+}

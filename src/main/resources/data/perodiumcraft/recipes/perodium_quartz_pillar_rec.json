@@ -1,0 +1,16 @@
+{
+  "group": "perodiumcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft:perodium_quartz_block"
+    },
+    {
+      "item": "perodiumcraft:perodium_quartz_block"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft:perodium_quartz_pillar",
+    "count": 1
+  }
+}

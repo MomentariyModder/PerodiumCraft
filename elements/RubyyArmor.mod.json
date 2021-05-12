@@ -47,7 +47,7 @@
     "toughness": 4.0,
     "knockbackResistance": 0.2,
     "equipSound": {
-      "value": ""
+      "value": "CUSTOM:gemarmors"
     },
     "repairItems": [
       {

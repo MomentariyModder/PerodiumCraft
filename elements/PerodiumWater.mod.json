@@ -14,9 +14,9 @@
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftItem"
     },
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 3,
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:PerodiumLand"
     ],
     "restrictionBiomes": []
   }

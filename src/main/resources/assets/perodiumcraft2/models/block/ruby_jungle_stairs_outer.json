@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "perodiumcraft2:blocks/rubywoodplanks",
-    "top": "perodiumcraft2:blocks/rubywoodplanks",
-    "side": "perodiumcraft2:blocks/rubywoodplanks"
-  }
-}

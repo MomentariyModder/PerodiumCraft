@@ -1,0 +1,13 @@
+{
+  "group": "perodiumcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft:ruby_jungle"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft:ruby_jungle_plant",
+    "count": 1
+  }
+}

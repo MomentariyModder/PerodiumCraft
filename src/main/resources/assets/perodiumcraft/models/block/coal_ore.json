@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/coal_ore",
+    "up": "perodiumcraft:blocks/coal_ore",
+    "north": "perodiumcraft:blocks/coal_ore",
+    "east": "perodiumcraft:blocks/coal_ore",
+    "south": "perodiumcraft:blocks/coal_ore",
+    "west": "perodiumcraft:blocks/coal_ore",
+    "particle": "perodiumcraft:blocks/coal_ore"
+  }
+}

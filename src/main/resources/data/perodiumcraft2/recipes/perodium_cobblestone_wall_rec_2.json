@@ -1,9 +1,0 @@
-{
-  "group": "perodiumcraft2",
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "perodiumcraft2:perodium_cobblestone"
-  },
-  "result": "perodiumcraft2:perodium_cobblestone_wall"
-}

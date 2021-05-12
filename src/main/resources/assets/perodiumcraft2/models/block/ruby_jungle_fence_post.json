@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_post",
-  "textures": {
-    "texture": "perodiumcraft2:blocks/rubywoodplanks",
-    "particle": "perodiumcraft2:blocks/rubywoodplanks"
-  }
-}

@@ -1,0 +1,13 @@
+{
+  "group": "perodiumcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft:perodium_oak"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft:perodium_oak_plant",
+    "count": 4
+  }
+}

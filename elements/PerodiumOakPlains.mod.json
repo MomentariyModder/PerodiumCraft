@@ -61,9 +61,9 @@
     "biomeDictionaryTypes": [
       "PLAINS"
     ],
-    "grassPerChunk": 4,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 4,
+    "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
@@ -102,7 +102,6 @@
       "Caves",
       "MonsterRooms",
       "Ores",
-      "Lakes",
       "FrozenTopLayer"
     ],
     "spawnEntries": []

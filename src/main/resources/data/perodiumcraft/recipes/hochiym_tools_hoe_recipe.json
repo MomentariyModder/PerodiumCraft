@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "addition": {
+    "item": "perodiumcraft:hochiym_block"
+  },
+  "result": {
+    "item": "perodiumcraft:hochiym_tools_hoe"
+  }
+}

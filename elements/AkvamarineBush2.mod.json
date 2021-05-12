@@ -4,7 +4,10 @@
   "definition": {
     "renderType": 12,
     "texture": "akvamarinebush2",
+    "textureBottom": "",
     "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
@@ -32,7 +35,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "forceTicking": false,
+    "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,

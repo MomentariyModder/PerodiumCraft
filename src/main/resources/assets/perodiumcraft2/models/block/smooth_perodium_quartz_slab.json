@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "perodiumcraft2:blocks/perodiumquartzblockbottom",
-    "top": "perodiumcraft2:blocks/perodiumquartzblockbottom",
-    "side": "perodiumcraft2:blocks/perodiumquartzblockbottom"
-  }
-}

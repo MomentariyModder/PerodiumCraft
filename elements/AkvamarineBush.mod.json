@@ -9,7 +9,7 @@
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
-    "isItemTinted": false,
+    "isItemTinted": true,
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Plains",
@@ -35,7 +35,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "forceTicking": false,
+    "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,

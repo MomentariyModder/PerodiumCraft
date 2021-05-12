@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "perodiumcraft:blocks/glass",
+    "particle": "perodiumcraft:blocks/glass"
+  }
+}

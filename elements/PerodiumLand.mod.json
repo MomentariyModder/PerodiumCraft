@@ -4,9 +4,6 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:AkvamarineBirchForest"
-      },
-      {
         "value": "CUSTOM:AkvamarinePlains"
       },
       {
@@ -19,13 +16,7 @@
         "value": "CUSTOM:InfinitiSwamp"
       },
       {
-        "value": "CUSTOM:RubyJungleBiome"
-      },
-      {
         "value": "CUSTOM:PerodiumDesert"
-      },
-      {
-        "value": "CUSTOM:PerodiumOakForest"
       },
       {
         "value": "CUSTOM:PerodiumOakPlains"
@@ -35,6 +26,15 @@
       },
       {
         "value": "CUSTOM:RubyZombiePlains"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakForest"
+      },
+      {
+        "value": "CUSTOM:AkvamarineBirchForest"
+      },
+      {
+        "value": "CUSTOM:RubyJungleForest"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -54,7 +54,7 @@
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": false,
-    "imitateOverworldBehaviour": true,
+    "imitateOverworldBehaviour": false,
     "portalFrame": {
       "value": "CUSTOM:ReinforcedPeriodiumBricks"
     },

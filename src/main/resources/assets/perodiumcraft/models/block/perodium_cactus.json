@@ -1,0 +1,10 @@
+{
+  "parent": "perodiumcraft:custom/cactus",
+  "textures": {
+    "all": "perodiumcraft:blocks/cactus_bottom",
+    "particle": "perodiumcraft:blocks/cactus_bottom",
+    "side": "perodiumcraft:blocks/cactus_side",
+    "top": "perodiumcraft:blocks/cactus_top",
+    "bottom": "perodiumcraft:blocks/cactus_bottom"
+  }
+}

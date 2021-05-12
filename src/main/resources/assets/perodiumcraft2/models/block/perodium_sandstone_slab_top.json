@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "perodiumcraft2:blocks/perodiumsandstonebottom",
-    "top": "perodiumcraft2:blocks/perodiumsandstonetop",
-    "side": "perodiumcraft2:blocks/perodiumsandstone"
-  }
-}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "perodiumcraft:items/infinitii_axe"
+  }
+}

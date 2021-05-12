@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/gold_ore",
+    "up": "perodiumcraft:blocks/gold_ore",
+    "north": "perodiumcraft:blocks/gold_ore",
+    "east": "perodiumcraft:blocks/gold_ore",
+    "south": "perodiumcraft:blocks/gold_ore",
+    "west": "perodiumcraft:blocks/gold_ore",
+    "particle": "perodiumcraft:blocks/gold_ore"
+  }
+}

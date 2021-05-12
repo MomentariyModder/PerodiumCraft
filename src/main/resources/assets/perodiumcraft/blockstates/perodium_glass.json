@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "perodiumcraft:block/perodium_glass"
+    },
+    "facing=east": {
+      "model": "perodiumcraft:block/perodium_glass",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "perodiumcraft:block/perodium_glass",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "perodiumcraft:block/perodium_glass",
+      "y": 270
+    }
+  }
+}

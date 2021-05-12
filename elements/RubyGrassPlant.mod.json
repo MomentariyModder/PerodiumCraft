@@ -4,7 +4,10 @@
   "definition": {
     "renderType": 12,
     "texture": "rubygrassplant",
+    "textureBottom": "",
     "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
@@ -53,7 +56,7 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:RubyJungleBiome"
+        "value": "CUSTOM:RubyJungleForest"
       }
     ]
   }

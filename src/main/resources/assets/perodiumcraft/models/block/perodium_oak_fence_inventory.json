@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "perodiumcraft:blocks/perodiumwoodplanks",
+    "particle": "perodiumcraft:blocks/perodiumwoodplanks"
+  }
+}

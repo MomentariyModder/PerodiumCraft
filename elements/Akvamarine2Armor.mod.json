@@ -38,16 +38,16 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 18,
+    "maxDamage": 45,
     "damageValueHelmet": 6,
     "damageValueBody": 18,
     "damageValueLeggings": 15,
     "damageValueBoots": 6,
     "enchantability": 12,
-    "toughness": 0.5,
-    "knockbackResistance": 0.0,
+    "toughness": 4.0,
+    "knockbackResistance": 0.2,
     "equipSound": {
-      "value": ""
+      "value": "CUSTOM:gemarmors"
     },
     "repairItems": [
       {

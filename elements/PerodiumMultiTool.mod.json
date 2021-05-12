@@ -1,0 +1,31 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "perodiummultitool",
+    "customModelName": "Normal",
+    "name": "§8Perodium Multi Tool",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PerodiumCraftToolsandArmors"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 4,
+    "efficiency": 24.0,
+    "attackSpeed": 1.0,
+    "enchantability": 24,
+    "damageVsEntity": 20.0,
+    "usageCount": 4062,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

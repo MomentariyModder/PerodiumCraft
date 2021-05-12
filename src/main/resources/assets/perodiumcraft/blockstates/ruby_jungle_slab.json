@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "perodiumcraft:block/ruby_jungle_slab"
+    },
+    "type=top": {
+      "model": "perodiumcraft:block/ruby_jungle_slab_top"
+    },
+    "type=double": {
+      "model": "perodiumcraft:block/ruby_jungle_slab_full"
+    }
+  }
+}

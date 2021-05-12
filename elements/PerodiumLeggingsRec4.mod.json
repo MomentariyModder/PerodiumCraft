@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:RubyyArmor.legs"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Perodium.legs"
+    },
+    "name": "perodium_leggings_rec_4",
+    "namespace": "mod"
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "perodiumcraft2:blocks/perodiumoakleaves",
-    "particle": "perodiumcraft2:blocks/perodiumoakleaves"
-  }
-}

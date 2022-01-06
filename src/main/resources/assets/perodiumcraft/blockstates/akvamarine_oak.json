@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "perodiumcraft:block/akvamarine_oak"
-    },
-    "facing=north": {
-      "model": "perodiumcraft:block/akvamarine_oak"
-    },
-    "facing=east": {
-      "model": "perodiumcraft:block/akvamarine_oak",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "perodiumcraft:block/akvamarine_oak",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "perodiumcraft:block/akvamarine_oak",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "perodiumcraft:block/akvamarine_oak"
+    },
+    "axis=z": {
       "model": "perodiumcraft:block/akvamarine_oak",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

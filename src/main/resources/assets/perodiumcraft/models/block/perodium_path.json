@@ -1,0 +1,10 @@
+{
+  "parent": "perodiumcraft:custom/perodiumdirtpath",
+  "textures": {
+    "all": "perodiumcraft:blocks/perodiumgrass",
+    "particle": "perodiumcraft:blocks/perodiumgrass",
+    "side": "perodiumcraft:blocks/perodiumpathside",
+    "top": "perodiumcraft:blocks/perodiumpathtop",
+    "bottom": "perodiumcraft:blocks/perodiumdirt"
+  }
+}

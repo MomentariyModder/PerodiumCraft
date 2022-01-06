@@ -1,71 +1,82 @@
 
 package net.mcreator.perodiumcraft.world.biome;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.level.levelgen.placement.FrequencyWithExtraChanceDecoratorConfiguration;
+import net.minecraft.world.level.levelgen.placement.FeatureDecorator;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.SimpleStateProvider;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.data.worldgen.Features;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
-import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
-import net.minecraft.world.gen.feature.TwoLayerFeature;
-import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.FeatureSpread;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
+import net.mcreator.perodiumcraft.world.features.treedecorators.PerodiumOakForestFruitDecorator;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
+import net.mcreator.perodiumcraft.PerodiumcraftMod;
 
-import net.mcreator.perodiumcraft.block.PerodiumOakLeavesBlock;
-import net.mcreator.perodiumcraft.block.PerodiumOakBlock;
-import net.mcreator.perodiumcraft.block.PerodiumGrassBlock;
-import net.mcreator.perodiumcraft.block.PerodiumDirtBlock;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
+import java.util.Map;
+import java.util.HashMap;
 
-@PerodiumcraftModElements.ModElement.Tag
-public class PerodiumOakForestBiome extends PerodiumcraftModElements.ModElement {
-	public static Biome biome;
-	public PerodiumOakForestBiome(PerodiumcraftModElements instance) {
-		super(instance, 342);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
+import com.google.common.collect.ImmutableList;
+
+public class PerodiumOakForestBiome {
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT
+			.configured(new SurfaceBuilderBaseConfiguration(PerodiumcraftModBlocks.PERODIUM_GRASS.defaultBlockState(),
+					PerodiumcraftModBlocks.PERODIUM_DIRT.defaultBlockState(), PerodiumcraftModBlocks.PERODIUM_DIRT.defaultBlockState()));
+
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-13421773).waterColor(-13421773).waterFogColor(-13421773)
+				.skyColor(-13421773).foliageColorOverride(-13421773).grassColorOverride(-13421773).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				register("trees", Feature.TREE
+						.configured((new TreeConfiguration.TreeConfigurationBuilder(
+								new SimpleStateProvider(PerodiumcraftModBlocks.PERODIUM_OAK.defaultBlockState()), new StraightTrunkPlacer(7, 2, 0),
+								new SimpleStateProvider(PerodiumcraftModBlocks.PERODIUM_OAK_LEAVES.defaultBlockState()),
+								new SimpleStateProvider(Blocks.OAK_SAPLING.defaultBlockState()),
+								new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1)))
+										.decorators(ImmutableList.of(
+
+												PerodiumOakForestFruitDecorator.INSTANCE))
+										.build())
+						.decorated(Features.Decorators.HEIGHTMAP_SQUARE)
+						.decorated(FeatureDecorator.COUNT_EXTRA.configured(new FrequencyWithExtraChanceDecoratorConfiguration(6, 0.1F, 1)))));
+		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.FOREST).depth(0.1f).scale(0.2f)
+				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
+				.generationSettings(biomeGenerationSettings.build()).build();
 	}
-	private static class BiomeRegisterHandler {
-		@SubscribeEvent
-		public void registerBiomes(RegistryEvent.Register<Biome> event) {
-			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-13421773).setWaterColor(-13421773).setWaterFogColor(-13421773)
-						.withSkyColor(-13421773).withFoliageColor(-13421773).withGrassColor(-13421773).build();
-				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(PerodiumGrassBlock.block.getDefaultState(),
-								PerodiumDirtBlock.block.getDefaultState(), PerodiumDirtBlock.block.getDefaultState())));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(PerodiumOakBlock.block.getDefaultState()),
-								new SimpleBlockStateProvider(PerodiumOakLeavesBlock.block.getDefaultState()),
-								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().setMaxWaterDepth(0).build())
-						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(6, 0.1F, 1))));
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
-				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.FOREST).depth(0.1f).scale(0.2f)
-						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
-						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("perodiumcraft:perodium_oak_forest"));
-			}
-		}
+
+	public static void init() {
+		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PerodiumcraftMod.MODID, "perodium_oak_forest"),
+				SURFACE_BUILDER);
+		CONFIGURED_FEATURES.forEach((resourceLocation, configuredFeature) -> Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, resourceLocation,
+				configuredFeature));
 	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
+
+	private static final Map<ResourceLocation, ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = new HashMap<>();
+
+	private static ConfiguredFeature<?, ?> register(String name, ConfiguredFeature<?, ?> configuredFeature) {
+		CONFIGURED_FEATURES.put(new ResourceLocation(PerodiumcraftMod.MODID, name + "_perodium_oak_forest"), configuredFeature);
+		return configuredFeature;
 	}
 }

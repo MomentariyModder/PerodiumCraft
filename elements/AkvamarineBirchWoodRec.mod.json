@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AkvamarineOak"
+      },
+      {
+        "value": "CUSTOM:AkvamarineOak"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AkvamarineOak"
+      },
+      {
+        "value": "CUSTOM:AkvamarineOak"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AkvamarineBirchWood"
+    },
+    "name": "akvamarine_birch_wood_rec",
+    "namespace": "mod"
+  }
+}

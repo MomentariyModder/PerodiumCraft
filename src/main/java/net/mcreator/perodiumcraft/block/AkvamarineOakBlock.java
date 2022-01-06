@@ -1,88 +1,76 @@
 
 package net.mcreator.perodiumcraft.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
-
-import net.minecraft.util.Rotation;
-import net.minecraft.util.Direction;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.DirectionProperty;
-import net.minecraft.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.BlockItem;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.DirectionalBlock;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.perodiumcraft.itemgroup.PerodiumCraftBlocksItemGroup;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Collections;
 
-@PerodiumcraftModElements.ModElement.Tag
-public class AkvamarineOakBlock extends PerodiumcraftModElements.ModElement {
-	@ObjectHolder("perodiumcraft:akvamarine_oak")
-	public static final Block block = null;
-	public AkvamarineOakBlock(PerodiumcraftModElements instance) {
-		super(instance, 90);
+public class AkvamarineOakBlock extends Block {
+	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
+
+	public AkvamarineOakBlock() {
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f).requiresCorrectToolForDrops());
+		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
+		setRegistryName("akvamarine_oak");
 	}
 
 	@Override
-	public void initElements() {
-		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(PerodiumCraftBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
+	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+		return 15;
 	}
-	public static class CustomBlock extends Block {
-		public static final DirectionProperty FACING = DirectionalBlock.FACING;
-		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(6f, 6f).setLightLevel(s -> 0).harvestLevel(4)
-					.harvestTool(ToolType.AXE).setRequiresTool());
-			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.SOUTH));
-			setRegistryName("akvamarine_oak");
-		}
 
-		@Override
-		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-			builder.add(FACING);
-		}
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(AXIS);
+	}
 
-		@Override
-		public BlockState rotate(BlockState state, Rotation rot) {
-			if (rot == Rotation.CLOCKWISE_90 || rot == Rotation.COUNTERCLOCKWISE_90) {
-				if ((Direction) state.get(FACING) == Direction.WEST || (Direction) state.get(FACING) == Direction.EAST) {
-					return state.with(FACING, Direction.UP);
-				} else if ((Direction) state.get(FACING) == Direction.UP || (Direction) state.get(FACING) == Direction.DOWN) {
-					return state.with(FACING, Direction.WEST);
-				}
+	@Override
+	public BlockState rotate(BlockState state, Rotation rot) {
+		if (rot == Rotation.CLOCKWISE_90 || rot == Rotation.COUNTERCLOCKWISE_90) {
+			if ((Direction.Axis) state.getValue(AXIS) == Direction.Axis.X) {
+				return state.setValue(AXIS, Direction.Axis.Z);
+			} else if ((Direction.Axis) state.getValue(AXIS) == Direction.Axis.Z) {
+				return state.setValue(AXIS, Direction.Axis.X);
 			}
-			return state;
 		}
+		return state;
+	}
 
-		@Override
-		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			Direction facing = context.getFace();
-			if (facing == Direction.WEST || facing == Direction.EAST)
-				facing = Direction.UP;
-			else if (facing == Direction.NORTH || facing == Direction.SOUTH)
-				facing = Direction.EAST;
-			else
-				facing = Direction.SOUTH;;
-			return this.getDefaultState().with(FACING, facing);
-		}
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		Direction.Axis axis = context.getClickedFace().getAxis();;
+		return this.defaultBlockState().setValue(AXIS, axis);
+	}
 
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
-		}
+	@Override
+	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
+		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+			return tieredItem.getTier().getLevel() >= 3;
+		return false;
+	}
+
+	@Override
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(this, 1));
 	}
 }

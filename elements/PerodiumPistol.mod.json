@@ -1,6 +1,6 @@
 {
-  "_fv": 18,
-  "_type": "gun",
+  "_fv": 24,
+  "_type": "rangeditem",
   "definition": {
     "renderType": 1,
     "texture": "perodiumpistol",
@@ -31,7 +31,7 @@
     "bulletItemTexture": {
       "value": "CUSTOM:PerodiumAmmo"
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": "rubyzombie.png"
+    "bulletModel": "Modelbullet2",
+    "customBulletModelTexture": "bullet2.png"
   }
 }

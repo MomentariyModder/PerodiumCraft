@@ -1,19 +1,45 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "fluid",
   "definition": {
-    "name": "PerodiumWater",
+    "name": "§8Perodium Water",
+    "bucketName": "§8Perodium Water Bucket",
     "textureStill": "perodiumwaterstill",
     "textureFlowing": "perodiumwaterflow",
-    "luminosity": 0,
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 5,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": true,
+    "dripParticle": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "flowStrength": 1.0,
+    "luminosity": 15,
     "density": 1000,
     "viscosity": 1000,
     "isGas": false,
+    "temperature": 300,
     "type": "WATER",
     "generateBucket": true,
+    "textureBucket": "",
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftItem"
     },
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": true,
+    "tickRate": 10,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
     "frequencyOnChunks": 3,
     "spawnWorldTypes": [
       "CUSTOM:PerodiumLand"

@@ -1,10 +1,9 @@
 {
-  "group": "perodiumcraft",
   "type": "minecraft:smelting",
   "experience": 1,
   "cookingtime": 200,
   "ingredient": {
-    "item": "perodiumcraft:perodium_quartz_ore"
+    "item": "perodiumcraft:deleted_mod_element"
   },
   "result": {
     "item": "perodiumcraft:perodium_quartz"

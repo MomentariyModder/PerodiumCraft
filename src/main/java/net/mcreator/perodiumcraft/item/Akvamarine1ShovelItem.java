@@ -1,52 +1,42 @@
 
 package net.mcreator.perodiumcraft.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModItems;
 
-import net.mcreator.perodiumcraft.itemgroup.PerodiumCraftToolsandArmorsItemGroup;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
-
-@PerodiumcraftModElements.ModElement.Tag
-public class Akvamarine1ShovelItem extends PerodiumcraftModElements.ModElement {
-	@ObjectHolder("perodiumcraft:akvamarine_1_shovel")
-	public static final Item block = null;
-	public Akvamarine1ShovelItem(PerodiumcraftModElements instance) {
-		super(instance, 134);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new ShovelItem(new IItemTier() {
-			public int getMaxUses() {
+public class Akvamarine1ShovelItem extends ShovelItem {
+	public Akvamarine1ShovelItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 3124;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 16f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 11f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 2;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 12;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(AkvamarineItem.block, (int) (1)));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.AKVAMARINE));
 			}
-		}, 1, -3f, new Item.Properties().group(PerodiumCraftToolsandArmorsItemGroup.tab)) {
-		}.setRegistryName("akvamarine_1_shovel"));
+		}, 1, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
+		setRegistryName("akvamarine_1_shovel");
 	}
 }

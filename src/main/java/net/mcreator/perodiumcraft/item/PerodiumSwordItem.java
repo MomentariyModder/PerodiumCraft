@@ -1,52 +1,42 @@
 
 package net.mcreator.perodiumcraft.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModItems;
 
-import net.mcreator.perodiumcraft.itemgroup.PerodiumCraftToolsandArmorsItemGroup;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
-
-@PerodiumcraftModElements.ModElement.Tag
-public class PerodiumSwordItem extends PerodiumcraftModElements.ModElement {
-	@ObjectHolder("perodiumcraft:perodium_sword")
-	public static final Item block = null;
-	public PerodiumSwordItem(PerodiumcraftModElements instance) {
-		super(instance, 149);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new SwordItem(new IItemTier() {
-			public int getMaxUses() {
+public class PerodiumSwordItem extends SwordItem {
+	public PerodiumSwordItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 100;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 4f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 14f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 4;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 24;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(PerodiumIngotItem.block, (int) (1)));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.PERODIUM_INGOT));
 			}
-		}, 3, -3f, new Item.Properties().group(PerodiumCraftToolsandArmorsItemGroup.tab).isImmuneToFire()) {
-		}.setRegistryName("perodium_sword"));
+		}, 3, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS).fireResistant());
+		setRegistryName("perodium_sword");
 	}
 }

@@ -1,17 +1,17 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smoking",
+    "recipeType": "Blasting",
     "xpReward": 1.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "smokingInputStack": {
+    "blastingInputStack": {
       "value": "CUSTOM:EmeraldOre"
     },
-    "smokingReturnStack": {
+    "blastingReturnStack": {
       "value": "Items.EMERALD"
     },
     "name": "smoking_ore_rec_7",

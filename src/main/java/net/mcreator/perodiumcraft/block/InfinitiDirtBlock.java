@@ -1,51 +1,44 @@
 
 package net.mcreator.perodiumcraft.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
-
-import net.minecraft.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.perodiumcraft.itemgroup.PerodiumCraftBlocksItemGroup;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Collections;
 
-@PerodiumcraftModElements.ModElement.Tag
-public class InfinitiDirtBlock extends PerodiumcraftModElements.ModElement {
-	@ObjectHolder("perodiumcraft:infiniti_dirt")
-	public static final Block block = null;
-	public InfinitiDirtBlock(PerodiumcraftModElements instance) {
-		super(instance, 84);
+public class InfinitiDirtBlock extends Block {
+	public InfinitiDirtBlock() {
+		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
+		setRegistryName("infiniti_dirt");
 	}
 
 	@Override
-	public void initElements() {
-		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(PerodiumCraftBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
+	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+		return 15;
 	}
-	public static class CustomBlock extends Block {
-		public CustomBlock() {
-			super(Block.Properties.create(Material.EARTH).sound(SoundType.GROUND).hardnessAndResistance(3f, 3f).setLightLevel(s -> 0).harvestLevel(4)
-					.harvestTool(ToolType.SHOVEL).setRequiresTool());
-			setRegistryName("infiniti_dirt");
-		}
 
-		@Override
-		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-			if (!dropsOriginal.isEmpty())
-				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
-		}
+	@Override
+	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
+		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+			return tieredItem.getTier().getLevel() >= 3;
+		return false;
+	}
+
+	@Override
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(this, 1));
 	}
 }

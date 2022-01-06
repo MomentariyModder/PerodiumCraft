@@ -1,5 +1,4 @@
 {
-  "group": "perodiumcraft",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
@@ -20,7 +19,7 @@
       "item": "perodiumcraft:ruby_block"
     },
     "4": {
-      "item": "perodiumcraft:perodium_quartz_block"
+      "item": "perodiumcraft:perodium_ingot"
     },
     "5": {
       "item": "perodiumcraft:akvamarine_block"

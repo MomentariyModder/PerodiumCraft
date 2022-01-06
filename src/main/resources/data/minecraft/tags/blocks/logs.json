@@ -1,8 +1,17 @@
 {
   "replace": false,
   "values": [
+    "perodiumcraft:stripped_ruby_jungle",
+    "perodiumcraft:perodium_oak_wood",
+    "perodiumcraft:stripped_ruby_jungle_wood",
+    "perodiumcraft:perodium_oak",
+    "perodiumcraft:stripped_akvamarine_birch_wood",
+    "perodiumcraft:stripped_perodium_oak",
     "perodiumcraft:akvamarine_oak",
     "perodiumcraft:ruby_jungle",
-    "perodiumcraft:perodium_oak"
+    "perodiumcraft:stripped_perodium_oak_wood",
+    "perodiumcraft:stripped_akvamarine_birch",
+    "perodiumcraft:ruby_jungle_wood",
+    "perodiumcraft:akvamarine_birch_wood"
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tag",
   "definition": {
     "type": "Blocks",
@@ -19,6 +19,21 @@
       },
       {
         "value": "CUSTOM:PerodiumDirt"
+      },
+      {
+        "value": "CUSTOM:HochiymGrass"
+      },
+      {
+        "value": "CUSTOM:AkvamarineGrass"
+      },
+      {
+        "value": "CUSTOM:InfinitiGrass"
+      },
+      {
+        "value": "CUSTOM:RubyGrass"
+      },
+      {
+        "value": "CUSTOM:PerodiumGrass"
       }
     ],
     "functions": [],

@@ -1,0 +1,10 @@
+{
+  "parent": "perodiumcraft:custom/akvamarinedirtpath",
+  "textures": {
+    "all": "perodiumcraft:blocks/akvamarinedirt",
+    "particle": "perodiumcraft:blocks/akvamarinedirt",
+    "side": "perodiumcraft:blocks/akvamarinepathside",
+    "top": "perodiumcraft:blocks/akvamarinepathtop",
+    "bottom": "perodiumcraft:blocks/akvamarinedirt"
+  }
+}

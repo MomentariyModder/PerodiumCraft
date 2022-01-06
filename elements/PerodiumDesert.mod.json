@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "§8Perodium Desert",
@@ -56,7 +56,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "biomeType": "DESERT",
-    "spawnBiome": true,
+    "spawnBiome": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
@@ -68,13 +68,12 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 10,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 3,
-    "maxWaterDepth": 1,
     "treeStem": {
-      "value": "CUSTOM:PerodiumCactus"
+      "value": "Blocks.AIR"
     },
     "treeBranch": {
       "value": "Blocks.AIR"
@@ -87,15 +86,24 @@
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
       "MonsterRooms",

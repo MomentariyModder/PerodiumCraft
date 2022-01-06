@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/shroomlight",
+    "up": "perodiumcraft:blocks/shroomlight",
+    "north": "perodiumcraft:blocks/shroomlight",
+    "east": "perodiumcraft:blocks/shroomlight",
+    "south": "perodiumcraft:blocks/shroomlight",
+    "west": "perodiumcraft:blocks/shroomlight",
+    "particle": "perodiumcraft:blocks/shroomlight"
+  }
+}

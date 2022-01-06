@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "perodiumpie",
+    "customModelName": "Normal",
+    "name": "§8Perodium Pie (4/8)",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 4,
+    "saturation": 1.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "CUSTOM:PerodiumPie3"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

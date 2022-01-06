@@ -1,47 +1,20 @@
 
 package net.mcreator.perodiumcraft.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
 
-import net.mcreator.perodiumcraft.itemgroup.PerodiumCraftToolsandArmorsItemGroup;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
-
-@PerodiumcraftModElements.ModElement.Tag
-public class PerodiumAmmoItem extends PerodiumcraftModElements.ModElement {
-	@ObjectHolder("perodiumcraft:perodium_ammo")
-	public static final Item block = null;
-	public PerodiumAmmoItem(PerodiumcraftModElements instance) {
-		super(instance, 157);
+public class PerodiumAmmoItem extends Item {
+	public PerodiumAmmoItem() {
+		super(new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS).durability(4).rarity(Rarity.COMMON));
+		setRegistryName("perodium_ammo");
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new ItemCustom());
-	}
-	public static class ItemCustom extends Item {
-		public ItemCustom() {
-			super(new Item.Properties().group(PerodiumCraftToolsandArmorsItemGroup.tab).maxDamage(4).rarity(Rarity.COMMON));
-			setRegistryName("perodium_ammo");
-		}
-
-		@Override
-		public int getItemEnchantability() {
-			return 0;
-		}
-
-		@Override
-		public int getUseDuration(ItemStack itemstack) {
-			return 0;
-		}
-
-		@Override
-		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 1F;
-		}
+	public int getUseDuration(ItemStack itemstack) {
+		return 0;
 	}
 }

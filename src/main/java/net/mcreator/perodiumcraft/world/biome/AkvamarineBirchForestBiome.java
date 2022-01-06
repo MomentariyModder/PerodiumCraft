@@ -1,72 +1,74 @@
 
 package net.mcreator.perodiumcraft.world.biome;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.level.levelgen.placement.FrequencyWithExtraChanceDecoratorConfiguration;
+import net.minecraft.world.level.levelgen.placement.FeatureDecorator;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.SimpleStateProvider;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.data.worldgen.Features;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
-import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
-import net.minecraft.world.gen.feature.TwoLayerFeature;
-import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.FeatureSpread;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
+import net.mcreator.perodiumcraft.PerodiumcraftMod;
 
-import net.mcreator.perodiumcraft.block.AkvamarineOakBlock;
-import net.mcreator.perodiumcraft.block.AkvamarineLeavesBlock;
-import net.mcreator.perodiumcraft.block.AkvamarineGrassBlock;
-import net.mcreator.perodiumcraft.block.AkvamarineDirtBlock;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
+import java.util.Map;
+import java.util.HashMap;
 
-@PerodiumcraftModElements.ModElement.Tag
-public class AkvamarineBirchForestBiome extends PerodiumcraftModElements.ModElement {
-	public static Biome biome;
-	public AkvamarineBirchForestBiome(PerodiumcraftModElements instance) {
-		super(instance, 343);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
+public class AkvamarineBirchForestBiome {
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT
+			.configured(new SurfaceBuilderBaseConfiguration(PerodiumcraftModBlocks.AKVAMARINE_GRASS.defaultBlockState(),
+					PerodiumcraftModBlocks.AKVAMARINE_DIRT.defaultBlockState(), PerodiumcraftModBlocks.AKVAMARINE_DIRT.defaultBlockState()));
+
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16728876).waterColor(-16728876).waterFogColor(-16728876)
+				.skyColor(-16728876).foliageColorOverride(-16728876).grassColorOverride(-16728876).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, register("trees", Feature.TREE
+				.configured((new TreeConfiguration.TreeConfigurationBuilder(
+						new SimpleStateProvider(PerodiumcraftModBlocks.AKVAMARINE_OAK.defaultBlockState()), new StraightTrunkPlacer(7, 2, 0),
+						new SimpleStateProvider(PerodiumcraftModBlocks.AKVAMARINE_LEAVES.defaultBlockState()),
+						new SimpleStateProvider(Blocks.BIRCH_SAPLING.defaultBlockState()),
+						new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))).ignoreVines().build())
+				.decorated(Features.Decorators.HEIGHTMAP_SQUARE)
+				.decorated(FeatureDecorator.COUNT_EXTRA.configured(new FrequencyWithExtraChanceDecoratorConfiguration(6, 0.1F, 1)))));
+		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.FOREST).depth(0.1f).scale(0.2f)
+				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
+				.generationSettings(biomeGenerationSettings.build()).build();
 	}
-	private static class BiomeRegisterHandler {
-		@SubscribeEvent
-		public void registerBiomes(RegistryEvent.Register<Biome> event) {
-			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16728876).setWaterColor(-16728876).setWaterFogColor(-16728876)
-						.withSkyColor(-16728876).withFoliageColor(-16728876).withGrassColor(-16728876).build();
-				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
-						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(AkvamarineGrassBlock.block.getDefaultState(),
-								AkvamarineDirtBlock.block.getDefaultState(), AkvamarineDirtBlock.block.getDefaultState())));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration(
-								(new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(AkvamarineOakBlock.block.getDefaultState()),
-										new SimpleBlockStateProvider(AkvamarineLeavesBlock.block.getDefaultState()),
-										new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-										new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().setMaxWaterDepth(0).build())
-						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(6, 0.1F, 1))));
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
-				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.FOREST).depth(0.1f).scale(0.2f)
-						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
-						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("perodiumcraft:akvamarine_birch_forest"));
-			}
-		}
+
+	public static void init() {
+		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PerodiumcraftMod.MODID, "akvamarine_birch_forest"),
+				SURFACE_BUILDER);
+		CONFIGURED_FEATURES.forEach((resourceLocation, configuredFeature) -> Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, resourceLocation,
+				configuredFeature));
 	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
+
+	private static final Map<ResourceLocation, ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = new HashMap<>();
+
+	private static ConfiguredFeature<?, ?> register(String name, ConfiguredFeature<?, ?> configuredFeature) {
+		CONFIGURED_FEATURES.put(new ResourceLocation(PerodiumcraftMod.MODID, name + "_akvamarine_birch_forest"), configuredFeature);
+		return configuredFeature;
 	}
 }

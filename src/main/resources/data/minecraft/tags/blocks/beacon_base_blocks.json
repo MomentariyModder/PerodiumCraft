@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "perodiumcraft:hochiym_block",
+    "perodiumcraft:perodium_block",
+    "perodiumcraft:perodium_quartz_block",
     "perodiumcraft:akvamarine_block",
     "perodiumcraft:infiniti_block",
-    "perodiumcraft:ruby_block",
-    "perodiumcraft:perodium_quartz_block",
-    "perodiumcraft:perodium_block"
+    "perodiumcraft:hochiym_block",
+    "perodiumcraft:ruby_block"
   ]
 }

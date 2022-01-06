@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "perodiumcraft:block/perodium_quartz_pillar"
-    },
-    "facing=north": {
-      "model": "perodiumcraft:block/perodium_quartz_pillar"
-    },
-    "facing=east": {
-      "model": "perodiumcraft:block/perodium_quartz_pillar",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "perodiumcraft:block/perodium_quartz_pillar",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "perodiumcraft:block/perodium_quartz_pillar",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "perodiumcraft:block/perodium_quartz_pillar"
+    },
+    "axis=z": {
       "model": "perodiumcraft:block/perodium_quartz_pillar",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

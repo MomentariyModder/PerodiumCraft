@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tag",
   "definition": {
     "type": "Blocks",
@@ -13,6 +13,33 @@
       },
       {
         "value": "CUSTOM:PerodiumOak"
+      },
+      {
+        "value": "CUSTOM:StrippedAkvamarineBirch"
+      },
+      {
+        "value": "CUSTOM:StrippedPerodiumOak"
+      },
+      {
+        "value": "CUSTOM:StrippedRubyJungle"
+      },
+      {
+        "value": "CUSTOM:AkvamarineBirchWood"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakWood"
+      },
+      {
+        "value": "CUSTOM:RubyJungleWood"
+      },
+      {
+        "value": "CUSTOM:StrippedAkvamarineBirchWood"
+      },
+      {
+        "value": "CUSTOM:StrippedPerodiumOakWood"
+      },
+      {
+        "value": "CUSTOM:StrippedRubyJungleWood"
       }
     ],
     "functions": [],

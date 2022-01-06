@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -12,6 +12,8 @@
     "isItemTinted": true,
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
+    "suspiciousStewEffect": "SATURATION",
+    "suspiciousStewDuration": 0,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
@@ -27,8 +29,24 @@
     "resistance": 3.0,
     "luminance": 0,
     "unbreakable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "SWEET_BERRY_BUSH"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "useLootTableForDrops": false,
     "customDrop": {
@@ -62,6 +80,7 @@
         "value": "CUSTOM:AkvamarinePlains"
       }
     ],
+    "patchSize": 64,
     "onTickUpdate": {
       "name": "AkvamarineBushUpdateTick"
     }

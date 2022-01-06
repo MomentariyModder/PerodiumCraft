@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:AkvamarineBirchPressurePlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakPressurePlate"
+      },
+      {
+        "value": "CUSTOM:RubyJunglePressurePlate"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "wooden_pressure_plates",
+    "namespace": "minecraft"
+  }
+}

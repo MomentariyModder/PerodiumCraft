@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "perodiumwoodplanks",
@@ -50,7 +50,7 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
+    "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
       "value": "WOOD"
@@ -58,6 +58,10 @@
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -72,19 +76,35 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "WOOD"
     },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 3,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleAmount": 3,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

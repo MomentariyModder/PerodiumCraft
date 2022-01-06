@@ -1,52 +1,42 @@
 
 package net.mcreator.perodiumcraft.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.HoeItem;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.HoeItem;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModItems;
 
-import net.mcreator.perodiumcraft.itemgroup.PerodiumCraftToolsandArmorsItemGroup;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
-
-@PerodiumcraftModElements.ModElement.Tag
-public class RubyyHoeItem extends PerodiumcraftModElements.ModElement {
-	@ObjectHolder("perodiumcraft:rubyy_hoe")
-	public static final Item block = null;
-	public RubyyHoeItem(PerodiumcraftModElements instance) {
-		super(instance, 147);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new HoeItem(new IItemTier() {
-			public int getMaxUses() {
+public class RubyyHoeItem extends HoeItem {
+	public RubyyHoeItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 1741;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 16f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 6f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 4;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 12;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(RubyItem.block, (int) (1)));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.RUBY));
 			}
-		}, 0, -3f, new Item.Properties().group(PerodiumCraftToolsandArmorsItemGroup.tab)) {
-		}.setRegistryName("rubyy_hoe"));
+		}, 0, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
+		setRegistryName("rubyy_hoe");
 	}
 }

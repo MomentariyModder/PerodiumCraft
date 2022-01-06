@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "hochiympathside",
+        "top": "hochiympathtop",
+        "bottom": "hochiymdirt"
+      },
+      "name": "default"
+    }
+  }
+}

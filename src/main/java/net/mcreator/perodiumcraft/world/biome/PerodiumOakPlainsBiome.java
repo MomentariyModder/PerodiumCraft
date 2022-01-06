@@ -1,58 +1,50 @@
 
 package net.mcreator.perodiumcraft.world.biome;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.BiomeDictionary;
 
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.feature.structure.StructureFeatures;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.util.registry.WorldGenRegistries;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.RegistryKey;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.StructureFeatures;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
-import net.mcreator.perodiumcraft.block.PerodiumGrassBlock;
-import net.mcreator.perodiumcraft.block.PerodiumDirtBlock;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBiomes;
+import net.mcreator.perodiumcraft.PerodiumcraftMod;
 
-@PerodiumcraftModElements.ModElement.Tag
-public class PerodiumOakPlainsBiome extends PerodiumcraftModElements.ModElement {
-	public static Biome biome;
-	public PerodiumOakPlainsBiome(PerodiumcraftModElements instance) {
-		super(instance, 250);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
+public class PerodiumOakPlainsBiome {
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT
+			.configured(new SurfaceBuilderBaseConfiguration(PerodiumcraftModBlocks.PERODIUM_GRASS.defaultBlockState(),
+					PerodiumcraftModBlocks.PERODIUM_DIRT.defaultBlockState(), PerodiumcraftModBlocks.PERODIUM_DIRT.defaultBlockState()));
+
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-13421773).waterColor(-13421773).waterFogColor(-13421773)
+				.skyColor(-13421773).foliageColorOverride(-13421773).grassColorOverride(-13421773).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
+		biomeGenerationSettings.addStructureStart(StructureFeatures.MINESHAFT);
+		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultMonsterRoom(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.PLAINS).depth(0f).scale(0f)
+				.temperature(0f).downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
+				.generationSettings(biomeGenerationSettings.build()).build();
 	}
-	private static class BiomeRegisterHandler {
-		@SubscribeEvent
-		public void registerBiomes(RegistryEvent.Register<Biome> event) {
-			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-13421773).setWaterColor(-13421773).setWaterFogColor(-13421773)
-						.withSkyColor(-13421773).withFoliageColor(-13421773).withGrassColor(-13421773).build();
-				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(PerodiumGrassBlock.block.getDefaultState(),
-								PerodiumDirtBlock.block.getDefaultState(), PerodiumDirtBlock.block.getDefaultState())));
-				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withMonsterRoom(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.PLAINS).depth(0f).scale(0f).temperature(0f)
-						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
-						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("perodiumcraft:perodium_oak_plains"));
-			}
-		}
-	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.PLAINS);
+
+	public static void init() {
+		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PerodiumcraftMod.MODID, "perodium_oak_plains"),
+				SURFACE_BUILDER);
+		BiomeDictionary.addTypes(
+				ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(PerodiumcraftModBiomes.PERODIUM_OAK_PLAINS)),
+				BiomeDictionary.Type.PLAINS);
 	}
 }

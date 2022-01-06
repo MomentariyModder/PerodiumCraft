@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "rubypathside",
+        "top": "rubypathtop",
+        "bottom": "rubydirt"
+      },
+      "name": "default"
+    }
+  }
+}

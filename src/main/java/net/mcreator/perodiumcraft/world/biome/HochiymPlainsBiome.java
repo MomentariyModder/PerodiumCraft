@@ -1,55 +1,45 @@
 
 package net.mcreator.perodiumcraft.world.biome;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.data.worldgen.StructureFeatures;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.feature.structure.StructureFeatures;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
+import net.mcreator.perodiumcraft.PerodiumcraftMod;
 
-import net.mcreator.perodiumcraft.block.HochiymGrassBlock;
-import net.mcreator.perodiumcraft.block.HochiymDirtBlock;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
+public class HochiymPlainsBiome {
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT
+			.configured(new SurfaceBuilderBaseConfiguration(PerodiumcraftModBlocks.HOCHIYM_GRASS.defaultBlockState(),
+					PerodiumcraftModBlocks.HOCHIYM_DIRT.defaultBlockState(), PerodiumcraftModBlocks.HOCHIYM_DIRT.defaultBlockState()));
 
-@PerodiumcraftModElements.ModElement.Tag
-public class HochiymPlainsBiome extends PerodiumcraftModElements.ModElement {
-	public static Biome biome;
-	public HochiymPlainsBiome(PerodiumcraftModElements instance) {
-		super(instance, 174);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16776961).waterColor(-16776961).waterFogColor(-16776961)
+				.skyColor(-16776961).foliageColorOverride(-16776961).grassColorOverride(-16776961).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
+		biomeGenerationSettings.addStructureStart(StructureFeatures.MINESHAFT);
+		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultMonsterRoom(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultLakes(biomeGenerationSettings);
+		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.PLAINS).depth(0.1f).scale(0.2f)
+				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
+				.generationSettings(biomeGenerationSettings.build()).build();
 	}
-	private static class BiomeRegisterHandler {
-		@SubscribeEvent
-		public void registerBiomes(RegistryEvent.Register<Biome> event) {
-			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16776961).setWaterColor(-16776961).setWaterFogColor(-16776961)
-						.withSkyColor(-16776961).withFoliageColor(-16776961).withGrassColor(-16776961).build();
-				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(HochiymGrassBlock.block.getDefaultState(),
-								HochiymDirtBlock.block.getDefaultState(), HochiymDirtBlock.block.getDefaultState())));
-				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withMonsterRoom(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
-				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.PLAINS).depth(0.1f).scale(0.2f)
-						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
-						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("perodiumcraft:hochiym_plains"));
-			}
-		}
-	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
+
+	public static void init() {
+		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PerodiumcraftMod.MODID, "hochiym_plains"),
+				SURFACE_BUILDER);
 	}
 }

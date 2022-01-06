@@ -1,8 +1,8 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "tab",
   "definition": {
-    "name": "§8PerodiumCraft2[§7Item§8]",
+    "name": "§8PerodiumCraft[§7Item§8]",
     "icon": {
       "value": "CUSTOM:PerodiumIngot"
     },

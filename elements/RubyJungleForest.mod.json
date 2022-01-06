@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "biome",
   "definition": {
     "name": "§4Ruby Jungle Forest",
@@ -72,7 +72,6 @@
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 7,
-    "maxWaterDepth": 0,
     "treeStem": {
       "value": "CUSTOM:RubyJungle"
     },
@@ -87,20 +86,28 @@
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer",
-      "JungleTreeForest"
+      "FrozenTopLayer"
     ],
     "spawnEntries": []
   }

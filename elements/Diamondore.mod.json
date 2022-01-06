@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "block",
   "definition": {
     "texture": "diamond_ore",
@@ -49,14 +49,18 @@
     "useLootTableForDrops": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
-    "lightOpacity": 255,
+    "canRedstoneConnect": false,
+    "lightOpacity": 15,
     "material": {
       "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
@@ -71,8 +75,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "STONE"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "luminance": 0,
     "unbreakable": false,
@@ -111,8 +131,8 @@
       }
     ],
     "frequencyPerChunks": 1,
-    "frequencyOnChunk": 10,
-    "minGenerateHeight": 0,
+    "frequencyOnChunk": 8,
+    "minGenerateHeight": 1,
     "maxGenerateHeight": 16
   }
 }

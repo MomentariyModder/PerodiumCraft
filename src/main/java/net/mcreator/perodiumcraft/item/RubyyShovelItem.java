@@ -1,52 +1,42 @@
 
 package net.mcreator.perodiumcraft.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModItems;
 
-import net.mcreator.perodiumcraft.itemgroup.PerodiumCraftToolsandArmorsItemGroup;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
-
-@PerodiumcraftModElements.ModElement.Tag
-public class RubyyShovelItem extends PerodiumcraftModElements.ModElement {
-	@ObjectHolder("perodiumcraft:rubyy_shovel")
-	public static final Item block = null;
-	public RubyyShovelItem(PerodiumcraftModElements instance) {
-		super(instance, 146);
-	}
-
-	@Override
-	public void initElements() {
-		elements.items.add(() -> new ShovelItem(new IItemTier() {
-			public int getMaxUses() {
+public class RubyyShovelItem extends ShovelItem {
+	public RubyyShovelItem() {
+		super(new Tier() {
+			public int getUses() {
 				return 3124;
 			}
 
-			public float getEfficiency() {
+			public float getSpeed() {
 				return 16f;
 			}
 
-			public float getAttackDamage() {
+			public float getAttackDamageBonus() {
 				return 11f;
 			}
 
-			public int getHarvestLevel() {
+			public int getLevel() {
 				return 4;
 			}
 
-			public int getEnchantability() {
+			public int getEnchantmentValue() {
 				return 12;
 			}
 
-			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(RubyItem.block, (int) (1)));
+			public Ingredient getRepairIngredient() {
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.RUBY));
 			}
-		}, 1, -3f, new Item.Properties().group(PerodiumCraftToolsandArmorsItemGroup.tab)) {
-		}.setRegistryName("rubyy_shovel"));
+		}, 1, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
+		setRegistryName("rubyy_shovel");
 	}
 }

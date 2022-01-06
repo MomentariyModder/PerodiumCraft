@@ -1,16 +1,19 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
       {
+        "value": "CUSTOM:AkvamarineBirchForest"
+      },
+      {
         "value": "CUSTOM:AkvamarinePlains"
       },
       {
-        "value": "CUSTOM:HochiymPlains"
+        "value": "CUSTOM:AkvamarineZombiePlains"
       },
       {
-        "value": "CUSTOM:AkvamarineZombiePlains"
+        "value": "CUSTOM:HochiymPlains"
       },
       {
         "value": "CUSTOM:InfinitiSwamp"
@@ -19,22 +22,22 @@
         "value": "CUSTOM:PerodiumDesert"
       },
       {
+        "value": "CUSTOM:PerodiumOakForest"
+      },
+      {
         "value": "CUSTOM:PerodiumOakPlains"
       },
       {
         "value": "CUSTOM:PerodiumZombiePlains"
       },
       {
-        "value": "CUSTOM:RubyZombiePlains"
-      },
-      {
-        "value": "CUSTOM:PerodiumOakForest"
-      },
-      {
-        "value": "CUSTOM:AkvamarineBirchForest"
-      },
-      {
         "value": "CUSTOM:RubyJungleForest"
+      },
+      {
+        "value": "CUSTOM:RubyPlains"
+      },
+      {
+        "value": "CUSTOM:RubyZombiePlains"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -49,11 +52,11 @@
       "falpha": 0.0
     },
     "canRespawnHere": true,
-    "hasFog": false,
+    "hasFog": true,
     "isDark": false,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
-    "hasSkyLight": false,
+    "sleepResult": "BED_EXPLODES",
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
       "value": "CUSTOM:ReinforcedPeriodiumBricks"

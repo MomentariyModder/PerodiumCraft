@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "infinitipathside",
+        "top": "infinitipathtop",
+        "bottom": "infinitidirt"
+      },
+      "name": "default"
+    }
+  }
+}

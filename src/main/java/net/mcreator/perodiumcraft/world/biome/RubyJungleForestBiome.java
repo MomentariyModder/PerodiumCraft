@@ -1,79 +1,80 @@
 
 package net.mcreator.perodiumcraft.world.biome;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.level.levelgen.placement.FrequencyWithExtraChanceDecoratorConfiguration;
+import net.minecraft.world.level.levelgen.placement.FeatureDecorator;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.MegaJungleTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.treedecorators.TrunkVineDecorator;
+import net.minecraft.world.level.levelgen.feature.treedecorators.LeaveVineDecorator;
+import net.minecraft.world.level.levelgen.feature.stateproviders.SimpleStateProvider;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.MegaJungleFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.data.worldgen.Features;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
-import net.minecraft.world.gen.trunkplacer.MegaJungleTrunkPlacer;
-import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
-import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.foliageplacer.JungleFoliagePlacer;
-import net.minecraft.world.gen.feature.TwoLayerFeature;
-import net.minecraft.world.gen.feature.Features;
-import net.minecraft.world.gen.feature.FeatureSpread;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
-import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
+import net.mcreator.perodiumcraft.PerodiumcraftMod;
 
-import net.mcreator.perodiumcraft.block.RubyJungleLeavesBlock;
-import net.mcreator.perodiumcraft.block.RubyJungleBlock;
-import net.mcreator.perodiumcraft.block.RubyGrassBlock;
-import net.mcreator.perodiumcraft.block.RubyDirtBlock;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
+import java.util.Map;
+import java.util.HashMap;
 
 import com.google.common.collect.ImmutableList;
 
-@PerodiumcraftModElements.ModElement.Tag
-public class RubyJungleForestBiome extends PerodiumcraftModElements.ModElement {
-	public static Biome biome;
-	public RubyJungleForestBiome(PerodiumcraftModElements instance) {
-		super(instance, 344);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
+public class RubyJungleForestBiome {
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT
+			.configured(new SurfaceBuilderBaseConfiguration(PerodiumcraftModBlocks.RUBY_GRASS.defaultBlockState(),
+					PerodiumcraftModBlocks.RUBY_DIRT.defaultBlockState(), PerodiumcraftModBlocks.RUBY_DIRT.defaultBlockState()));
+
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-3407872).waterColor(-3407872).waterFogColor(-3407872)
+				.skyColor(-3407872).foliageColorOverride(-3407872).grassColorOverride(-3407872).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				register("trees", Feature.TREE
+						.configured((new TreeConfiguration.TreeConfigurationBuilder(
+								new SimpleStateProvider(PerodiumcraftModBlocks.RUBY_JUNGLE.defaultBlockState()), new MegaJungleTrunkPlacer(7, 2, 19),
+								new SimpleStateProvider(PerodiumcraftModBlocks.RUBY_JUNGLE_LEAVES.defaultBlockState()),
+								new SimpleStateProvider(Blocks.OAK_SAPLING.defaultBlockState()),
+								new MegaJungleFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 2), new TwoLayersFeatureSize(1, 1, 2)))
+										.decorators(ImmutableList.of(TrunkVineDecorator.INSTANCE, LeaveVineDecorator.INSTANCE)).build())
+						.decorated(Features.Decorators.HEIGHTMAP_SQUARE)
+						.decorated(FeatureDecorator.COUNT_EXTRA.configured(new FrequencyWithExtraChanceDecoratorConfiguration(6, 0.1F, 1)))));
+		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.JUNGLE).depth(0.1f).scale(0.2f)
+				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
+				.generationSettings(biomeGenerationSettings.build()).build();
 	}
-	private static class BiomeRegisterHandler {
-		@SubscribeEvent
-		public void registerBiomes(RegistryEvent.Register<Biome> event) {
-			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-3407872).setWaterColor(-3407872).setWaterFogColor(-3407872)
-						.withSkyColor(-3407872).withFoliageColor(-3407872).withGrassColor(-3407872).build();
-				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(RubyGrassBlock.block.getDefaultState(),
-								RubyDirtBlock.block.getDefaultState(), RubyDirtBlock.block.getDefaultState())));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(RubyJungleBlock.block.getDefaultState()),
-								new SimpleBlockStateProvider(RubyJungleLeavesBlock.block.getDefaultState()),
-								new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
-								new MegaJungleTrunkPlacer(7, 2, 19), new TwoLayerFeature(1, 1, 2)))
-										.setDecorators(
-												ImmutableList.of(TrunkVineTreeDecorator.field_236879_b_, LeaveVineTreeDecorator.field_236871_b_))
-										.setMaxWaterDepth(0).build())
-						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(6, 0.1F, 1))));
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
-				DefaultBiomeFeatures.withJungleTrees(biomeGenerationSettings);
-				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.JUNGLE).depth(0.1f).scale(0.2f)
-						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
-						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("perodiumcraft:ruby_jungle_forest"));
-			}
-		}
+
+	public static void init() {
+		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PerodiumcraftMod.MODID, "ruby_jungle_forest"),
+				SURFACE_BUILDER);
+		CONFIGURED_FEATURES.forEach((resourceLocation, configuredFeature) -> Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, resourceLocation,
+				configuredFeature));
 	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
+
+	private static final Map<ResourceLocation, ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = new HashMap<>();
+
+	private static ConfiguredFeature<?, ?> register(String name, ConfiguredFeature<?, ?> configuredFeature) {
+		CONFIGURED_FEATURES.put(new ResourceLocation(PerodiumcraftMod.MODID, name + "_ruby_jungle_forest"), configuredFeature);
+		return configuredFeature;
 	}
 }

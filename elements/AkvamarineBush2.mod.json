@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -12,6 +12,8 @@
     "isItemTinted": false,
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
+    "suspiciousStewEffect": "SATURATION",
+    "suspiciousStewDuration": 0,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
@@ -27,8 +29,24 @@
     "resistance": 3.0,
     "luminance": 0,
     "unbreakable": false,
+    "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
     },
     "useLootTableForDrops": false,
     "customDrop": {
@@ -53,6 +71,7 @@
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
+    "patchSize": 64,
     "onRightClicked": {
       "name": "AkvamarineBush2PlantRightClicked"
     }

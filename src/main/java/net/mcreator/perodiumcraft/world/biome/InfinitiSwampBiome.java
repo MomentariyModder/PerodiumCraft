@@ -1,61 +1,43 @@
 
 package net.mcreator.perodiumcraft.world.biome;
 
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.BiomeManager;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
+import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.level.biome.MobSpawnSettings;
+import net.minecraft.world.level.biome.BiomeSpecialEffects;
+import net.minecraft.world.level.biome.BiomeGenerationSettings;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.data.worldgen.StructureFeatures;
+import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.gen.feature.structure.StructureFeatures;
-import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.BiomeGenerationSettings;
-import net.minecraft.world.biome.BiomeAmbience;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.util.registry.WorldGenRegistries;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.RegistryKey;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
+import net.mcreator.perodiumcraft.PerodiumcraftMod;
 
-import net.mcreator.perodiumcraft.block.InfinitiGrassBlock;
-import net.mcreator.perodiumcraft.block.InfinitiDirtBlock;
-import net.mcreator.perodiumcraft.PerodiumcraftModElements;
+public class InfinitiSwampBiome {
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT
+			.configured(new SurfaceBuilderBaseConfiguration(PerodiumcraftModBlocks.INFINITI_GRASS.defaultBlockState(),
+					PerodiumcraftModBlocks.INFINITI_DIRT.defaultBlockState(), PerodiumcraftModBlocks.INFINITI_DIRT.defaultBlockState()));
 
-@PerodiumcraftModElements.ModElement.Tag
-public class InfinitiSwampBiome extends PerodiumcraftModElements.ModElement {
-	public static Biome biome;
-	public InfinitiSwampBiome(PerodiumcraftModElements instance) {
-		super(instance, 184);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
+	public static Biome createBiome() {
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16711936).waterColor(-16711936).waterFogColor(-16711936)
+				.skyColor(-16711936).foliageColorOverride(-16711936).grassColorOverride(-16711936).build();
+		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
+		biomeGenerationSettings.addStructureStart(StructureFeatures.MINESHAFT);
+		BiomeDefaultFeatures.addDefaultCarvers(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultMonsterRoom(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
+		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.SWAMP).depth(0.1f).scale(0.2f)
+				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
+				.generationSettings(biomeGenerationSettings.build()).build();
 	}
-	private static class BiomeRegisterHandler {
-		@SubscribeEvent
-		public void registerBiomes(RegistryEvent.Register<Biome> event) {
-			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16711936).setWaterColor(-16711936).setWaterFogColor(-16711936)
-						.withSkyColor(-16711936).withFoliageColor(-16711936).withGrassColor(-16711936).build();
-				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(InfinitiGrassBlock.block.getDefaultState(),
-								InfinitiDirtBlock.block.getDefaultState(), InfinitiDirtBlock.block.getDefaultState())));
-				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
-				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
-				DefaultBiomeFeatures.withMonsterRoom(biomeGenerationSettings);
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
-				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.SWAMP).depth(0.1f).scale(0.2f)
-						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
-						.withGenerationSettings(biomeGenerationSettings.build()).build();
-				event.getRegistry().register(biome.setRegistryName("perodiumcraft:infiniti_swamp"));
-			}
-		}
-	}
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM,
-				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 10));
+
+	public static void init() {
+		Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new ResourceLocation(PerodiumcraftMod.MODID, "infiniti_swamp"),
+				SURFACE_BUILDER);
 	}
 }

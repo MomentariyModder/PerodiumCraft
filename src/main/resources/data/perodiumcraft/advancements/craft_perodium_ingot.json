@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "perodiumcraft:perodium_ingot"
+    },
+    "title": {
+      "translate": "advancements.craft_perodium_ingot.title"
+    },
+    "description": {
+      "translate": "advancements.craft_perodium_ingot.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft_perodium_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "perodiumcraft:perodium_ingot"
+            ],
+            "count": {
+              "min": 2,
+              "max": 11111111111111112
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "perodiumcraft:perodium_block_rec"
+    ]
+  },
+  "parent": "perodiumcraft:test"
+}

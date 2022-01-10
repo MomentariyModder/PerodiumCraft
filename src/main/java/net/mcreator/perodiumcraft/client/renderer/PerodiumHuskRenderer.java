@@ -18,6 +18,6 @@ public class PerodiumHuskRenderer extends HumanoidMobRenderer<PerodiumHuskEntity
 
 	@Override
 	public ResourceLocation getTextureLocation(PerodiumHuskEntity entity) {
-		return new ResourceLocation("perodiumcraft:textures/perodiumzombie.png");
+		return new ResourceLocation("perodiumcraft:textures/perodiumhusk.png");
 	}
 }

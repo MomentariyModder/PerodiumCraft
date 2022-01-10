@@ -43,6 +43,21 @@
     "soundOnStep": {
       "value": "SWEET_BERRY_BUSH"
     },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
     "useLootTableForDrops": false,
     "customDrop": {
       "value": "CUSTOM:PerodiumBerries"
@@ -65,7 +80,7 @@
     "canBePlacedOn": [],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:PerodiumLand"
     ],
     "restrictionBiomes": [],
     "patchSize": 64,

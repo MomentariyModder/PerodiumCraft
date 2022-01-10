@@ -155,11 +155,11 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL,
-							(float) 0.9, (float) 0.85, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
+							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}
 			{
@@ -226,11 +226,11 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL,
-							(float) 0.9, (float) 0.85, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
+							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}
 			{
@@ -297,11 +297,11 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL,
-							(float) 0.9, (float) 0.85, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
+							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}
 			{
@@ -368,10 +368,10 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
 							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}
@@ -439,10 +439,10 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
 							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}
@@ -510,10 +510,10 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
 							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}
@@ -581,10 +581,10 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
 							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}
@@ -652,10 +652,10 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
 							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}
@@ -723,10 +723,10 @@ public class PathProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")), SoundSource.NEUTRAL, (float) 0.9,
+							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")), SoundSource.NEUTRAL, (float) 0.9,
 							(float) 0.85);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("perodiumcraft:gemarmors")),
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.shovel.flatten")),
 							SoundSource.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 			}

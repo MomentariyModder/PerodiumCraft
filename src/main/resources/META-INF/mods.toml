@@ -29,5 +29,11 @@ description='''
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.perodiumcraft]]
+    modId="momentariycore2"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 

@@ -71,6 +71,7 @@ import net.mcreator.perodiumcraft.item.HochiymToolsAxeItem;
 import net.mcreator.perodiumcraft.item.HochiymItem;
 import net.mcreator.perodiumcraft.item.HochiymDustItem;
 import net.mcreator.perodiumcraft.item.HochiymArmorArmorItem;
+import net.mcreator.perodiumcraft.item.GuideBookItem;
 import net.mcreator.perodiumcraft.item.CookedPerodiumMeatItem;
 import net.mcreator.perodiumcraft.item.AkvamarineItem;
 import net.mcreator.perodiumcraft.item.AkvamarineDustItem;
@@ -392,6 +393,11 @@ public class PerodiumcraftModItems {
 	public static final Item PERODIUM_PIE_1 = register(new PerodiumPie1Item());
 	public static final Item PERODIUM_APPLE_STAGE_2 = register(PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_2, null);
 	public static final Item PERODIUM_APPLE_STAGE_3 = register(PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_3, null);
+	public static final Item GUIDE_BOOK = register(new GuideBookItem());
+	public static final Item PERODIUM_MAN = register(new SpawnEggItem(PerodiumcraftModEntities.PERODIUM_MAN, -13421773, -13421773,
+			new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_ITEM)).setRegistryName("perodium_man_spawn_egg"));
+	public static final Item PERODIUM_SLIME = register(new SpawnEggItem(PerodiumcraftModEntities.PERODIUM_SLIME, -13421773, -13421773,
+			new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_ITEM)).setRegistryName("perodium_slime_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

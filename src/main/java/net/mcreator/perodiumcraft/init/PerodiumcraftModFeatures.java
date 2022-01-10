@@ -60,10 +60,16 @@ import net.mcreator.perodiumcraft.world.features.ores.CopperOreFeature;
 import net.mcreator.perodiumcraft.world.features.ores.CoalOreFeature;
 import net.mcreator.perodiumcraft.world.features.ores.AkvamarineOreFeature;
 import net.mcreator.perodiumcraft.world.features.lakes.PerodiumWaterFeature;
+import net.mcreator.perodiumcraft.world.features.RubyHouse4Feature;
+import net.mcreator.perodiumcraft.world.features.RubyHouse3Feature;
+import net.mcreator.perodiumcraft.world.features.RubyHouse2Feature;
 import net.mcreator.perodiumcraft.world.features.RubyHouse1Feature;
 import net.mcreator.perodiumcraft.world.features.RubyGeodeFeature;
 import net.mcreator.perodiumcraft.world.features.RedstoneGeodeFeature;
 import net.mcreator.perodiumcraft.world.features.PerodiumQuartzGeodeFeature;
+import net.mcreator.perodiumcraft.world.features.PerodiumHouse4Feature;
+import net.mcreator.perodiumcraft.world.features.PerodiumHouse3Feature;
+import net.mcreator.perodiumcraft.world.features.PerodiumHouse2Feature;
 import net.mcreator.perodiumcraft.world.features.PerodiumHouse1Feature;
 import net.mcreator.perodiumcraft.world.features.Mushroom3Feature;
 import net.mcreator.perodiumcraft.world.features.Mushroom2Feature;
@@ -80,6 +86,9 @@ import net.mcreator.perodiumcraft.world.features.DiamondGeodeFeature;
 import net.mcreator.perodiumcraft.world.features.CopperGeodeFeature;
 import net.mcreator.perodiumcraft.world.features.Copper2GeodeFeature;
 import net.mcreator.perodiumcraft.world.features.CoalGeodeFeature;
+import net.mcreator.perodiumcraft.world.features.AkvamarineHouse4Feature;
+import net.mcreator.perodiumcraft.world.features.AkvamarineHouse3Feature;
+import net.mcreator.perodiumcraft.world.features.AkvamarineHouse2Feature;
 import net.mcreator.perodiumcraft.world.features.AkvamarineHouse1Feature;
 import net.mcreator.perodiumcraft.world.features.AkvamarineGeodeFeature;
 
@@ -223,6 +232,24 @@ public class PerodiumcraftModFeatures {
 				PerodiumHouse1Feature.GENERATE_BIOMES, PerodiumHouse1Feature.CONFIGURED_FEATURE));
 		REGISTRY.put(RubyHouse1Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				RubyHouse1Feature.GENERATE_BIOMES, RubyHouse1Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(AkvamarineHouse2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				AkvamarineHouse2Feature.GENERATE_BIOMES, AkvamarineHouse2Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(AkvamarineHouse3Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				AkvamarineHouse3Feature.GENERATE_BIOMES, AkvamarineHouse3Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(AkvamarineHouse4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				AkvamarineHouse4Feature.GENERATE_BIOMES, AkvamarineHouse4Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(PerodiumHouse2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				PerodiumHouse2Feature.GENERATE_BIOMES, PerodiumHouse2Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(PerodiumHouse3Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				PerodiumHouse3Feature.GENERATE_BIOMES, PerodiumHouse3Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(PerodiumHouse4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				PerodiumHouse4Feature.GENERATE_BIOMES, PerodiumHouse4Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(RubyHouse2Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				RubyHouse2Feature.GENERATE_BIOMES, RubyHouse2Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(RubyHouse3Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				RubyHouse3Feature.GENERATE_BIOMES, RubyHouse3Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(RubyHouse4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
+				RubyHouse4Feature.GENERATE_BIOMES, RubyHouse4Feature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

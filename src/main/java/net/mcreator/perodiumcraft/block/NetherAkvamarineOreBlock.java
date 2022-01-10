@@ -41,6 +41,6 @@ public class NetherAkvamarineOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PerodiumcraftModItems.AKVAMARINE, (int) (2)));
+		return Collections.singletonList(new ItemStack(PerodiumcraftModItems.AKVAMARINE));
 	}
 }

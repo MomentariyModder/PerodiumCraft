@@ -18,6 +18,6 @@ public class RubyHuskRenderer extends HumanoidMobRenderer<RubyHuskEntity, Humano
 
 	@Override
 	public ResourceLocation getTextureLocation(RubyHuskEntity entity) {
-		return new ResourceLocation("perodiumcraft:textures/rubyzombie.png");
+		return new ResourceLocation("perodiumcraft:textures/rubyhusk.png");
 	}
 }

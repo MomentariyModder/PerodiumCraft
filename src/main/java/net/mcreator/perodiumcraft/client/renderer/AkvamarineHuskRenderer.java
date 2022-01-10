@@ -18,6 +18,6 @@ public class AkvamarineHuskRenderer extends HumanoidMobRenderer<AkvamarineHuskEn
 
 	@Override
 	public ResourceLocation getTextureLocation(AkvamarineHuskEntity entity) {
-		return new ResourceLocation("perodiumcraft:textures/akvamarinezombie.png");
+		return new ResourceLocation("perodiumcraft:textures/akvamarinehusk.png");
 	}
 }

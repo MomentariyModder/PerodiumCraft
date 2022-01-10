@@ -27,6 +27,6 @@
         "value": "CUSTOM:PerodiumOakPlains"
       }
     ],
-    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
+    "ignoreBlocks": "AIR"
   }
 }

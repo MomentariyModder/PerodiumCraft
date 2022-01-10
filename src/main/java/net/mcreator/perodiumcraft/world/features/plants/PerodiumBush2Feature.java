@@ -14,6 +14,7 @@ import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.Registry;
 
 import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 
@@ -39,7 +40,7 @@ public class PerodiumBush2Feature extends DefaultFlowerFeature {
 		WorldGenLevel world = context.level();
 		ResourceKey<Level> dimensionType = world.getLevel().dimension();
 		boolean dimensionCriteria = false;
-		if (dimensionType == Level.OVERWORLD)
+		if (dimensionType == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("perodiumcraft:perodium_land")))
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return false;

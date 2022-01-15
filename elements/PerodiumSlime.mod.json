@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:PerodiumPowder"
+      "value": "CUSTOM:PerodiumSlimeball"
     },
     "livingSound": {
       "value": "entity.slime.squish"

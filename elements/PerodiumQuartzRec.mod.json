@@ -2,16 +2,16 @@
   "_fv": 24,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smelting",
+    "recipeType": "Blasting",
     "xpReward": 1.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:PerodiumQuartzOre"
+    "blastingInputStack": {
+      "value": "CUSTOM:PerodiumQuartzOre2"
     },
-    "smeltingReturnStack": {
+    "blastingReturnStack": {
       "value": "CUSTOM:PerodiumQuartz"
     },
     "name": "perodium_quartz_rec",

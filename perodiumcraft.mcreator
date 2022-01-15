@@ -77,7 +77,7 @@
       "type": "recipe",
       "sortid": 206,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "hochiym_rec"
     },
     {
@@ -85,24 +85,8 @@
       "type": "recipe",
       "sortid": 207,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "hochiym_rec_2"
-    },
-    {
-      "name": "HochiymRec3",
-      "type": "recipe",
-      "sortid": 208,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hochiym_rec_3"
-    },
-    {
-      "name": "HochiymRec4",
-      "type": "recipe",
-      "sortid": 209,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hochiym_rec_4"
     },
     {
       "name": "HochiymBlock",
@@ -173,7 +157,7 @@
       "type": "recipe",
       "sortid": 210,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "akvamarine_ore_rec"
     },
     {
@@ -181,24 +165,8 @@
       "type": "recipe",
       "sortid": 211,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "akvamarine_ore_rec_2"
-    },
-    {
-      "name": "AkvamarineOreRec3",
-      "type": "recipe",
-      "sortid": 212,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "akvamarine_ore_rec_3"
-    },
-    {
-      "name": "AkvamarineOreRec4",
-      "type": "recipe",
-      "sortid": 213,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "akvamarine_ore_rec_4"
     },
     {
       "name": "AkvamarineLeaves",
@@ -477,7 +445,7 @@
       "type": "recipe",
       "sortid": 228,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "infiniti_rec"
     },
     {
@@ -485,24 +453,8 @@
       "type": "recipe",
       "sortid": 229,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "infiniti_rec_2"
-    },
-    {
-      "name": "InfinitiRec3",
-      "type": "recipe",
-      "sortid": 230,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infiniti_rec_3"
-    },
-    {
-      "name": "InfinitiRec4",
-      "type": "recipe",
-      "sortid": 231,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infiniti_rec_4"
     },
     {
       "name": "InfinitiGrass",
@@ -613,7 +565,7 @@
       "type": "recipe",
       "sortid": 236,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ruby_rec"
     },
     {
@@ -621,24 +573,8 @@
       "type": "recipe",
       "sortid": 237,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ruby_rec_2"
-    },
-    {
-      "name": "RubyRec3",
-      "type": "recipe",
-      "sortid": 238,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruby_rec_3"
-    },
-    {
-      "name": "RubyRec4",
-      "type": "recipe",
-      "sortid": 239,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ruby_rec_4"
     },
     {
       "name": "RubyBlock",
@@ -799,14 +735,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "perodium_quartz_ore_2"
-    },
-    {
-      "name": "PerodiumQuartzRec",
-      "type": "recipe",
-      "sortid": 246,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "perodium_quartz_rec"
     },
     {
       "name": "PerodiumQuartzRec2",
@@ -5000,6 +4928,262 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "craft_perodium_ingot"
+    },
+    {
+      "name": "Pcswords",
+      "type": "tag",
+      "sortid": 571,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pcswords"
+    },
+    {
+      "name": "HochiymOreTag",
+      "type": "tag",
+      "sortid": 572,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hochiym_ore_tag"
+    },
+    {
+      "name": "AkvamarineOreTag",
+      "type": "tag",
+      "sortid": 573,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "akvamarine_ore_tag"
+    },
+    {
+      "name": "InfinitiOreTag",
+      "type": "tag",
+      "sortid": 574,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infiniti_ore_tag"
+    },
+    {
+      "name": "RubyOreTag",
+      "type": "tag",
+      "sortid": 575,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_tag"
+    },
+    {
+      "name": "PerodiumQuartzRec",
+      "type": "recipe",
+      "sortid": 576,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perodium_quartz_rec"
+    },
+    {
+      "name": "RubyRec3",
+      "type": "recipe",
+      "sortid": 577,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_rec_3"
+    },
+    {
+      "name": "DeepslateHochiymOre",
+      "type": "block",
+      "sortid": 578,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_hochiym_ore"
+    },
+    {
+      "name": "DeepslateAkvamarineOre",
+      "type": "block",
+      "sortid": 579,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_akvamarine_ore"
+    },
+    {
+      "name": "DeepslateInfinitiOre",
+      "type": "block",
+      "sortid": 580,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_infiniti_ore"
+    },
+    {
+      "name": "DeepslateRubyOre",
+      "type": "block",
+      "sortid": 581,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_ruby_ore"
+    },
+    {
+      "name": "HochiymOreLT",
+      "type": "loottable",
+      "sortid": 582,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hochiym_ore_lt"
+    },
+    {
+      "name": "NetherHochiymOreLT",
+      "type": "loottable",
+      "sortid": 583,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nether_hochiym_ore_lt"
+    },
+    {
+      "name": "EndHochiymOreLT",
+      "type": "loottable",
+      "sortid": 584,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "end_hochiym_ore_lt"
+    },
+    {
+      "name": "PerodiumHochiymOreLT",
+      "type": "loottable",
+      "sortid": 585,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perodium_hochiym_ore_lt"
+    },
+    {
+      "name": "DeepslateHochiymOreLT",
+      "type": "loottable",
+      "sortid": 586,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "deepslate_hochiym_ore_lt"
+    },
+    {
+      "name": "AkvamarineOreLT",
+      "type": "loottable",
+      "sortid": 587,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "akvamarine_ore_lt"
+    },
+    {
+      "name": "NetherAkvamarineOreLT",
+      "type": "loottable",
+      "sortid": 588,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nether_akvamarine_ore_lt"
+    },
+    {
+      "name": "EndAkvamarineOreLT",
+      "type": "loottable",
+      "sortid": 589,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "end_akvamarine_ore_lt"
+    },
+    {
+      "name": "PerodiumAkvamarineOreLT",
+      "type": "loottable",
+      "sortid": 590,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perodium_akvamarine_ore_lt"
+    },
+    {
+      "name": "DeepslateAkvamarineOreLT",
+      "type": "loottable",
+      "sortid": 591,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "deepslate_akvamarine_ore_lt"
+    },
+    {
+      "name": "InfinitiOreLT",
+      "type": "loottable",
+      "sortid": 592,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "infiniti_ore_lt"
+    },
+    {
+      "name": "NetherInfinitiOreLT",
+      "type": "loottable",
+      "sortid": 593,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nether_infiniti_ore_lt"
+    },
+    {
+      "name": "EndInfinitiOreLT",
+      "type": "loottable",
+      "sortid": 594,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "end_infiniti_ore_lt"
+    },
+    {
+      "name": "PerodiumInfinitiOreLT",
+      "type": "loottable",
+      "sortid": 595,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perodium_infiniti_ore_lt"
+    },
+    {
+      "name": "DeepslateInfinitiOreLT",
+      "type": "loottable",
+      "sortid": 596,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "deepslate_infiniti_ore_lt"
+    },
+    {
+      "name": "RubyOreLT",
+      "type": "loottable",
+      "sortid": 597,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ruby_ore_lt"
+    },
+    {
+      "name": "RubyOre2LT",
+      "type": "loottable",
+      "sortid": 598,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ruby_ore_2_lt"
+    },
+    {
+      "name": "EndRubyOreLT",
+      "type": "loottable",
+      "sortid": 599,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "end_ruby_ore_lt"
+    },
+    {
+      "name": "PerodiumRubyOreLT",
+      "type": "loottable",
+      "sortid": 600,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perodium_ruby_ore_lt"
+    },
+    {
+      "name": "DeepslateRubyOreLT",
+      "type": "loottable",
+      "sortid": 601,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "deepslate_ruby_ore_lt"
+    },
+    {
+      "name": "PerodiumQuartzOre2LT",
+      "type": "loottable",
+      "sortid": 602,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "perodium_quartz_ore_2_lt"
     }
   ],
   "variable_elements": [],
@@ -5182,6 +5366,7 @@
       "subtitles.shoot3": "",
       "block.perodiumcraft.ruby_jungle_plant": "§4Ruby Jungle Planks",
       "advancements.craft_perodium_ingot.title": "Perodium Ingot?",
+      "block.perodiumcraft.deepslate_ruby_ore": "§4Deepslate Ruby Ore",
       "block.perodiumcraft.perodium_quartz_block": "§8Perodium Quartz Block",
       "item.perodiumcraft.perodium_mushroom_soup": "§8Perodium Mushroom Soup",
       "block.perodiumcraft.perodium_block": "§8Perodium Block",
@@ -5265,6 +5450,7 @@
       "block.perodiumcraft.infiniti_grass_plant": "§2Infiniti Grass Plant",
       "item.perodiumcraft.perodium_ingot": "§8Perodium Ingot",
       "block.perodiumcraft.perodium_bush": "§8Perodium Bush",
+      "block.perodiumcraft.deepslate_infiniti_ore": "§2Deepslate Infiniti Ore",
       "biome.perodiumcraft.ruby_zombie_plains": "§4Ruby Zombie Plains",
       "advancements.craft_perodium_ingot.descr": "Craft Perodium Ingot.",
       "item.perodiumcraft.hochiym_armor_armor_boots": "§1Hochiym Boots",
@@ -5294,6 +5480,7 @@
       "biome.perodiumcraft.akvamarine_plains": "§3Akvamarine Plains",
       "item.perodiumcraft.perodium_shovel": "§8Perodium Shovel",
       "item.perodiumcraft.infinitii_shovel": "§2Infiniti Shovel",
+      "block.perodiumcraft.deepslate_hochiym_ore": "§1Deepslate Hochiym Ore",
       "item.perodiumcraft.perodium_husk_spawn_egg": "§8Perodium Husk Spawn Egg",
       "block.perodiumcraft.copper_ore": "§8Copper Ore",
       "item.perodiumcraft.rubyy_armor_chestplate": "§4Ruby Chestplate",
@@ -5318,6 +5505,7 @@
       "block.perodiumcraft.ruby_jungle_fence": "§4Ruby Jungle Fence",
       "block.perodiumcraft.perodium_yellow_mushroom_stem": "§8Perodium Yellow Mushroom Stem",
       "block.perodiumcraft.perodium_dirt": "§8Perodium Dirt",
+      "block.perodiumcraft.deepslate_akvamarine_ore": "§3Deepslate Akvamarine Ore",
       "item.perodiumcraft.infinitii_hoe": "§2Infiniti Hoe",
       "block.perodiumcraft.perodium_quartz_stairs": "§8Perodium Quartz Stairs",
       "block.perodiumcraft.perodium_smooth_stone_slab": "§8Perodium Smooth Stone Slab",
@@ -5342,7 +5530,7 @@
   "workspaceSettings": {
     "modid": "perodiumcraft",
     "modName": "PerodiumCraft: The Next Generation",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "§8A new main resource appears in the game - Perodium. It is possible to make super-tools and super-armor from it. It is not so easy to create a periodium. But you will be pleased with the result. And a new world is added.  ",
     "author": "MomentariyModder",
     "websiteURL": "https://momentariymodder.github.io/",

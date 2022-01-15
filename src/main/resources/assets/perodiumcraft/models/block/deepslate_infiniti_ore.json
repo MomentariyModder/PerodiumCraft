@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/deepslateinfinitiore",
+    "up": "perodiumcraft:blocks/deepslateinfinitiore",
+    "north": "perodiumcraft:blocks/deepslateinfinitiore",
+    "east": "perodiumcraft:blocks/deepslateinfinitiore",
+    "south": "perodiumcraft:blocks/deepslateinfinitiore",
+    "west": "perodiumcraft:blocks/deepslateinfinitiore",
+    "particle": "perodiumcraft:blocks/deepslateinfinitiore"
+  }
+}

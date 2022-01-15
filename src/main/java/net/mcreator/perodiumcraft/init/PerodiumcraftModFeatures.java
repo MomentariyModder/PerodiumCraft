@@ -56,6 +56,10 @@ import net.mcreator.perodiumcraft.world.features.ores.EndHochiymOreFeature;
 import net.mcreator.perodiumcraft.world.features.ores.EndAkvamarineOreFeature;
 import net.mcreator.perodiumcraft.world.features.ores.EmeraldOreFeature;
 import net.mcreator.perodiumcraft.world.features.ores.DiamondoreFeature;
+import net.mcreator.perodiumcraft.world.features.ores.DeepslateRubyOreFeature;
+import net.mcreator.perodiumcraft.world.features.ores.DeepslateInfinitiOreFeature;
+import net.mcreator.perodiumcraft.world.features.ores.DeepslateHochiymOreFeature;
+import net.mcreator.perodiumcraft.world.features.ores.DeepslateAkvamarineOreFeature;
 import net.mcreator.perodiumcraft.world.features.ores.CopperOreFeature;
 import net.mcreator.perodiumcraft.world.features.ores.CoalOreFeature;
 import net.mcreator.perodiumcraft.world.features.ores.AkvamarineOreFeature;
@@ -250,6 +254,14 @@ public class PerodiumcraftModFeatures {
 				RubyHouse3Feature.GENERATE_BIOMES, RubyHouse3Feature.CONFIGURED_FEATURE));
 		REGISTRY.put(RubyHouse4Feature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES,
 				RubyHouse4Feature.GENERATE_BIOMES, RubyHouse4Feature.CONFIGURED_FEATURE));
+		REGISTRY.put(DeepslateHochiymOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				DeepslateHochiymOreFeature.GENERATE_BIOMES, DeepslateHochiymOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(DeepslateAkvamarineOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				DeepslateAkvamarineOreFeature.GENERATE_BIOMES, DeepslateAkvamarineOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(DeepslateInfinitiOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				DeepslateInfinitiOreFeature.GENERATE_BIOMES, DeepslateInfinitiOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(DeepslateRubyOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES,
+				DeepslateRubyOreFeature.GENERATE_BIOMES, DeepslateRubyOreFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

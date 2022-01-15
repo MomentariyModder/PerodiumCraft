@@ -2,16 +2,16 @@
   "_fv": 24,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smelting",
+    "recipeType": "Blasting",
     "xpReward": 1.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:NetherAkvamarineOre"
+    "blastingInputStack": {
+      "value": "TAG:akvamarine_ore"
     },
-    "smeltingReturnStack": {
+    "blastingReturnStack": {
       "value": "CUSTOM:Akvamarine"
     },
     "name": "akvamarine_ore_rec_2",

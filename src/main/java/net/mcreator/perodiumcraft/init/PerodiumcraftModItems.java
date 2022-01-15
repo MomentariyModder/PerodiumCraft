@@ -398,6 +398,13 @@ public class PerodiumcraftModItems {
 			new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_ITEM)).setRegistryName("perodium_man_spawn_egg"));
 	public static final Item PERODIUM_SLIME = register(new SpawnEggItem(PerodiumcraftModEntities.PERODIUM_SLIME, -13421773, -13421773,
 			new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_ITEM)).setRegistryName("perodium_slime_spawn_egg"));
+	public static final Item DEEPSLATE_HOCHIYM_ORE = register(PerodiumcraftModBlocks.DEEPSLATE_HOCHIYM_ORE,
+			PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_BLOCKS);
+	public static final Item DEEPSLATE_AKVAMARINE_ORE = register(PerodiumcraftModBlocks.DEEPSLATE_AKVAMARINE_ORE,
+			PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_BLOCKS);
+	public static final Item DEEPSLATE_INFINITI_ORE = register(PerodiumcraftModBlocks.DEEPSLATE_INFINITI_ORE,
+			PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_BLOCKS);
+	public static final Item DEEPSLATE_RUBY_ORE = register(PerodiumcraftModBlocks.DEEPSLATE_RUBY_ORE, PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_BLOCKS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RubyOre"
+      },
+      {
+        "value": "CUSTOM:RubyOre2"
+      },
+      {
+        "value": "CUSTOM:EndRubyOre"
+      },
+      {
+        "value": "CUSTOM:PerodiumRubyOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateRubyOre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "ruby_ore",
+    "namespace": "mod"
+  }
+}

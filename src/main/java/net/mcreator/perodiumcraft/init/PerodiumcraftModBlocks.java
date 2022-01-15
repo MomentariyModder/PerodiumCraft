@@ -136,6 +136,10 @@ import net.mcreator.perodiumcraft.block.EndHochiymOreBlock;
 import net.mcreator.perodiumcraft.block.EndAkvamarineOreBlock;
 import net.mcreator.perodiumcraft.block.EmeraldOreBlock;
 import net.mcreator.perodiumcraft.block.DiamondoreBlock;
+import net.mcreator.perodiumcraft.block.DeepslateRubyOreBlock;
+import net.mcreator.perodiumcraft.block.DeepslateInfinitiOreBlock;
+import net.mcreator.perodiumcraft.block.DeepslateHochiymOreBlock;
+import net.mcreator.perodiumcraft.block.DeepslateAkvamarineOreBlock;
 import net.mcreator.perodiumcraft.block.CopperOreBlock;
 import net.mcreator.perodiumcraft.block.CoalOreBlock;
 import net.mcreator.perodiumcraft.block.ChiseldPerodiumQuartzBlockBlock;
@@ -313,6 +317,10 @@ public class PerodiumcraftModBlocks {
 	public static final Block PERODIUM_BUSH_2 = register(new PerodiumBush2Block());
 	public static final Block PERODIUM_APPLE_STAGE_2 = register(new PerodiumAppleStage2Block());
 	public static final Block PERODIUM_APPLE_STAGE_3 = register(new PerodiumAppleStage3Block());
+	public static final Block DEEPSLATE_HOCHIYM_ORE = register(new DeepslateHochiymOreBlock());
+	public static final Block DEEPSLATE_AKVAMARINE_ORE = register(new DeepslateAkvamarineOreBlock());
+	public static final Block DEEPSLATE_INFINITI_ORE = register(new DeepslateInfinitiOreBlock());
+	public static final Block DEEPSLATE_RUBY_ORE = register(new DeepslateRubyOreBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

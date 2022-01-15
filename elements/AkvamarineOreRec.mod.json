@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "CUSTOM:AkvamarineOre"
+      "value": "TAG:akvamarine_ore"
     },
     "smeltingReturnStack": {
       "value": "CUSTOM:Akvamarine"

@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "CUSTOM:HochiymOre"
+      "value": "TAG:hochiym_ore"
     },
     "smeltingReturnStack": {
       "value": "CUSTOM:Hochiym"

@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "CUSTOM:InfinitiOre"
+      "value": "TAG:infiniti_ore"
     },
     "smeltingReturnStack": {
       "value": "CUSTOM:Infiniti"

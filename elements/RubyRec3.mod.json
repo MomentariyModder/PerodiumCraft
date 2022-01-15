@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "CUSTOM:EndRubyOre"
+      "value": "CUSTOM:RubyDust"
     },
     "smeltingReturnStack": {
       "value": "CUSTOM:Ruby"

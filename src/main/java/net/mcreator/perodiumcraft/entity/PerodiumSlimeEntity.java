@@ -90,7 +90,7 @@ public class PerodiumSlimeEntity extends Monster {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(PerodiumcraftModItems.PERODIUM_POWDER));
+		this.spawnAtLocation(new ItemStack(PerodiumcraftModItems.PERODIUM_SLIMEBALL));
 	}
 
 	@Override

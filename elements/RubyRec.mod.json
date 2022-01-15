@@ -9,7 +9,7 @@
     "group": "",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "CUSTOM:RubyOre"
+      "value": "TAG:ruby_ore"
     },
     "smeltingReturnStack": {
       "value": "CUSTOM:Ruby"

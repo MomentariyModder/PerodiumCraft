@@ -2,16 +2,16 @@
   "_fv": 24,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smelting",
+    "recipeType": "Blasting",
     "xpReward": 1.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:NetherHochiymOre"
+    "blastingInputStack": {
+      "value": "TAG:hochiym_ore"
     },
-    "smeltingReturnStack": {
+    "blastingReturnStack": {
       "value": "CUSTOM:Hochiym"
     },
     "name": "hochiym_rec_2",

@@ -63,6 +63,10 @@
     "perodiumcraft:perodium_pressure_plate",
     "perodiumcraft:perodium_door",
     "perodiumcraft:perodium_glowstone",
-    "perodiumcraft:perodium_shroomlight"
+    "perodiumcraft:perodium_shroomlight",
+    "perodiumcraft:deepslate_hochiym_ore",
+    "perodiumcraft:deepslate_akvamarine_ore",
+    "perodiumcraft:deepslate_infiniti_ore",
+    "perodiumcraft:deepslate_ruby_ore"
   ]
 }

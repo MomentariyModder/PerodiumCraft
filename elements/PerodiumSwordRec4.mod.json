@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Perodium.helmet"
+      "value": "CUSTOM:PerodiumSword"
     },
     "name": "perodium_sword_rec_4",
     "namespace": "mod"

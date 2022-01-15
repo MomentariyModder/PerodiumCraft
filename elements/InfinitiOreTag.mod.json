@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:InfinitiOre"
+      },
+      {
+        "value": "CUSTOM:NetherInfinitiOre"
+      },
+      {
+        "value": "CUSTOM:EndInfinitiOre"
+      },
+      {
+        "value": "CUSTOM:PerodiumInfinitiOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateInfinitiOre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "infiniti_ore",
+    "namespace": "mod"
+  }
+}

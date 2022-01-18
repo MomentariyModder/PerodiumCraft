@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/rubymushroominside",
+    "up": "perodiumcraft:blocks/rubymushroomtop",
+    "north": "perodiumcraft:blocks/rubymushroomtop",
+    "east": "perodiumcraft:blocks/rubymushroomtop",
+    "south": "perodiumcraft:blocks/rubymushroomtop",
+    "west": "perodiumcraft:blocks/rubymushroomtop",
+    "particle": "perodiumcraft:blocks/rubymushroominside"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "perodiumcraft:ruby"
+    },
+    "title": {
+      "translate": "advancements.stack_ruby.title"
+    },
+    "description": {
+      "translate": "advancements.stack_ruby.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stack_ruby": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "perodiumcraft:ruby"
+            ],
+            "count": {
+              "min": 64,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "perodiumcraft:test"
+}

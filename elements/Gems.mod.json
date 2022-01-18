@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Hochiym"
+      },
+      {
+        "value": "CUSTOM:Akvamarine"
+      },
+      {
+        "value": "CUSTOM:Infiniti"
+      },
+      {
+        "value": "CUSTOM:Ruby"
+      },
+      {
+        "value": "CUSTOM:PerodiumQuartz"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "gems",
+    "namespace": "forge"
+  }
+}

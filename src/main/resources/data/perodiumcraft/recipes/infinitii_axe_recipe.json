@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "addition": {
+    "item": "perodiumcraft:infiniti_block"
+  },
+  "result": {
+    "item": "perodiumcraft:infinitii_axe"
+  }
+}

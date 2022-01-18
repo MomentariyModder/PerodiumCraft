@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft:ruby_jungle_plant"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft:ruby_jungle_button",
+    "count": 1
+  }
+}

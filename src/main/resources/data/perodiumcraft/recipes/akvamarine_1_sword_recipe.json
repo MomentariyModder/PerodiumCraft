@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "perodiumcraft:akvamarine_block"
+  },
+  "result": {
+    "item": "perodiumcraft:akvamarine_1_sword"
+  }
+}

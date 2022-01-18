@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/reinforcedperiodiumbricks",
+    "up": "perodiumcraft:blocks/reinforcedperiodiumbricks",
+    "north": "perodiumcraft:blocks/reinforcedperiodiumbricks",
+    "east": "perodiumcraft:blocks/reinforcedperiodiumbricks",
+    "south": "perodiumcraft:blocks/reinforcedperiodiumbricks",
+    "west": "perodiumcraft:blocks/reinforcedperiodiumbricks",
+    "particle": "perodiumcraft:blocks/reinforcedperiodiumbricks"
+  }
+}

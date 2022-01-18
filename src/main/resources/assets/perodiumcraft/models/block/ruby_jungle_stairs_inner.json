@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "perodiumcraft:blocks/rubywoodplanks",
+    "top": "perodiumcraft:blocks/rubywoodplanks",
+    "side": "perodiumcraft:blocks/rubywoodplanks"
+  }
+}

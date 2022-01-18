@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft:infiniti"
+    },
+    "1": {
+      "item": "perodiumcraft:infiniti"
+    },
+    "2": {
+      "item": "perodiumcraft:infiniti"
+    },
+    "3": {
+      "item": "perodiumcraft:infiniti"
+    },
+    "4": {
+      "item": "perodiumcraft:infiniti"
+    },
+    "5": {
+      "item": "perodiumcraft:infiniti"
+    },
+    "6": {
+      "item": "perodiumcraft:infiniti"
+    },
+    "7": {
+      "item": "perodiumcraft:infiniti"
+    },
+    "8": {
+      "item": "perodiumcraft:infiniti"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft:infiniti_block",
+    "count": 1
+  }
+}

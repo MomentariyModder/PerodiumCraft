@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "perodiumcraft:perodium_sandstone"
+  },
+  "result": "perodiumcraft:perodium_sandstone_stairs"
+}

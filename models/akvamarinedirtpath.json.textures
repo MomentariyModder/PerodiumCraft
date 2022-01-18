@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "akvamarinepathside",
+        "top": "akvamarinepathtop",
+        "bottom": "akvamarinedirt"
+      },
+      "name": "default"
+    }
+  }
+}

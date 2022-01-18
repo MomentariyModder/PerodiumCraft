@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      },
+      {
+        "value": "CUSTOM:PerodiumBlock"
+      },
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumIngot"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PerodiumBrick"
+    },
+    "name": "perodium_brick_rec",
+    "namespace": "mod"
+  }
+}

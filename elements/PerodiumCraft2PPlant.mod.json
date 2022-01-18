@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "tab",
+  "definition": {
+    "name": "§8PerodiumCraft[§7Plant§8]",
+    "icon": {
+      "value": "CUSTOM:PerodiumDeadBush"
+    },
+    "showSearch": true
+  }
+}

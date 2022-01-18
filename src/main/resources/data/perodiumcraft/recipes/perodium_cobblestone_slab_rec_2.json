@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "perodiumcraft:perodium_cobblestone"
+  },
+  "result": "perodiumcraft:perodium_cobblestone_slab"
+}

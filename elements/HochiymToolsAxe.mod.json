@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "hochiymtools_axe",
+    "customModelName": "Normal",
+    "name": "§1Hochiym Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PerodiumCraftToolsandArmors"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 16.0,
+    "attackSpeed": 1.0,
+    "enchantability": 12,
+    "damageVsEntity": 18.0,
+    "usageCount": 3124,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Hochiym"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

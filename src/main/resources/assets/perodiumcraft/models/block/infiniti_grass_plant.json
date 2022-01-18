@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "perodiumcraft:blocks/infinitigrassplant",
+    "particle": "perodiumcraft:blocks/infinitigrassplant"
+  }
+}

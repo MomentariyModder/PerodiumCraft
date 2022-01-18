@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "perodiumcraft:perodium_ingot"
+    },
+    "3": {
+      "item": "perodiumcraft:perodium_plate"
+    },
+    "4": {
+      "item": "perodiumcraft:perodium_plate"
+    },
+    "6": {
+      "item": "perodiumcraft:perodium_ingot"
+    },
+    "7": {
+      "item": "perodiumcraft:perodium_plate"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft:perodium_land",
+    "count": 1
+  }
+}

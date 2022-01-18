@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 9,
+  "ingredient": {
+    "item": "perodiumcraft:hochiym_block"
+  },
+  "result": "perodiumcraft:hochiym_dust"
+}

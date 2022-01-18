@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft:perodium_quartz_block"
+    },
+    "3": {
+      "item": "perodiumcraft:perodium_quartz_block"
+    },
+    "4": {
+      "item": "perodiumcraft:perodium_quartz_block"
+    },
+    "6": {
+      "item": "perodiumcraft:perodium_quartz_block"
+    },
+    "7": {
+      "item": "perodiumcraft:perodium_quartz_block"
+    },
+    "8": {
+      "item": "perodiumcraft:perodium_quartz_block"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft:perodium_quartz_stairs",
+    "count": 4
+  }
+}

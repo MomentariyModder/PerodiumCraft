@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 9,
+  "ingredient": {
+    "item": "perodiumcraft:ruby_block"
+  },
+  "result": "perodiumcraft:ruby_dust"
+}

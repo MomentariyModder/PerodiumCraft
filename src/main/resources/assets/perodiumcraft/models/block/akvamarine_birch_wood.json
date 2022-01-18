@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/akvamarinewood",
+    "up": "perodiumcraft:blocks/akvamarinewood",
+    "north": "perodiumcraft:blocks/akvamarinewood",
+    "east": "perodiumcraft:blocks/akvamarinewood",
+    "south": "perodiumcraft:blocks/akvamarinewood",
+    "west": "perodiumcraft:blocks/akvamarinewood",
+    "particle": "perodiumcraft:blocks/akvamarinewood"
+  }
+}

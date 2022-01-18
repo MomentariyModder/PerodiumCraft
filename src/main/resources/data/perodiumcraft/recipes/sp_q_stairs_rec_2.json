@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "perodiumcraft:smooth_perodium_quartz_block"
+  },
+  "result": "perodiumcraft:smooth_perodium_quartz_stairs"
+}

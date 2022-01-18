@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/strippedakvamarinebirchlogtop",
+    "up": "perodiumcraft:blocks/strippedakvamarinebirchlogtop",
+    "north": "perodiumcraft:blocks/strippedakvamarinebirchlog",
+    "east": "perodiumcraft:blocks/strippedakvamarinebirchlog",
+    "south": "perodiumcraft:blocks/strippedakvamarinebirchlog",
+    "west": "perodiumcraft:blocks/strippedakvamarinebirchlog",
+    "particle": "perodiumcraft:blocks/strippedakvamarinebirchlogtop"
+  }
+}

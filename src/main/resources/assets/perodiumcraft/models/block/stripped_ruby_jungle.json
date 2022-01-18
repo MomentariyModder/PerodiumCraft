@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/strippedrubyjunglelogtop",
+    "up": "perodiumcraft:blocks/strippedrubyjunglelogtop",
+    "north": "perodiumcraft:blocks/strippedrubyjunglelog",
+    "east": "perodiumcraft:blocks/strippedrubyjunglelog",
+    "south": "perodiumcraft:blocks/strippedrubyjunglelog",
+    "west": "perodiumcraft:blocks/strippedrubyjunglelog",
+    "particle": "perodiumcraft:blocks/strippedrubyjunglelogtop"
+  }
+}

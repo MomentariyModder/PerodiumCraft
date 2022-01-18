@@ -1,0 +1,10 @@
+{
+  "parent": "perodiumcraft:custom/rubydirtpath",
+  "textures": {
+    "all": "perodiumcraft:blocks/rubydirt",
+    "particle": "perodiumcraft:blocks/rubydirt",
+    "side": "perodiumcraft:blocks/rubypathside",
+    "top": "perodiumcraft:blocks/rubypathtop",
+    "bottom": "perodiumcraft:blocks/rubydirt"
+  }
+}

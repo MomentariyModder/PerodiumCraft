@@ -1,0 +1,56 @@
+{
+  "gemarmors": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "perodiumcraft:crystal_walk1",
+        "stream": false
+      }
+    ]
+  },
+  "metalarmors": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "perodiumcraft:heavy_walk1",
+        "stream": false
+      }
+    ]
+  },
+  "perodiumpistol": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "perodiumcraft:perodiumguns",
+        "stream": false
+      }
+    ]
+  },
+  "shoot": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "perodiumcraft:shoot1",
+        "stream": false
+      }
+    ]
+  },
+  "shoot2": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "perodiumcraft:shoot3",
+        "stream": false
+      }
+    ]
+  },
+  "shoot3": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "perodiumcraft:shoot2",
+        "stream": false
+      }
+    ]
+  }
+}

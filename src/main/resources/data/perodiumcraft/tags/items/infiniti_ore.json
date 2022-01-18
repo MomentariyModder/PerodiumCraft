@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "perodiumcraft:end_infiniti_ore",
+    "perodiumcraft:nether_infiniti_ore",
+    "perodiumcraft:infiniti_ore",
+    "perodiumcraft:perodium_infiniti_ore",
+    "perodiumcraft:deepslate_infiniti_ore"
+  ]
+}

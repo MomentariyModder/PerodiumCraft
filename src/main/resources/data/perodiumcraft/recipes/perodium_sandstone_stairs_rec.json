@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft:perodium_sandstone"
+    },
+    "3": {
+      "item": "perodiumcraft:perodium_sandstone"
+    },
+    "4": {
+      "item": "perodiumcraft:perodium_sandstone"
+    },
+    "6": {
+      "item": "perodiumcraft:perodium_sandstone"
+    },
+    "7": {
+      "item": "perodiumcraft:perodium_sandstone"
+    },
+    "8": {
+      "item": "perodiumcraft:perodium_sandstone"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft:perodium_sandstone_stairs",
+    "count": 4
+  }
+}

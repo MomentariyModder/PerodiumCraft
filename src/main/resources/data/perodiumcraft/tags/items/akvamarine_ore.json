@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "perodiumcraft:end_akvamarine_ore",
+    "perodiumcraft:akvamarine_ore",
+    "perodiumcraft:deepslate_akvamarine_ore",
+    "perodiumcraft:perodium_akvamarine_ore",
+    "perodiumcraft:nether_akvamarine_ore"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PerodiumPowder"
+      },
+      {
+        "value": "CUSTOM:PerodiumPowder"
+      },
+      {
+        "value": "CUSTOM:PerodiumPowder"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      },
+      {
+        "value": "CUSTOM:PerodiumSlimeball"
+      },
+      {
+        "value": "CUSTOM:PerodiumNuggets"
+      },
+      {
+        "value": "CUSTOM:PerodiumPlate"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PerodiumPistol"
+    },
+    "name": "perodium_pistol_rec",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/chiseledperodiumquartzblocktop",
+    "up": "perodiumcraft:blocks/chiseledperodiumquartzblocktop",
+    "north": "perodiumcraft:blocks/chiseledperodiumquartzblock",
+    "east": "perodiumcraft:blocks/chiseledperodiumquartzblock",
+    "south": "perodiumcraft:blocks/chiseledperodiumquartzblock",
+    "west": "perodiumcraft:blocks/chiseledperodiumquartzblock",
+    "particle": "perodiumcraft:blocks/chiseledperodiumquartzblocktop"
+  }
+}

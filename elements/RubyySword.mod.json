@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "rubyy_sword",
+    "customModelName": "Normal",
+    "name": "§4Ruby Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:PerodiumCraftToolsandArmors"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 4,
+    "efficiency": 16.0,
+    "attackSpeed": 1.0,
+    "enchantability": 12,
+    "damageVsEntity": 14.0,
+    "usageCount": 3124,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ruby"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:AkvamarineOre"
+      },
+      {
+        "value": "CUSTOM:NetherAkvamarineOre"
+      },
+      {
+        "value": "CUSTOM:EndAkvamarineOre"
+      },
+      {
+        "value": "CUSTOM:PerodiumAkvamarineOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateAkvamarineOre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "akvamarine_ore",
+    "namespace": "mod"
+  }
+}

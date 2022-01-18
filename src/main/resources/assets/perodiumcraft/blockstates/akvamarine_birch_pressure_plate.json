@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "perodiumcraft:block/akvamarine_birch_pressure_plate"
+    },
+    "powered=true": {
+      "model": "perodiumcraft:block/akvamarine_birch_pressure_plate_down"
+    }
+  }
+}

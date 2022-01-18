@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "PerodiumCraft - Start!",
+    "achievementDescription": "Get any gem from PerodiumCraft.",
+    "achievementIcon": {
+      "value": "CUSTOM:GuideBook"
+    },
+    "background": "background.png",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [
+      "GuideLT"
+    ],
+    "rewardRecipes": [
+      "PerodiumIngotRec"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "No parent: root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"-94\" y=\"116\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

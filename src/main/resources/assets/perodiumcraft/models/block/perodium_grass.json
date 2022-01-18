@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/perodiumdirt",
+    "up": "perodiumcraft:blocks/perodiumgrass2",
+    "north": "perodiumcraft:blocks/perodiumgrass1",
+    "east": "perodiumcraft:blocks/perodiumgrass1",
+    "south": "perodiumcraft:blocks/perodiumgrass1",
+    "west": "perodiumcraft:blocks/perodiumgrass1",
+    "particle": "perodiumcraft:blocks/perodiumdirt"
+  }
+}

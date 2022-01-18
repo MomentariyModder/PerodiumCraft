@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "perodiumcraft:block/perodium_smooth_stone_slab"
+    },
+    "type=top": {
+      "model": "perodiumcraft:block/perodium_smooth_stone_slab_top"
+    },
+    "type=double": {
+      "model": "perodiumcraft:block/perodium_smooth_stone_slab_full"
+    }
+  }
+}

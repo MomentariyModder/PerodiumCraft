@@ -1,0 +1,10 @@
+{
+  "parent": "perodiumcraft:custom/infinitidirtpath",
+  "textures": {
+    "all": "perodiumcraft:blocks/infinitidirt",
+    "particle": "perodiumcraft:blocks/infinitidirt",
+    "side": "perodiumcraft:blocks/infinitipathside",
+    "top": "perodiumcraft:blocks/infinitipathtop",
+    "bottom": "perodiumcraft:blocks/infinitidirt"
+  }
+}

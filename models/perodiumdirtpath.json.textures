@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "perodiumpathside",
+        "top": "perodiumpathtop",
+        "bottom": "perodiumdirt"
+      },
+      "name": "default"
+    }
+  }
+}

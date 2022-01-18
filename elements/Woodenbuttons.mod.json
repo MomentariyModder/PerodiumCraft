@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:AkvamarineBirchButton"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakButton"
+      },
+      {
+        "value": "CUSTOM:RubyJungleButton"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "wooden_buttons",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "perodiumcraft:akvamarine_birch_door",
+    "perodiumcraft:perodium_oak_door",
+    "perodiumcraft:ruby_jungle_door",
+    "perodiumcraft:perodium_door"
+  ]
+}

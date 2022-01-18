@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "perodiumcraft:blocks/deepslateakvamarineore",
+    "up": "perodiumcraft:blocks/deepslateakvamarineore",
+    "north": "perodiumcraft:blocks/deepslateakvamarineore",
+    "east": "perodiumcraft:blocks/deepslateakvamarineore",
+    "south": "perodiumcraft:blocks/deepslateakvamarineore",
+    "west": "perodiumcraft:blocks/deepslateakvamarineore",
+    "particle": "perodiumcraft:blocks/deepslateakvamarineore"
+  }
+}

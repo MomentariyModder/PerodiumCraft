@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft:stripped_akvamarine_birch"
+    },
+    "1": {
+      "item": "perodiumcraft:stripped_akvamarine_birch"
+    },
+    "2": {
+      "item": "perodiumcraft:stripped_akvamarine_birch"
+    },
+    "3": {
+      "item": "perodiumcraft:stripped_akvamarine_birch"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft:stripped_akvamarine_birch_wood",
+    "count": 3
+  }
+}

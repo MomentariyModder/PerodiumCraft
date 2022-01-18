@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "perodiumcraft:perodium_grass",
+    "perodiumcraft:hochiym_grass",
+    "perodiumcraft:akvamarine_grass",
+    "perodiumcraft:infiniti_grass",
+    "perodiumcraft:ruby_grass",
+    "perodiumcraft:perodium_dirt",
+    "perodiumcraft:perodium_sand",
+    "perodiumcraft:hochiym_dirt",
+    "perodiumcraft:akvamarine_dirt",
+    "perodiumcraft:infiniti_dirt",
+    "perodiumcraft:ruby_dirt",
+    "perodiumcraft:perodium_path",
+    "perodiumcraft:hochiym_path",
+    "perodiumcraft:akvamarine_path",
+    "perodiumcraft:infiniti_path",
+    "perodiumcraft:ruby_path"
+  ]
+}

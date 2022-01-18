@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "perodiumcraft:akvamarine"
+    },
+    "title": {
+      "translate": "advancements.stackakvamarine.title"
+    },
+    "description": {
+      "translate": "advancements.stackakvamarine.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stackakvamarine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "perodiumcraft:akvamarine"
+            ],
+            "count": {
+              "min": 64,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "perodiumcraft:test"
+}

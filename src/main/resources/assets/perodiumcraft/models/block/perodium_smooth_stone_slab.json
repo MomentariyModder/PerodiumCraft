@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "perodiumcraft:blocks/smoothperodiumstone",
-    "top": "perodiumcraft:blocks/smoothperodiumstone",
-    "side": "perodiumcraft:blocks/smoothperodiumstone"
-  }
-}

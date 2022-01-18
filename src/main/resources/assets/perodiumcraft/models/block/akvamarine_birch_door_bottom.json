@@ -1,7 +1,0 @@
-{
-  "parent": "block/door_bottom",
-  "textures": {
-    "bottom": "perodiumcraft:blocks/birch_door_bottom",
-    "top": "perodiumcraft:blocks/birch_door_top"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "perodiumcraft:blocks/perodiumquartzblockbottom",
-    "top": "perodiumcraft:blocks/perodiumquartzblocktop",
-    "side": "perodiumcraft:blocks/perodiumquartzblockside"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "perodiumcraft:custom/perodiumpistol",
-  "textures": {
-    "0": "perodiumcraft:blocks/perodiumpistol",
-    "missing": "perodiumcraft:blocks/perodiumpistol",
-    "particle": "perodiumcraft:items/perodiumpistol"
-  }
-}

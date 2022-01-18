@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "perodiumcraft:blocks/perodiumapple_stage_1",
-    "particle": "perodiumcraft:blocks/perodiumapple_stage_1"
-  }
-}

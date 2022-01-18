@@ -1,8 +1,0 @@
-{
-  "parent": "perodiumcraft:custom/perodiummushroomyellow",
-  "textures": {
-    "all": "perodiumcraft:blocks/perodiumyellowmushroom",
-    "particle": "perodiumcraft:blocks/perodiumyellowmushroom",
-    "0": "perodiumcraft:blocks/perodiumyellowmushroom"
-  }
-}

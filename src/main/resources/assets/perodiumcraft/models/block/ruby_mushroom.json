@@ -1,8 +1,0 @@
-{
-  "parent": "perodiumcraft:custom/rubymushroom",
-  "textures": {
-    "all": "perodiumcraft:blocks/rubymushroom",
-    "particle": "perodiumcraft:blocks/rubymushroom",
-    "0": "perodiumcraft:blocks/rubymushroom"
-  }
-}

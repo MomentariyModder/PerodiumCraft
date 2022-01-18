@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "perodiumcraft:blocks/perodiumwoodplanks",
-    "top": "perodiumcraft:blocks/perodiumwoodplanks",
-    "side": "perodiumcraft:blocks/perodiumwoodplanks"
-  }
-}

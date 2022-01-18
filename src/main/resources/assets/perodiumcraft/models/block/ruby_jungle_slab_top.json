@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab_top",
-  "textures": {
-    "bottom": "perodiumcraft:blocks/rubywoodplanks",
-    "top": "perodiumcraft:blocks/rubywoodplanks",
-    "side": "perodiumcraft:blocks/rubywoodplanks"
-  }
-}

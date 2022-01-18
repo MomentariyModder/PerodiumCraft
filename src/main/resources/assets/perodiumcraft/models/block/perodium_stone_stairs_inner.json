@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "perodiumcraft:blocks/perodiumstone",
-    "top": "perodiumcraft:blocks/perodiumstone",
-    "side": "perodiumcraft:blocks/perodiumstone"
-  }
-}

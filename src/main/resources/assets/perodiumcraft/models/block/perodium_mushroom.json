@@ -1,8 +1,0 @@
-{
-  "parent": "perodiumcraft:custom/perodiummushroom",
-  "textures": {
-    "all": "perodiumcraft:blocks/perodiummushroom",
-    "particle": "perodiumcraft:blocks/perodiummushroom",
-    "0": "perodiumcraft:blocks/perodiummushroom"
-  }
-}

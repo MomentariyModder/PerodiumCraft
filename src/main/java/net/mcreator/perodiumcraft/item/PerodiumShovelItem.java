@@ -34,9 +34,8 @@ public class PerodiumShovelItem extends ShovelItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PerodiumcraftModItems.PERODIUM_INGOT));
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.PERODIUM_INGOT.get()));
 			}
 		}, 1, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS).fireResistant());
-		setRegistryName("perodium_shovel");
 	}
 }

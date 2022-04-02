@@ -19,7 +19,6 @@ import java.util.Collections;
 public class InfinitiBlockBlock extends Block {
 	public InfinitiBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("infiniti_block");
 	}
 
 	@Override

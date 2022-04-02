@@ -27,7 +27,6 @@ public class PerodiumStoneButtonBlock extends StoneButtonBlock {
 	public PerodiumStoneButtonBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.5f, 2.5f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_stone_button");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class PerodiumStoneButtonBlock extends StoneButtonBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_STONE_BUTTON, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_STONE_BUTTON.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

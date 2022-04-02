@@ -35,7 +35,6 @@ public class PerodiumBush2Block extends FlowerBlock {
 	public PerodiumBush2Block() {
 		super(MobEffects.SATURATION, 0,
 				BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH).instabreak());
-		setRegistryName("perodium_bush_2");
 	}
 
 	@Override
@@ -58,7 +57,7 @@ public class PerodiumBush2Block extends FlowerBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PerodiumcraftModItems.PERODIUM_BERRIES));
+		return Collections.singletonList(new ItemStack(PerodiumcraftModItems.PERODIUM_BERRIES.get()));
 	}
 
 	@Override
@@ -70,6 +69,6 @@ public class PerodiumBush2Block extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_BUSH_2, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_BUSH_2.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

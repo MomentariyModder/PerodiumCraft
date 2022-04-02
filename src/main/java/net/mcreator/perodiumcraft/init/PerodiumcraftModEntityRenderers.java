@@ -21,12 +21,12 @@ import net.mcreator.perodiumcraft.client.renderer.AkvamarineHuskRenderer;
 public class PerodiumcraftModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_HUSK, PerodiumHuskRenderer::new);
-		event.registerEntityRenderer(PerodiumcraftModEntities.AKVAMARINE_HUSK, AkvamarineHuskRenderer::new);
-		event.registerEntityRenderer(PerodiumcraftModEntities.RUBY_HUSK, RubyHuskRenderer::new);
-		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_COW, PerodiumCowRenderer::new);
-		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_PISTOL, PerodiumPistolRenderer::new);
-		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_MAN, PerodiumManRenderer::new);
-		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_SLIME, PerodiumSlimeRenderer::new);
+		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_HUSK.get(), PerodiumHuskRenderer::new);
+		event.registerEntityRenderer(PerodiumcraftModEntities.AKVAMARINE_HUSK.get(), AkvamarineHuskRenderer::new);
+		event.registerEntityRenderer(PerodiumcraftModEntities.RUBY_HUSK.get(), RubyHuskRenderer::new);
+		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_COW.get(), PerodiumCowRenderer::new);
+		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_MAN.get(), PerodiumManRenderer::new);
+		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_SLIME.get(), PerodiumSlimeRenderer::new);
+		event.registerEntityRenderer(PerodiumcraftModEntities.PERODIUM_PISTOL.get(), PerodiumPistolRenderer::new);
 	}
 }

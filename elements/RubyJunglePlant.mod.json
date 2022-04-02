@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "rubywoodplanks",
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "§4Ruby Jungle Planks",
+    "name": "Ruby Jungle Planks",
     "specialInfo": [],
     "hardness": 6.0,
     "resistance": 6.0,

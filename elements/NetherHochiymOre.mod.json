@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "hochiymorenether",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "§1Nether Hochiym Ore",
+    "name": "Nether Hochiym Ore",
     "specialInfo": [],
     "hardness": 6.0,
     "resistance": 30.0,

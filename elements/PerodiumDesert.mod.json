@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
-    "name": "§8Perodium Desert",
+    "name": "Perodium Desert",
     "groundBlock": {
       "value": "CUSTOM:PerodiumSand"
     },
@@ -48,9 +48,6 @@
     },
     "particlesProbability": 0.0,
     "biomeCategory": "DESERT",
-    "parent": {
-      "value": "desert"
-    },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -73,7 +70,7 @@
     "treeType": 1,
     "minHeight": 3,
     "treeStem": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:PerodiumCactus"
     },
     "treeBranch": {
       "value": "Blocks.AIR"
@@ -106,10 +103,7 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "MonsterRooms",
-      "Ores",
-      "Lakes",
-      "FrozenTopLayer"
+      "Ores"
     ],
     "spawnEntries": []
   }

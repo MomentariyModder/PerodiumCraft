@@ -1,0 +1,9 @@
+{
+  "parent": "perodiumcraft:custom/perodiumbox",
+  "textures": {
+    "all": "perodiumcraft:blocks/perodiumwoodplanks",
+    "particle": "perodiumcraft:blocks/perodiumwoodplanks",
+    "0": "perodiumcraft:blocks/strippedperodiumoaklog",
+    "1": "perodiumcraft:blocks/perodiumwoodplanks"
+  }
+}

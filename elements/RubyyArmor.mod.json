@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -14,10 +14,10 @@
       "value": "CUSTOM:PerodiumCraftToolsandArmors"
     },
     "armorTextureFile": "rubyy",
-    "helmetName": "§4Ruby Helmet",
-    "bodyName": "§4Ruby Chestplate",
-    "leggingsName": "§4Ruby Leggings",
-    "bootsName": "§4Ruby Boots",
+    "helmetName": "Ruby Helmet",
+    "bodyName": "Ruby Chestplate",
+    "leggingsName": "Ruby Leggings",
+    "bootsName": "Ruby Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

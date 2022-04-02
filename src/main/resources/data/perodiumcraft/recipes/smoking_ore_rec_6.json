@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "perodiumcraft:coal_ore"
   },
-  "result": {
-    "item": "minecraft:coal"
-  }
+  "result": "minecraft:coal"
 }

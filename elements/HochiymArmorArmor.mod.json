@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -14,10 +14,10 @@
       "value": "CUSTOM:PerodiumCraftToolsandArmors"
     },
     "armorTextureFile": "hochiymarmor",
-    "helmetName": "§1Hochiym Helmet",
-    "bodyName": "§1Hochiym Chestplate",
-    "leggingsName": "§1Hochiym Leggings",
-    "bootsName": "§1Hochiym Boots",
+    "helmetName": "Hochiym Helmet",
+    "bodyName": "Hochiym Chestplate",
+    "leggingsName": "Hochiym Leggings",
+    "bootsName": "Hochiym Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

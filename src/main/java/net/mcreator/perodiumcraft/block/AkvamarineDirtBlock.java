@@ -19,7 +19,6 @@ import java.util.Collections;
 public class AkvamarineDirtBlock extends Block {
 	public AkvamarineDirtBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("akvamarine_dirt");
 	}
 
 	@Override

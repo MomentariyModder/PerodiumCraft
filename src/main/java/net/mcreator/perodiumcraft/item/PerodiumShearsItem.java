@@ -11,7 +11,6 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
 public class PerodiumShearsItem extends ShearsItem {
 	public PerodiumShearsItem() {
 		super(new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS).durability(952).fireResistant());
-		setRegistryName("perodium_shears");
 	}
 
 	@Override

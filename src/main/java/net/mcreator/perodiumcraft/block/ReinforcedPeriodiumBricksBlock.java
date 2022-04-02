@@ -19,7 +19,6 @@ import java.util.Collections;
 public class ReinforcedPeriodiumBricksBlock extends Block {
 	public ReinforcedPeriodiumBricksBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(9f, 45f).requiresCorrectToolForDrops());
-		setRegistryName("reinforced_periodium_bricks");
 	}
 
 	@Override

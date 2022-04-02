@@ -10,7 +10,6 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
 public class PerodiumAmmoItem extends Item {
 	public PerodiumAmmoItem() {
 		super(new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS).durability(4).rarity(Rarity.COMMON));
-		setRegistryName("perodium_ammo");
 	}
 
 	@Override

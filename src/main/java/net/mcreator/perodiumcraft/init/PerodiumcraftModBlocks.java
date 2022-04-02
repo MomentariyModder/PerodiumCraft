@@ -4,10 +4,12 @@
  */
 package net.mcreator.perodiumcraft.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
@@ -42,6 +44,7 @@ import net.mcreator.perodiumcraft.block.RubyGrassPlantBlock;
 import net.mcreator.perodiumcraft.block.RubyGrassBlock;
 import net.mcreator.perodiumcraft.block.RubyDirtBlock;
 import net.mcreator.perodiumcraft.block.RubyDandeleonBlock;
+import net.mcreator.perodiumcraft.block.RubyBoxBlock;
 import net.mcreator.perodiumcraft.block.RubyBlockBlock;
 import net.mcreator.perodiumcraft.block.ReinforcedPeriodiumBricksBlock;
 import net.mcreator.perodiumcraft.block.RedstoneOreBlock;
@@ -106,6 +109,7 @@ import net.mcreator.perodiumcraft.block.PerodiumCactusBlock;
 import net.mcreator.perodiumcraft.block.PerodiumBushBlock;
 import net.mcreator.perodiumcraft.block.PerodiumBush2Block;
 import net.mcreator.perodiumcraft.block.PerodiumBrickBlock;
+import net.mcreator.perodiumcraft.block.PerodiumBoxBlock;
 import net.mcreator.perodiumcraft.block.PerodiumBlockBlock;
 import net.mcreator.perodiumcraft.block.PerodiumBarsBlock;
 import net.mcreator.perodiumcraft.block.PerodiumAppleStage3Block;
@@ -153,6 +157,7 @@ import net.mcreator.perodiumcraft.block.AkvamarineDirtBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineCornflowerBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineBushBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineBush2Block;
+import net.mcreator.perodiumcraft.block.AkvamarineBoxBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineBlockBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineBirchWoodBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineBirchStairsBlock;
@@ -163,174 +168,219 @@ import net.mcreator.perodiumcraft.block.AkvamarineBirchFenceGateBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineBirchFenceBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineBirchDoorBlock;
 import net.mcreator.perodiumcraft.block.AkvamarineBirchButtonBlock;
+import net.mcreator.perodiumcraft.PerodiumcraftMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PerodiumcraftModBlocks {
-	private static final List<Block> REGISTRY = new ArrayList<>();
-	public static final Block PERODIUM_LAND_PORTAL = register(new PerodiumLandPortalBlock());
-	public static final Block PERODIUM_WATER = register(new PerodiumWaterBlock());
-	public static final Block PERODIUM_BARS = register(new PerodiumBarsBlock());
-	public static final Block PERODIUM_LANTERN = register(new PerodiumLanternBlock());
-	public static final Block PERODIUM_STONE = register(new PerodiumStoneBlock());
-	public static final Block PERODIUM_COBBLESTONE = register(new PerodiumCobblestoneBlock());
-	public static final Block PERODIUM_SMOOTH_STONE = register(new PerodiumSmoothStoneBlock());
-	public static final Block PERODIUM_SANDSTONE = register(new PerodiumSandstoneBlock());
-	public static final Block PERODIUM_STONE_SLAB = register(new PerodiumStoneSlabBlock());
-	public static final Block PERODIUM_COBBLESTONE_SLAB = register(new PerodiumCobblestoneSlabBlock());
-	public static final Block PERODIUM_SMOOTH_STONE_SLAB = register(new PerodiumSmoothStoneSlabBlock());
-	public static final Block PERODIUM_SANDSTONE_SLAB = register(new PerodiumSandstoneSlabBlock());
-	public static final Block PERODIUM_STONE_STAIRS = register(new PerodiumStoneStairsBlock());
-	public static final Block PERODIUM_COBBLESTONE_STAIRS = register(new PerodiumCobblestoneStairsBlock());
-	public static final Block PERODIUM_SANDSTONE_STAIRS = register(new PerodiumSandstoneStairsBlock());
-	public static final Block PERODIUM_COBBLESTONE_WALL = register(new PerodiumCobblestoneWallBlock());
-	public static final Block PERODIUM_SANDSTONE_WALL = register(new PerodiumSandstoneWallBlock());
-	public static final Block HOCHIYM_ORE = register(new HochiymOreBlock());
-	public static final Block AKVAMARINE_ORE = register(new AkvamarineOreBlock());
-	public static final Block RUBY_ORE = register(new RubyOreBlock());
-	public static final Block INFINITI_ORE = register(new InfinitiOreBlock());
-	public static final Block NETHER_HOCHIYM_ORE = register(new NetherHochiymOreBlock());
-	public static final Block NETHER_AKVAMARINE_ORE = register(new NetherAkvamarineOreBlock());
-	public static final Block RUBY_ORE_2 = register(new RubyOre2Block());
-	public static final Block NETHER_INFINITI_ORE = register(new NetherInfinitiOreBlock());
-	public static final Block END_HOCHIYM_ORE = register(new EndHochiymOreBlock());
-	public static final Block END_AKVAMARINE_ORE = register(new EndAkvamarineOreBlock());
-	public static final Block END_RUBY_ORE = register(new EndRubyOreBlock());
-	public static final Block END_INFINITI_ORE = register(new EndInfinitiOreBlock());
-	public static final Block PERODIUM_HOCHIYM_ORE = register(new PerodiumHochiymOreBlock());
-	public static final Block PERODIUM_AKVAMARINE_ORE = register(new PerodiumAkvamarineOreBlock());
-	public static final Block PERODIUM_RUBY_ORE = register(new PerodiumRubyOreBlock());
-	public static final Block PERODIUM_INFINITI_ORE = register(new PerodiumInfinitiOreBlock());
-	public static final Block COAL_ORE = register(new CoalOreBlock());
-	public static final Block IRON_ORE = register(new IronOreBlock());
-	public static final Block GOLD_ORE = register(new GoldOreBlock());
-	public static final Block DIAMONDORE = register(new DiamondoreBlock());
-	public static final Block LAPIS_LAZULI_ORE = register(new LapisLazuliOreBlock());
-	public static final Block EMERALD_ORE = register(new EmeraldOreBlock());
-	public static final Block PERODIUM_QUARTZ_ORE_2 = register(new PerodiumQuartzOre2Block());
-	public static final Block REDSTONE_ORE = register(new RedstoneOreBlock());
-	public static final Block COPPER_ORE = register(new CopperOreBlock());
-	public static final Block HOCHIYM_BLOCK = register(new HochiymBlockBlock());
-	public static final Block AKVAMARINE_BLOCK = register(new AkvamarineBlockBlock());
-	public static final Block INFINITI_BLOCK = register(new InfinitiBlockBlock());
-	public static final Block RUBY_BLOCK = register(new RubyBlockBlock());
-	public static final Block PERODIUM_BLOCK = register(new PerodiumBlockBlock());
-	public static final Block PERODIUM_BRICK = register(new PerodiumBrickBlock());
-	public static final Block REINFORCED_PERIODIUM_BRICKS = register(new ReinforcedPeriodiumBricksBlock());
-	public static final Block PERODIUM_QUARTZ_BLOCK = register(new PerodiumQuartzBlockBlock());
-	public static final Block PERODIUM_QUARTZ_STAIRS = register(new PerodiumQuartzStairsBlock());
-	public static final Block PERODIUM_QUARTZ_SLAB = register(new PerodiumQuartzSlabBlock());
-	public static final Block SMOOTH_PERODIUM_QUARTZ_BLOCK = register(new SmoothPerodiumQuartzBlockBlock());
-	public static final Block SMOOTH_PERODIUM_QUARTZ_STAIRS = register(new SmoothPerodiumQuartzStairsBlock());
-	public static final Block SMOOTH_PERODIUM_QUARTZ_SLAB = register(new SmoothPerodiumQuartzSlabBlock());
-	public static final Block CHISELD_PERODIUM_QUARTZ_BLOCK = register(new ChiseldPerodiumQuartzBlockBlock());
-	public static final Block PERODIUM_QUARTZ_BRICK = register(new PerodiumQuartzBrickBlock());
-	public static final Block PERODIUM_QUARTZ_PILLAR = register(new PerodiumQuartzPillarBlock());
-	public static final Block PERODIUM_GRASS = register(new PerodiumGrassBlock());
-	public static final Block HOCHIYM_GRASS = register(new HochiymGrassBlock());
-	public static final Block AKVAMARINE_GRASS = register(new AkvamarineGrassBlock());
-	public static final Block INFINITI_GRASS = register(new InfinitiGrassBlock());
-	public static final Block RUBY_GRASS = register(new RubyGrassBlock());
-	public static final Block PERODIUM_DIRT = register(new PerodiumDirtBlock());
-	public static final Block PERODIUM_SAND = register(new PerodiumSandBlock());
-	public static final Block HOCHIYM_DIRT = register(new HochiymDirtBlock());
-	public static final Block AKVAMARINE_DIRT = register(new AkvamarineDirtBlock());
-	public static final Block INFINITI_DIRT = register(new InfinitiDirtBlock());
-	public static final Block RUBY_DIRT = register(new RubyDirtBlock());
-	public static final Block PERODIUM_PATH = register(new PerodiumPathBlock());
-	public static final Block HOCHIYM_PATH = register(new HochiymPathBlock());
-	public static final Block AKVAMARINE_PATH = register(new AkvamarinePathBlock());
-	public static final Block INFINITI_PATH = register(new InfinitiPathBlock());
-	public static final Block RUBY_PATH = register(new RubyPathBlock());
-	public static final Block PERODIUM_OAK_LEAVES = register(new PerodiumOakLeavesBlock());
-	public static final Block AKVAMARINE_LEAVES = register(new AkvamarineLeavesBlock());
-	public static final Block RUBY_JUNGLE_LEAVES = register(new RubyJungleLeavesBlock());
-	public static final Block PERODIUM_OAK = register(new PerodiumOakBlock());
-	public static final Block STRIPPED_PERODIUM_OAK = register(new StrippedPerodiumOakBlock());
-	public static final Block PERODIUM_OAK_WOOD = register(new PerodiumOakWoodBlock());
-	public static final Block STRIPPED_PERODIUM_OAK_WOOD = register(new StrippedPerodiumOakWoodBlock());
-	public static final Block AKVAMARINE_OAK = register(new AkvamarineOakBlock());
-	public static final Block STRIPPED_AKVAMARINE_BIRCH = register(new StrippedAkvamarineBirchBlock());
-	public static final Block AKVAMARINE_BIRCH_WOOD = register(new AkvamarineBirchWoodBlock());
-	public static final Block STRIPPED_AKVAMARINE_BIRCH_WOOD = register(new StrippedAkvamarineBirchWoodBlock());
-	public static final Block RUBY_JUNGLE = register(new RubyJungleBlock());
-	public static final Block STRIPPED_RUBY_JUNGLE = register(new StrippedRubyJungleBlock());
-	public static final Block RUBY_JUNGLE_WOOD = register(new RubyJungleWoodBlock());
-	public static final Block STRIPPED_RUBY_JUNGLE_WOOD = register(new StrippedRubyJungleWoodBlock());
-	public static final Block PERODIUM_OAK_PLANT = register(new PerodiumOakPlantBlock());
-	public static final Block AKVAMARINE_BIRCH_PLANKS = register(new AkvamarineBirchPlanksBlock());
-	public static final Block RUBY_JUNGLE_PLANT = register(new RubyJunglePlantBlock());
-	public static final Block PERODIUM_OAK_STAIRS = register(new PerodiumOakStairsBlock());
-	public static final Block AKVAMARINE_BIRCH_STAIRS = register(new AkvamarineBirchStairsBlock());
-	public static final Block RUBY_JUNGLE_STAIRS = register(new RubyJungleStairsBlock());
-	public static final Block PERODIUM_OAK_SLAB = register(new PerodiumOakSlabBlock());
-	public static final Block AKVAMARINE_BIRCH_SLAB = register(new AkvamarineBirchSlabBlock());
-	public static final Block RUBY_JUNGLE_SLAB = register(new RubyJungleSlabBlock());
-	public static final Block PERODIUM_OAK_FENCE = register(new PerodiumOakFenceBlock());
-	public static final Block AKVAMARINE_BIRCH_FENCE = register(new AkvamarineBirchFenceBlock());
-	public static final Block RUBY_JUNGLE_FENCE = register(new RubyJungleFenceBlock());
-	public static final Block PERODIUM_OAK_FENCE_GATE = register(new PerodiumOakFenceGateBlock());
-	public static final Block AKVAMARINE_BIRCH_FENCE_GATE = register(new AkvamarineBirchFenceGateBlock());
-	public static final Block RUBY_JUNGLE_FENCE_GATE = register(new RubyJungleFenceGateBlock());
-	public static final Block PERODIUM_OAK_BUTTON = register(new PerodiumOakButtonBlock());
-	public static final Block AKVAMARINE_BIRCH_BUTTON = register(new AkvamarineBirchButtonBlock());
-	public static final Block RUBY_JUNGLE_BUTTON = register(new RubyJungleButtonBlock());
-	public static final Block PERODIUM_STONE_BUTTON = register(new PerodiumStoneButtonBlock());
-	public static final Block PERODIUM_OAK_PRESSURE_PLATE = register(new PerodiumOakPressurePlateBlock());
-	public static final Block AKVAMARINE_BIRCH_PRESSURE_PLATE = register(new AkvamarineBirchPressurePlateBlock());
-	public static final Block RUBY_JUNGLE_PRESSURE_PLATE = register(new RubyJunglePressurePlateBlock());
-	public static final Block PERODIUM_STONE_PRESSURE_PLATE = register(new PerodiumStonePressurePlateBlock());
-	public static final Block PERODIUM_PRESSURE_PLATE = register(new PerodiumPressurePlateBlock());
-	public static final Block PERODIUM_OAK_DOOR = register(new PerodiumOakDoorBlock());
-	public static final Block AKVAMARINE_BIRCH_DOOR = register(new AkvamarineBirchDoorBlock());
-	public static final Block RUBY_JUNGLE_DOOR = register(new RubyJungleDoorBlock());
-	public static final Block PERODIUM_DOOR = register(new PerodiumDoorBlock());
-	public static final Block PERODIUM_GLASS = register(new PerodiumGlassBlock());
-	public static final Block PERODIUM_GLASS_PANE = register(new PerodiumGlassPaneBlock());
-	public static final Block PERODIUM_GLOWSTONE = register(new PerodiumGlowstoneBlock());
-	public static final Block PERODIUM_SHROOMLIGHT = register(new PerodiumShroomlightBlock());
-	public static final Block HOCHIYM_GRASS_PLANT = register(new HochiymGrassPlantBlock());
-	public static final Block AKVAMARINE_GRASS_PLANT = register(new AkvamarineGrassPlantBlock());
-	public static final Block INFINITI_GRASS_PLANT = register(new InfinitiGrassPlantBlock());
-	public static final Block RUBY_GRASS_PLANT = register(new RubyGrassPlantBlock());
-	public static final Block PERODIUM_GRASS_PLANT = register(new PerodiumGrassPlantBlock());
-	public static final Block PERODIUM_DEAD_BUSH = register(new PerodiumDeadBushBlock());
-	public static final Block AKVAMARINE_BUSH = register(new AkvamarineBushBlock());
-	public static final Block PERODIUM_TULIP = register(new PerodiumTulipBlock());
-	public static final Block AKVAMARINE_CORNFLOWER = register(new AkvamarineCornflowerBlock());
-	public static final Block RUBY_DANDELEON = register(new RubyDandeleonBlock());
-	public static final Block PERODIUM_BUSH = register(new PerodiumBushBlock());
-	public static final Block PERODIUM_YELLOW_MUSHROOM = register(new PerodiumYellowMushroomBlock());
-	public static final Block PERODIUM_MUSHROOM = register(new PerodiumMushroomBlock());
-	public static final Block RUBY_MUSHROOM = register(new RubyMushroomBlock());
-	public static final Block PERODIUM_APPLE_STAGE_1 = register(new PerodiumAppleStage1Block());
-	public static final Block PERODIUM_CACTUS = register(new PerodiumCactusBlock());
-	public static final Block PERODIUM_MUSHROOM_STEM = register(new PerodiumMushroomStemBlock());
-	public static final Block PERODIUM_MUSHROOM_BLOCK = register(new PerodiumMushroomBlockBlock());
-	public static final Block PERODIUM_YELLOW_MUSHROOM_STEM = register(new PerodiumYellowMushroomStemBlock());
-	public static final Block PERODIUM_YELLOW_MUSHROOM_BLOCK = register(new PerodiumYellowMushroomBlockBlock());
-	public static final Block RUBY_MUSHROOM_STEM = register(new RubyMushroomStemBlock());
-	public static final Block RUBY_MUSHROOM_BLOCK = register(new RubyMushroomBlockBlock());
-	public static final Block AKVAMARINE_BUSH_2 = register(new AkvamarineBush2Block());
-	public static final Block PERODIUM_BUSH_2 = register(new PerodiumBush2Block());
-	public static final Block PERODIUM_APPLE_STAGE_2 = register(new PerodiumAppleStage2Block());
-	public static final Block PERODIUM_APPLE_STAGE_3 = register(new PerodiumAppleStage3Block());
-	public static final Block DEEPSLATE_HOCHIYM_ORE = register(new DeepslateHochiymOreBlock());
-	public static final Block DEEPSLATE_AKVAMARINE_ORE = register(new DeepslateAkvamarineOreBlock());
-	public static final Block DEEPSLATE_INFINITI_ORE = register(new DeepslateInfinitiOreBlock());
-	public static final Block DEEPSLATE_RUBY_ORE = register(new DeepslateRubyOreBlock());
-
-	private static Block register(Block block) {
-		REGISTRY.add(block);
-		return block;
-	}
-
-	@SubscribeEvent
-	public static void registerBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
-	}
+	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, PerodiumcraftMod.MODID);
+	public static final RegistryObject<Block> PERODIUM_LAND_PORTAL = REGISTRY.register("perodium_land_portal", () -> new PerodiumLandPortalBlock());
+	public static final RegistryObject<Block> PERODIUM_WATER = REGISTRY.register("perodium_water", () -> new PerodiumWaterBlock());
+	public static final RegistryObject<Block> PERODIUM_BARS = REGISTRY.register("perodium_bars", () -> new PerodiumBarsBlock());
+	public static final RegistryObject<Block> PERODIUM_LANTERN = REGISTRY.register("perodium_lantern", () -> new PerodiumLanternBlock());
+	public static final RegistryObject<Block> PERODIUM_STONE = REGISTRY.register("perodium_stone", () -> new PerodiumStoneBlock());
+	public static final RegistryObject<Block> PERODIUM_COBBLESTONE = REGISTRY.register("perodium_cobblestone", () -> new PerodiumCobblestoneBlock());
+	public static final RegistryObject<Block> PERODIUM_SMOOTH_STONE = REGISTRY.register("perodium_smooth_stone",
+			() -> new PerodiumSmoothStoneBlock());
+	public static final RegistryObject<Block> PERODIUM_SANDSTONE = REGISTRY.register("perodium_sandstone", () -> new PerodiumSandstoneBlock());
+	public static final RegistryObject<Block> PERODIUM_STONE_SLAB = REGISTRY.register("perodium_stone_slab", () -> new PerodiumStoneSlabBlock());
+	public static final RegistryObject<Block> PERODIUM_COBBLESTONE_SLAB = REGISTRY.register("perodium_cobblestone_slab",
+			() -> new PerodiumCobblestoneSlabBlock());
+	public static final RegistryObject<Block> PERODIUM_SMOOTH_STONE_SLAB = REGISTRY.register("perodium_smooth_stone_slab",
+			() -> new PerodiumSmoothStoneSlabBlock());
+	public static final RegistryObject<Block> PERODIUM_SANDSTONE_SLAB = REGISTRY.register("perodium_sandstone_slab",
+			() -> new PerodiumSandstoneSlabBlock());
+	public static final RegistryObject<Block> PERODIUM_STONE_STAIRS = REGISTRY.register("perodium_stone_stairs",
+			() -> new PerodiumStoneStairsBlock());
+	public static final RegistryObject<Block> PERODIUM_COBBLESTONE_STAIRS = REGISTRY.register("perodium_cobblestone_stairs",
+			() -> new PerodiumCobblestoneStairsBlock());
+	public static final RegistryObject<Block> PERODIUM_SANDSTONE_STAIRS = REGISTRY.register("perodium_sandstone_stairs",
+			() -> new PerodiumSandstoneStairsBlock());
+	public static final RegistryObject<Block> PERODIUM_COBBLESTONE_WALL = REGISTRY.register("perodium_cobblestone_wall",
+			() -> new PerodiumCobblestoneWallBlock());
+	public static final RegistryObject<Block> PERODIUM_SANDSTONE_WALL = REGISTRY.register("perodium_sandstone_wall",
+			() -> new PerodiumSandstoneWallBlock());
+	public static final RegistryObject<Block> HOCHIYM_ORE = REGISTRY.register("hochiym_ore", () -> new HochiymOreBlock());
+	public static final RegistryObject<Block> AKVAMARINE_ORE = REGISTRY.register("akvamarine_ore", () -> new AkvamarineOreBlock());
+	public static final RegistryObject<Block> RUBY_ORE = REGISTRY.register("ruby_ore", () -> new RubyOreBlock());
+	public static final RegistryObject<Block> INFINITI_ORE = REGISTRY.register("infiniti_ore", () -> new InfinitiOreBlock());
+	public static final RegistryObject<Block> NETHER_HOCHIYM_ORE = REGISTRY.register("nether_hochiym_ore", () -> new NetherHochiymOreBlock());
+	public static final RegistryObject<Block> NETHER_AKVAMARINE_ORE = REGISTRY.register("nether_akvamarine_ore",
+			() -> new NetherAkvamarineOreBlock());
+	public static final RegistryObject<Block> RUBY_ORE_2 = REGISTRY.register("ruby_ore_2", () -> new RubyOre2Block());
+	public static final RegistryObject<Block> NETHER_INFINITI_ORE = REGISTRY.register("nether_infiniti_ore", () -> new NetherInfinitiOreBlock());
+	public static final RegistryObject<Block> END_HOCHIYM_ORE = REGISTRY.register("end_hochiym_ore", () -> new EndHochiymOreBlock());
+	public static final RegistryObject<Block> END_AKVAMARINE_ORE = REGISTRY.register("end_akvamarine_ore", () -> new EndAkvamarineOreBlock());
+	public static final RegistryObject<Block> END_RUBY_ORE = REGISTRY.register("end_ruby_ore", () -> new EndRubyOreBlock());
+	public static final RegistryObject<Block> END_INFINITI_ORE = REGISTRY.register("end_infiniti_ore", () -> new EndInfinitiOreBlock());
+	public static final RegistryObject<Block> PERODIUM_HOCHIYM_ORE = REGISTRY.register("perodium_hochiym_ore", () -> new PerodiumHochiymOreBlock());
+	public static final RegistryObject<Block> PERODIUM_AKVAMARINE_ORE = REGISTRY.register("perodium_akvamarine_ore",
+			() -> new PerodiumAkvamarineOreBlock());
+	public static final RegistryObject<Block> PERODIUM_RUBY_ORE = REGISTRY.register("perodium_ruby_ore", () -> new PerodiumRubyOreBlock());
+	public static final RegistryObject<Block> PERODIUM_INFINITI_ORE = REGISTRY.register("perodium_infiniti_ore",
+			() -> new PerodiumInfinitiOreBlock());
+	public static final RegistryObject<Block> COAL_ORE = REGISTRY.register("coal_ore", () -> new CoalOreBlock());
+	public static final RegistryObject<Block> IRON_ORE = REGISTRY.register("iron_ore", () -> new IronOreBlock());
+	public static final RegistryObject<Block> GOLD_ORE = REGISTRY.register("gold_ore", () -> new GoldOreBlock());
+	public static final RegistryObject<Block> DIAMONDORE = REGISTRY.register("diamondore", () -> new DiamondoreBlock());
+	public static final RegistryObject<Block> LAPIS_LAZULI_ORE = REGISTRY.register("lapis_lazuli_ore", () -> new LapisLazuliOreBlock());
+	public static final RegistryObject<Block> EMERALD_ORE = REGISTRY.register("emerald_ore", () -> new EmeraldOreBlock());
+	public static final RegistryObject<Block> PERODIUM_QUARTZ_ORE_2 = REGISTRY.register("perodium_quartz_ore_2", () -> new PerodiumQuartzOre2Block());
+	public static final RegistryObject<Block> REDSTONE_ORE = REGISTRY.register("redstone_ore", () -> new RedstoneOreBlock());
+	public static final RegistryObject<Block> COPPER_ORE = REGISTRY.register("copper_ore", () -> new CopperOreBlock());
+	public static final RegistryObject<Block> HOCHIYM_BLOCK = REGISTRY.register("hochiym_block", () -> new HochiymBlockBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BLOCK = REGISTRY.register("akvamarine_block", () -> new AkvamarineBlockBlock());
+	public static final RegistryObject<Block> INFINITI_BLOCK = REGISTRY.register("infiniti_block", () -> new InfinitiBlockBlock());
+	public static final RegistryObject<Block> RUBY_BLOCK = REGISTRY.register("ruby_block", () -> new RubyBlockBlock());
+	public static final RegistryObject<Block> PERODIUM_BLOCK = REGISTRY.register("perodium_block", () -> new PerodiumBlockBlock());
+	public static final RegistryObject<Block> PERODIUM_BRICK = REGISTRY.register("perodium_brick", () -> new PerodiumBrickBlock());
+	public static final RegistryObject<Block> REINFORCED_PERIODIUM_BRICKS = REGISTRY.register("reinforced_periodium_bricks",
+			() -> new ReinforcedPeriodiumBricksBlock());
+	public static final RegistryObject<Block> PERODIUM_QUARTZ_BLOCK = REGISTRY.register("perodium_quartz_block",
+			() -> new PerodiumQuartzBlockBlock());
+	public static final RegistryObject<Block> PERODIUM_QUARTZ_STAIRS = REGISTRY.register("perodium_quartz_stairs",
+			() -> new PerodiumQuartzStairsBlock());
+	public static final RegistryObject<Block> PERODIUM_QUARTZ_SLAB = REGISTRY.register("perodium_quartz_slab", () -> new PerodiumQuartzSlabBlock());
+	public static final RegistryObject<Block> SMOOTH_PERODIUM_QUARTZ_BLOCK = REGISTRY.register("smooth_perodium_quartz_block",
+			() -> new SmoothPerodiumQuartzBlockBlock());
+	public static final RegistryObject<Block> SMOOTH_PERODIUM_QUARTZ_STAIRS = REGISTRY.register("smooth_perodium_quartz_stairs",
+			() -> new SmoothPerodiumQuartzStairsBlock());
+	public static final RegistryObject<Block> SMOOTH_PERODIUM_QUARTZ_SLAB = REGISTRY.register("smooth_perodium_quartz_slab",
+			() -> new SmoothPerodiumQuartzSlabBlock());
+	public static final RegistryObject<Block> CHISELD_PERODIUM_QUARTZ_BLOCK = REGISTRY.register("chiseld_perodium_quartz_block",
+			() -> new ChiseldPerodiumQuartzBlockBlock());
+	public static final RegistryObject<Block> PERODIUM_QUARTZ_BRICK = REGISTRY.register("perodium_quartz_brick",
+			() -> new PerodiumQuartzBrickBlock());
+	public static final RegistryObject<Block> PERODIUM_QUARTZ_PILLAR = REGISTRY.register("perodium_quartz_pillar",
+			() -> new PerodiumQuartzPillarBlock());
+	public static final RegistryObject<Block> PERODIUM_GRASS = REGISTRY.register("perodium_grass", () -> new PerodiumGrassBlock());
+	public static final RegistryObject<Block> HOCHIYM_GRASS = REGISTRY.register("hochiym_grass", () -> new HochiymGrassBlock());
+	public static final RegistryObject<Block> AKVAMARINE_GRASS = REGISTRY.register("akvamarine_grass", () -> new AkvamarineGrassBlock());
+	public static final RegistryObject<Block> INFINITI_GRASS = REGISTRY.register("infiniti_grass", () -> new InfinitiGrassBlock());
+	public static final RegistryObject<Block> RUBY_GRASS = REGISTRY.register("ruby_grass", () -> new RubyGrassBlock());
+	public static final RegistryObject<Block> PERODIUM_DIRT = REGISTRY.register("perodium_dirt", () -> new PerodiumDirtBlock());
+	public static final RegistryObject<Block> PERODIUM_SAND = REGISTRY.register("perodium_sand", () -> new PerodiumSandBlock());
+	public static final RegistryObject<Block> HOCHIYM_DIRT = REGISTRY.register("hochiym_dirt", () -> new HochiymDirtBlock());
+	public static final RegistryObject<Block> AKVAMARINE_DIRT = REGISTRY.register("akvamarine_dirt", () -> new AkvamarineDirtBlock());
+	public static final RegistryObject<Block> INFINITI_DIRT = REGISTRY.register("infiniti_dirt", () -> new InfinitiDirtBlock());
+	public static final RegistryObject<Block> RUBY_DIRT = REGISTRY.register("ruby_dirt", () -> new RubyDirtBlock());
+	public static final RegistryObject<Block> PERODIUM_PATH = REGISTRY.register("perodium_path", () -> new PerodiumPathBlock());
+	public static final RegistryObject<Block> HOCHIYM_PATH = REGISTRY.register("hochiym_path", () -> new HochiymPathBlock());
+	public static final RegistryObject<Block> AKVAMARINE_PATH = REGISTRY.register("akvamarine_path", () -> new AkvamarinePathBlock());
+	public static final RegistryObject<Block> INFINITI_PATH = REGISTRY.register("infiniti_path", () -> new InfinitiPathBlock());
+	public static final RegistryObject<Block> RUBY_PATH = REGISTRY.register("ruby_path", () -> new RubyPathBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_LEAVES = REGISTRY.register("perodium_oak_leaves", () -> new PerodiumOakLeavesBlock());
+	public static final RegistryObject<Block> AKVAMARINE_LEAVES = REGISTRY.register("akvamarine_leaves", () -> new AkvamarineLeavesBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_LEAVES = REGISTRY.register("ruby_jungle_leaves", () -> new RubyJungleLeavesBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK = REGISTRY.register("perodium_oak", () -> new PerodiumOakBlock());
+	public static final RegistryObject<Block> STRIPPED_PERODIUM_OAK = REGISTRY.register("stripped_perodium_oak",
+			() -> new StrippedPerodiumOakBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_WOOD = REGISTRY.register("perodium_oak_wood", () -> new PerodiumOakWoodBlock());
+	public static final RegistryObject<Block> STRIPPED_PERODIUM_OAK_WOOD = REGISTRY.register("stripped_perodium_oak_wood",
+			() -> new StrippedPerodiumOakWoodBlock());
+	public static final RegistryObject<Block> AKVAMARINE_OAK = REGISTRY.register("akvamarine_oak", () -> new AkvamarineOakBlock());
+	public static final RegistryObject<Block> STRIPPED_AKVAMARINE_BIRCH = REGISTRY.register("stripped_akvamarine_birch",
+			() -> new StrippedAkvamarineBirchBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_WOOD = REGISTRY.register("akvamarine_birch_wood",
+			() -> new AkvamarineBirchWoodBlock());
+	public static final RegistryObject<Block> STRIPPED_AKVAMARINE_BIRCH_WOOD = REGISTRY.register("stripped_akvamarine_birch_wood",
+			() -> new StrippedAkvamarineBirchWoodBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE = REGISTRY.register("ruby_jungle", () -> new RubyJungleBlock());
+	public static final RegistryObject<Block> STRIPPED_RUBY_JUNGLE = REGISTRY.register("stripped_ruby_jungle", () -> new StrippedRubyJungleBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_WOOD = REGISTRY.register("ruby_jungle_wood", () -> new RubyJungleWoodBlock());
+	public static final RegistryObject<Block> STRIPPED_RUBY_JUNGLE_WOOD = REGISTRY.register("stripped_ruby_jungle_wood",
+			() -> new StrippedRubyJungleWoodBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_PLANT = REGISTRY.register("perodium_oak_plant", () -> new PerodiumOakPlantBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_PLANKS = REGISTRY.register("akvamarine_birch_planks",
+			() -> new AkvamarineBirchPlanksBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_PLANT = REGISTRY.register("ruby_jungle_plant", () -> new RubyJunglePlantBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_STAIRS = REGISTRY.register("perodium_oak_stairs", () -> new PerodiumOakStairsBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_STAIRS = REGISTRY.register("akvamarine_birch_stairs",
+			() -> new AkvamarineBirchStairsBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_STAIRS = REGISTRY.register("ruby_jungle_stairs", () -> new RubyJungleStairsBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_SLAB = REGISTRY.register("perodium_oak_slab", () -> new PerodiumOakSlabBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_SLAB = REGISTRY.register("akvamarine_birch_slab",
+			() -> new AkvamarineBirchSlabBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_SLAB = REGISTRY.register("ruby_jungle_slab", () -> new RubyJungleSlabBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_FENCE = REGISTRY.register("perodium_oak_fence", () -> new PerodiumOakFenceBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_FENCE = REGISTRY.register("akvamarine_birch_fence",
+			() -> new AkvamarineBirchFenceBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_FENCE = REGISTRY.register("ruby_jungle_fence", () -> new RubyJungleFenceBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_FENCE_GATE = REGISTRY.register("perodium_oak_fence_gate",
+			() -> new PerodiumOakFenceGateBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_FENCE_GATE = REGISTRY.register("akvamarine_birch_fence_gate",
+			() -> new AkvamarineBirchFenceGateBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_FENCE_GATE = REGISTRY.register("ruby_jungle_fence_gate",
+			() -> new RubyJungleFenceGateBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_BUTTON = REGISTRY.register("perodium_oak_button", () -> new PerodiumOakButtonBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_BUTTON = REGISTRY.register("akvamarine_birch_button",
+			() -> new AkvamarineBirchButtonBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_BUTTON = REGISTRY.register("ruby_jungle_button", () -> new RubyJungleButtonBlock());
+	public static final RegistryObject<Block> PERODIUM_STONE_BUTTON = REGISTRY.register("perodium_stone_button",
+			() -> new PerodiumStoneButtonBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_PRESSURE_PLATE = REGISTRY.register("perodium_oak_pressure_plate",
+			() -> new PerodiumOakPressurePlateBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_PRESSURE_PLATE = REGISTRY.register("akvamarine_birch_pressure_plate",
+			() -> new AkvamarineBirchPressurePlateBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_PRESSURE_PLATE = REGISTRY.register("ruby_jungle_pressure_plate",
+			() -> new RubyJunglePressurePlateBlock());
+	public static final RegistryObject<Block> PERODIUM_STONE_PRESSURE_PLATE = REGISTRY.register("perodium_stone_pressure_plate",
+			() -> new PerodiumStonePressurePlateBlock());
+	public static final RegistryObject<Block> PERODIUM_PRESSURE_PLATE = REGISTRY.register("perodium_pressure_plate",
+			() -> new PerodiumPressurePlateBlock());
+	public static final RegistryObject<Block> PERODIUM_OAK_DOOR = REGISTRY.register("perodium_oak_door", () -> new PerodiumOakDoorBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BIRCH_DOOR = REGISTRY.register("akvamarine_birch_door",
+			() -> new AkvamarineBirchDoorBlock());
+	public static final RegistryObject<Block> RUBY_JUNGLE_DOOR = REGISTRY.register("ruby_jungle_door", () -> new RubyJungleDoorBlock());
+	public static final RegistryObject<Block> PERODIUM_DOOR = REGISTRY.register("perodium_door", () -> new PerodiumDoorBlock());
+	public static final RegistryObject<Block> PERODIUM_GLASS = REGISTRY.register("perodium_glass", () -> new PerodiumGlassBlock());
+	public static final RegistryObject<Block> PERODIUM_GLASS_PANE = REGISTRY.register("perodium_glass_pane", () -> new PerodiumGlassPaneBlock());
+	public static final RegistryObject<Block> PERODIUM_GLOWSTONE = REGISTRY.register("perodium_glowstone", () -> new PerodiumGlowstoneBlock());
+	public static final RegistryObject<Block> PERODIUM_SHROOMLIGHT = REGISTRY.register("perodium_shroomlight", () -> new PerodiumShroomlightBlock());
+	public static final RegistryObject<Block> DEEPSLATE_HOCHIYM_ORE = REGISTRY.register("deepslate_hochiym_ore",
+			() -> new DeepslateHochiymOreBlock());
+	public static final RegistryObject<Block> DEEPSLATE_AKVAMARINE_ORE = REGISTRY.register("deepslate_akvamarine_ore",
+			() -> new DeepslateAkvamarineOreBlock());
+	public static final RegistryObject<Block> DEEPSLATE_INFINITI_ORE = REGISTRY.register("deepslate_infiniti_ore",
+			() -> new DeepslateInfinitiOreBlock());
+	public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = REGISTRY.register("deepslate_ruby_ore", () -> new DeepslateRubyOreBlock());
+	public static final RegistryObject<Block> PERODIUM_BOX = REGISTRY.register("perodium_box", () -> new PerodiumBoxBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BOX = REGISTRY.register("akvamarine_box", () -> new AkvamarineBoxBlock());
+	public static final RegistryObject<Block> RUBY_BOX = REGISTRY.register("ruby_box", () -> new RubyBoxBlock());
+	public static final RegistryObject<Block> HOCHIYM_GRASS_PLANT = REGISTRY.register("hochiym_grass_plant", () -> new HochiymGrassPlantBlock());
+	public static final RegistryObject<Block> AKVAMARINE_GRASS_PLANT = REGISTRY.register("akvamarine_grass_plant",
+			() -> new AkvamarineGrassPlantBlock());
+	public static final RegistryObject<Block> INFINITI_GRASS_PLANT = REGISTRY.register("infiniti_grass_plant", () -> new InfinitiGrassPlantBlock());
+	public static final RegistryObject<Block> RUBY_GRASS_PLANT = REGISTRY.register("ruby_grass_plant", () -> new RubyGrassPlantBlock());
+	public static final RegistryObject<Block> PERODIUM_GRASS_PLANT = REGISTRY.register("perodium_grass_plant", () -> new PerodiumGrassPlantBlock());
+	public static final RegistryObject<Block> PERODIUM_DEAD_BUSH = REGISTRY.register("perodium_dead_bush", () -> new PerodiumDeadBushBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BUSH = REGISTRY.register("akvamarine_bush", () -> new AkvamarineBushBlock());
+	public static final RegistryObject<Block> PERODIUM_TULIP = REGISTRY.register("perodium_tulip", () -> new PerodiumTulipBlock());
+	public static final RegistryObject<Block> AKVAMARINE_CORNFLOWER = REGISTRY.register("akvamarine_cornflower",
+			() -> new AkvamarineCornflowerBlock());
+	public static final RegistryObject<Block> RUBY_DANDELEON = REGISTRY.register("ruby_dandeleon", () -> new RubyDandeleonBlock());
+	public static final RegistryObject<Block> PERODIUM_BUSH = REGISTRY.register("perodium_bush", () -> new PerodiumBushBlock());
+	public static final RegistryObject<Block> PERODIUM_YELLOW_MUSHROOM = REGISTRY.register("perodium_yellow_mushroom",
+			() -> new PerodiumYellowMushroomBlock());
+	public static final RegistryObject<Block> PERODIUM_MUSHROOM = REGISTRY.register("perodium_mushroom", () -> new PerodiumMushroomBlock());
+	public static final RegistryObject<Block> RUBY_MUSHROOM = REGISTRY.register("ruby_mushroom", () -> new RubyMushroomBlock());
+	public static final RegistryObject<Block> PERODIUM_APPLE_STAGE_1 = REGISTRY.register("perodium_apple_stage_1",
+			() -> new PerodiumAppleStage1Block());
+	public static final RegistryObject<Block> PERODIUM_CACTUS = REGISTRY.register("perodium_cactus", () -> new PerodiumCactusBlock());
+	public static final RegistryObject<Block> PERODIUM_MUSHROOM_STEM = REGISTRY.register("perodium_mushroom_stem",
+			() -> new PerodiumMushroomStemBlock());
+	public static final RegistryObject<Block> PERODIUM_MUSHROOM_BLOCK = REGISTRY.register("perodium_mushroom_block",
+			() -> new PerodiumMushroomBlockBlock());
+	public static final RegistryObject<Block> PERODIUM_YELLOW_MUSHROOM_STEM = REGISTRY.register("perodium_yellow_mushroom_stem",
+			() -> new PerodiumYellowMushroomStemBlock());
+	public static final RegistryObject<Block> PERODIUM_YELLOW_MUSHROOM_BLOCK = REGISTRY.register("perodium_yellow_mushroom_block",
+			() -> new PerodiumYellowMushroomBlockBlock());
+	public static final RegistryObject<Block> RUBY_MUSHROOM_STEM = REGISTRY.register("ruby_mushroom_stem", () -> new RubyMushroomStemBlock());
+	public static final RegistryObject<Block> RUBY_MUSHROOM_BLOCK = REGISTRY.register("ruby_mushroom_block", () -> new RubyMushroomBlockBlock());
+	public static final RegistryObject<Block> AKVAMARINE_BUSH_2 = REGISTRY.register("akvamarine_bush_2", () -> new AkvamarineBush2Block());
+	public static final RegistryObject<Block> PERODIUM_BUSH_2 = REGISTRY.register("perodium_bush_2", () -> new PerodiumBush2Block());
+	public static final RegistryObject<Block> PERODIUM_APPLE_STAGE_2 = REGISTRY.register("perodium_apple_stage_2",
+			() -> new PerodiumAppleStage2Block());
+	public static final RegistryObject<Block> PERODIUM_APPLE_STAGE_3 = REGISTRY.register("perodium_apple_stage_3",
+			() -> new PerodiumAppleStage3Block());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -367,6 +417,9 @@ public class PerodiumcraftModBlocks {
 			PerodiumDoorBlock.registerRenderLayer();
 			PerodiumGlassBlock.registerRenderLayer();
 			PerodiumGlassPaneBlock.registerRenderLayer();
+			PerodiumBoxBlock.registerRenderLayer();
+			AkvamarineBoxBlock.registerRenderLayer();
+			RubyBoxBlock.registerRenderLayer();
 			HochiymGrassPlantBlock.registerRenderLayer();
 			AkvamarineGrassPlantBlock.registerRenderLayer();
 			InfinitiGrassPlantBlock.registerRenderLayer();

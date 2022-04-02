@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "yellowmushroominside",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Yellow Mushroom Block",
+    "name": "Perodium Yellow Mushroom Block",
     "specialInfo": [],
     "hardness": 0.2,
     "resistance": 0.2,

@@ -1,0 +1,23 @@
+{
+  "_fv": 25,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:AkvamarineBirchFence"
+      },
+      {
+        "value": "CUSTOM:RubyJungleFence"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakFence"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "wooden_fences",
+    "namespace": "minecraft"
+  }
+}

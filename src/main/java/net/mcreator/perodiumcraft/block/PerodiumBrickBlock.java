@@ -19,7 +19,6 @@ import java.util.Collections;
 public class PerodiumBrickBlock extends Block {
 	public PerodiumBrickBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_brick");
 	}
 
 	@Override

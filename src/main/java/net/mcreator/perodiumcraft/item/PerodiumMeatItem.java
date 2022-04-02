@@ -13,6 +13,5 @@ public class PerodiumMeatItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.3f)
 
 						.meat().build()));
-		setRegistryName("perodium_meat");
 	}
 }

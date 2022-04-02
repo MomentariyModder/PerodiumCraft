@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "glowstone",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Glowstone",
+    "name": "Perodium Glowstone",
     "specialInfo": [],
     "hardness": 0.3,
     "resistance": 0.5,

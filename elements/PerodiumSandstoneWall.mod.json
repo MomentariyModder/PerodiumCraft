@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "perodiumsandstone",
@@ -31,7 +31,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Sandstone Wall",
+    "name": "Perodium Sandstone Wall",
     "specialInfo": [],
     "hardness": 2.4,
     "resistance": 12.0,

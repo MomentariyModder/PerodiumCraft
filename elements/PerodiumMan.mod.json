@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "livingentity",
   "definition": {
-    "mobName": "§8Perodium Man",
+    "mobName": "Perodium Man",
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "perodiumman.png",

@@ -1,0 +1,46 @@
+{
+  "_fv": 25,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:StrippedRubyJungle"
+      },
+      {
+        "value": "CUSTOM:RubyJunglePlant"
+      },
+      {
+        "value": "CUSTOM:StrippedRubyJungle"
+      },
+      {
+        "value": "CUSTOM:RubyJunglePlant"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RubyJunglePlant"
+      },
+      {
+        "value": "CUSTOM:StrippedRubyJungle"
+      },
+      {
+        "value": "CUSTOM:RubyJunglePlant"
+      },
+      {
+        "value": "CUSTOM:StrippedRubyJungle"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RubyBox"
+    },
+    "name": "ruby_box_rec",
+    "namespace": "mod"
+  }
+}

@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "perodiumcraft:infiniti_dust"
   },
-  "result": {
-    "item": "perodiumcraft:infiniti"
-  }
+  "result": "perodiumcraft:infiniti"
 }

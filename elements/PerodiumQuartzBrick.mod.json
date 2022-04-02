@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "perodiumquartzbricks",
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Quartz Brick",
+    "name": "Perodium Quartz Brick",
     "specialInfo": [],
     "hardness": 6.0,
     "resistance": 30.0,

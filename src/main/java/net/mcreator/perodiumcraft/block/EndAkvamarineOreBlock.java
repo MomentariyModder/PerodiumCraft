@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class EndAkvamarineOreBlock extends Block {
 	public EndAkvamarineOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("end_akvamarine_ore");
 	}
 
 	@Override

@@ -27,7 +27,6 @@ public class PerodiumOakFenceBlock extends FenceBlock {
 	public PerodiumOakFenceBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f, 9f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_oak_fence");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class PerodiumOakFenceBlock extends FenceBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_OAK_FENCE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_OAK_FENCE.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

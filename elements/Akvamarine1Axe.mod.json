@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "akvamarine1_axe",
     "customModelName": "Normal",
-    "name": "§3Akvamarine Axe",
+    "name": "Akvamarine Axe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

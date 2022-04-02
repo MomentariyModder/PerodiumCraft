@@ -15,8 +15,7 @@ import javax.annotation.Nullable;
 public class WorldJoinProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		Entity entity = event.getPlayer();
-		execute(event, entity);
+		execute(event, event.getPlayer());
 	}
 
 	public static void execute(Entity entity) {
@@ -29,7 +28,7 @@ public class WorldJoinProcedure {
 		if (entity instanceof Player _player && !_player.level.isClientSide())
 			_player.displayClientMessage(new TextComponent("\u00A7e| \u00A78PerodiumCraft: \u00A77The Next Generation"), (false));
 		if (entity instanceof Player _player && !_player.level.isClientSide())
-			_player.displayClientMessage(new TextComponent("\u00A7e| \u00A78Version: \u00A771.0"), (false));
+			_player.displayClientMessage(new TextComponent("\u00A7e| \u00A78Version: \u00A772.0.2"), (false));
 		if (entity instanceof Player _player && !_player.level.isClientSide())
 			_player.displayClientMessage(new TextComponent("\u00A7e| \u00A77momentariymodder.github.io/PerodiumCraft.html"), (false));
 	}

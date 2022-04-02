@@ -29,7 +29,6 @@ public class AkvamarineBirchDoorBlock extends DoorBlock {
 	public AkvamarineBirchDoorBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("akvamarine_birch_door");
 	}
 
 	@Override
@@ -56,6 +55,6 @@ public class AkvamarineBirchDoorBlock extends DoorBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BIRCH_DOOR, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BIRCH_DOOR.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

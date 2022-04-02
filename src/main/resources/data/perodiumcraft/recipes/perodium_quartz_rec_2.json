@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "perodiumcraft:perodium_quartz_ore_2"
   },
-  "result": {
-    "item": "perodiumcraft:perodium_quartz"
-  }
+  "result": "perodiumcraft:perodium_quartz"
 }

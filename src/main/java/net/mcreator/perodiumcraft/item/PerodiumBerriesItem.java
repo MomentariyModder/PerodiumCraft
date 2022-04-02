@@ -13,6 +13,5 @@ public class PerodiumBerriesItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f).alwaysEat()
 
 						.build()));
-		setRegistryName("perodium_berries");
 	}
 }

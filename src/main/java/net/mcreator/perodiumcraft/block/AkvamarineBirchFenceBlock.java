@@ -27,7 +27,6 @@ public class AkvamarineBirchFenceBlock extends FenceBlock {
 	public AkvamarineBirchFenceBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f, 9f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("akvamarine_birch_fence");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class AkvamarineBirchFenceBlock extends FenceBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BIRCH_FENCE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BIRCH_FENCE.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

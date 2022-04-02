@@ -26,7 +26,6 @@ import java.util.Collections;
 public class PerodiumTulipBlock extends FlowerBlock {
 	public PerodiumTulipBlock() {
 		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("perodium_tulip");
 	}
 
 	@Override
@@ -49,6 +48,6 @@ public class PerodiumTulipBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_TULIP, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_TULIP.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

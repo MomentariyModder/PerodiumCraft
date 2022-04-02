@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "akvamarine1_sword",
     "customModelName": "Normal",
-    "name": "§3Akvamarine Sword",
+    "name": "Akvamarine Sword",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

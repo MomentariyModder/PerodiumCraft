@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "perodiumcraft:diamondore"
   },
-  "result": {
-    "item": "minecraft:diamond"
-  }
+  "result": "minecraft:diamond"
 }

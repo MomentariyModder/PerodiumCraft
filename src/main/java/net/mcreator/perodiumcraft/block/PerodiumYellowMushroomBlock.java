@@ -21,7 +21,6 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 public class PerodiumYellowMushroomBlock extends FlowerBlock {
 	public PerodiumYellowMushroomBlock() {
 		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.FUNGUS).instabreak());
-		setRegistryName("perodium_yellow_mushroom");
 	}
 
 	@Override
@@ -36,6 +35,6 @@ public class PerodiumYellowMushroomBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_YELLOW_MUSHROOM, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_YELLOW_MUSHROOM.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

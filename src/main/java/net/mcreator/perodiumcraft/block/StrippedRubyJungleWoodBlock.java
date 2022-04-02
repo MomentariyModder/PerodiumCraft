@@ -28,7 +28,6 @@ public class StrippedRubyJungleWoodBlock extends Block {
 	public StrippedRubyJungleWoodBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
-		setRegistryName("stripped_ruby_jungle_wood");
 	}
 
 	@Override

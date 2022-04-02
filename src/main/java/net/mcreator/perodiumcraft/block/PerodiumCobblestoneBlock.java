@@ -19,7 +19,6 @@ import java.util.Collections;
 public class PerodiumCobblestoneBlock extends Block {
 	public PerodiumCobblestoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(4f, 12f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_cobblestone");
 	}
 
 	@Override

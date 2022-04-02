@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -38,6 +38,15 @@
       },
       {
         "value": "CUSTOM:RubyZombiePlains"
+      },
+      {
+        "value": "CUSTOM:PerodiumMountain"
+      },
+      {
+        "value": "CUSTOM:AkvamarineBirchMegaForest"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakMegaForest"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -52,28 +61,28 @@
       "falpha": 0.0
     },
     "canRespawnHere": true,
-    "hasFog": true,
+    "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": false,
+    "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "CUSTOM:ReinforcedPeriodiumBricks"
     },
     "portalParticles": {
-      "value": "PORTAL"
+      "value": "CUSTOM:Portal"
     },
-    "portalLuminance": 2,
+    "portalLuminance": 6,
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "§8Perodium Key",
+    "igniterName": "Perodium Key",
     "igniterTab": {
       "value": "CUSTOM:PerodiumCraftItem"
     },
     "texture": "perodiumkey",
-    "portalTexture": "perodiumportal",
+    "portalTexture": "perodiumwaterstill",
     "enablePortal": true
   }
 }

@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "perodiumplate",
     "customModelName": "Normal",
-    "name": "§8Perodium Plate",
+    "name": "Perodium Plate",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftItem"

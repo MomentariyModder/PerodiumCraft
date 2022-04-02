@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "perodiumcraft:blocks/perodiumportal",
-    "portal": "perodiumcraft:blocks/perodiumportal"
+    "particle": "perodiumcraft:blocks/perodiumwaterstill",
+    "portal": "perodiumcraft:blocks/perodiumwaterstill"
   },
   "elements": [
     {

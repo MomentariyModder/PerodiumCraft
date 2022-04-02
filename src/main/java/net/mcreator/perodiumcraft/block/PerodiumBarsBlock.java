@@ -26,7 +26,6 @@ import java.util.Collections;
 public class PerodiumBarsBlock extends IronBarsBlock {
 	public PerodiumBarsBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_bars");
 	}
 
 	@Override
@@ -51,7 +50,7 @@ public class PerodiumBarsBlock extends IronBarsBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_BARS, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_BARS.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

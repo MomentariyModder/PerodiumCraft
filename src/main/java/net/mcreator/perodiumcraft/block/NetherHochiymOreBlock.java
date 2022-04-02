@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class NetherHochiymOreBlock extends Block {
 	public NetherHochiymOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("nether_hochiym_ore");
 	}
 
 	@Override

@@ -19,7 +19,6 @@ import java.util.Collections;
 public class PerodiumOakPlantBlock extends Block {
 	public PerodiumOakPlantBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_oak_plant");
 	}
 
 	@Override

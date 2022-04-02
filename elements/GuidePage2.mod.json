@@ -1,0 +1,118 @@
+{
+  "_fv": 25,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bestiary.png",
+          "use1Xscale": true,
+          "name": "bestiary.png",
+          "x": 87,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Reinforced Perodium",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Reinforced Perodium",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Perodium Portal",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Perodium Portal",
+          "x": 240,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Smithing Table",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Smithing Table",
+          "x": 114,
+          "y": 53
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "GuidePageProcedure2"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 177,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "brick",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "brick",
+          "x": 96,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rec5.png",
+          "use1Xscale": false,
+          "name": "rec5.png",
+          "x": 96,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pportal.png",
+          "use1Xscale": true,
+          "name": "pportal.png",
+          "x": 231,
+          "y": 71
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

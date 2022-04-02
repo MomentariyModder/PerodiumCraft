@@ -20,7 +20,6 @@ import java.util.Collections;
 public class RubyJungleSlabBlock extends SlabBlock {
 	public RubyJungleSlabBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f, 9f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_jungle_slab");
 	}
 
 	@Override

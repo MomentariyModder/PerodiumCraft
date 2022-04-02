@@ -1,17 +1,43 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Stone cutting",
+    "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 9,
     "group": "",
-    "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:PerodiumBlock"
-    },
-    "stoneCuttingReturnStack": {
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PerodiumHammer"
+      },
+      {
+        "value": "CUSTOM:PerodiumBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:PerodiumDust"
     },
     "name": "perodium_dust_rec",

@@ -1,7 +1,6 @@
 
 package net.mcreator.perodiumcraft.world.dimension;
 
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -29,55 +28,37 @@ public class PerodiumLandDimension {
 		@SubscribeEvent
 		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
 			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_STONE);
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:perodium_oak_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:perodium_oak_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:perodium_zombie_plains"))
-					.getGenerationSettings().getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:perodium_zombie_plains"))
-					.getGenerationSettings().getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:perodium_desert")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:perodium_desert")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:ruby_zombie_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:ruby_zombie_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:akvamarine_birch_forest"))
-					.getGenerationSettings().getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:akvamarine_birch_forest"))
-					.getGenerationSettings().getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:infiniti_swamp")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:infiniti_swamp")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:akvamarine_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:akvamarine_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:akvamarine_zombie_plains"))
-					.getGenerationSettings().getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:akvamarine_zombie_plains"))
-					.getGenerationSettings().getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:perodium_oak_forest")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:perodium_oak_forest")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:ruby_jungle_forest")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:ruby_jungle_forest")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:hochiym_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:hochiym_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:ruby_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getTopMaterial().getBlock());
-			replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("perodiumcraft:ruby_plains")).getGenerationSettings()
-					.getSurfaceBuilder().get().config().getUnderMaterial().getBlock());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_STONE.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_SAND.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_SANDSTONE.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.RUBY_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.RUBY_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.AKVAMARINE_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.AKVAMARINE_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.INFINITI_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.INFINITI_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.AKVAMARINE_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.AKVAMARINE_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.AKVAMARINE_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.AKVAMARINE_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.AKVAMARINE_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.AKVAMARINE_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.RUBY_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.RUBY_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.PERODIUM_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.RUBY_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.RUBY_DIRT.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.HOCHIYM_GRASS.get());
+			replaceableBlocks.add(PerodiumcraftModBlocks.HOCHIYM_DIRT.get());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks)
 						.addAll(replaceableBlocks).build();
@@ -89,7 +70,7 @@ public class PerodiumLandDimension {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public static void registerDimensionSpecialEffects(FMLClientSetupEvent event) {
-			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(Float.NaN, true, DimensionSpecialEffects.SkyType.NONE, false, false) {
+			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(128, true, DimensionSpecialEffects.SkyType.NORMAL, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
 					return new Vec3(0.2, 0.2, 0.2);
@@ -97,7 +78,7 @@ public class PerodiumLandDimension {
 
 				@Override
 				public boolean isFoggyAt(int x, int y) {
-					return true;
+					return false;
 				}
 			};
 			event.enqueueWork(() -> DimensionSpecialEffects.EFFECTS.put(new ResourceLocation("perodiumcraft:perodium_land"), customEffect));

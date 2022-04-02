@@ -13,6 +13,5 @@ public class AkvamarineBerriesItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("akvamarine_berries");
 	}
 }

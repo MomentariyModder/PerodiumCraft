@@ -18,7 +18,6 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 public class PerodiumYellowMushroomStemBlock extends Block {
 	public PerodiumYellowMushroomStemBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.2f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_yellow_mushroom_stem");
 	}
 
 	@Override
@@ -27,8 +26,8 @@ public class PerodiumYellowMushroomStemBlock extends Block {
 	}
 
 	@Override
-	public ItemStack getPickBlock(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(PerodiumcraftModBlocks.PERODIUM_YELLOW_MUSHROOM);
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		return new ItemStack(PerodiumcraftModBlocks.PERODIUM_YELLOW_MUSHROOM.get());
 	}
 
 	@Override

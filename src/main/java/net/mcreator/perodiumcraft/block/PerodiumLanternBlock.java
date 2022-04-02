@@ -1,6 +1,8 @@
 
 package net.mcreator.perodiumcraft.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -40,7 +42,6 @@ public class PerodiumLanternBlock extends Block {
 		super(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.LANTERN).strength(10.5f).lightLevel(s -> 15)
 				.requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-		setRegistryName("perodium_lantern");
 	}
 
 	@Override
@@ -105,6 +106,6 @@ public class PerodiumLanternBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_LANTERN, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_LANTERN.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

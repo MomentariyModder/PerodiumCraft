@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "akvamarineorenether",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "§3Nether Akvamarine Ore",
+    "name": "Nether Akvamarine Ore",
     "specialInfo": [],
     "hardness": 6.0,
     "resistance": 30.0,

@@ -28,7 +28,6 @@ public class RubyJungleBlock extends Block {
 	public RubyJungleBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
-		setRegistryName("ruby_jungle");
 	}
 
 	@Override

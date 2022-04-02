@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "perodiumstone",
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Stone",
+    "name": "Perodstone",
     "specialInfo": [],
     "hardness": 3.0,
     "resistance": 12.0,

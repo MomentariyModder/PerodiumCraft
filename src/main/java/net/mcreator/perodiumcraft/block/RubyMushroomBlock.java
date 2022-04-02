@@ -21,7 +21,6 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 public class RubyMushroomBlock extends FlowerBlock {
 	public RubyMushroomBlock() {
 		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.FUNGUS).instabreak());
-		setRegistryName("ruby_mushroom");
 	}
 
 	@Override
@@ -36,6 +35,6 @@ public class RubyMushroomBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_MUSHROOM, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_MUSHROOM.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

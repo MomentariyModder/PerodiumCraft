@@ -29,7 +29,6 @@ public class PerodiumSandstoneBlock extends Block {
 	public PerodiumSandstoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.4f, 12f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-		setRegistryName("perodium_sandstone");
 	}
 
 	@Override

@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "hochiymtools_axe",
     "customModelName": "Normal",
-    "name": "§1Hochiym Axe",
+    "name": "Hochiym Axe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

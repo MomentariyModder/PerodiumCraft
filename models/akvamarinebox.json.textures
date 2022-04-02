@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "strippedakvamarinebirchlog",
+        "1": "akvamarinewoodplanks"
+      },
+      "name": "default"
+    }
+  }
+}

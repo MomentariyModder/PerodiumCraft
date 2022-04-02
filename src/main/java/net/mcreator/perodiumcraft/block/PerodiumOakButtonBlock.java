@@ -27,7 +27,6 @@ public class PerodiumOakButtonBlock extends WoodButtonBlock {
 	public PerodiumOakButtonBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.5f, 2.5f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_oak_button");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class PerodiumOakButtonBlock extends WoodButtonBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_OAK_BUTTON, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_OAK_BUTTON.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

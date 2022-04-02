@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Bush",
+    "name": "Perodium Bush",
     "specialInfo": [],
     "creativeTab": {
       "value": "No creative tab entry"

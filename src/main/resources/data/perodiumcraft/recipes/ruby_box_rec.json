@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "perodiumcraft:stripped_ruby_jungle"
+    },
+    "1": {
+      "item": "perodiumcraft:ruby_jungle_plant"
+    },
+    "2": {
+      "item": "perodiumcraft:stripped_ruby_jungle"
+    },
+    "3": {
+      "item": "perodiumcraft:ruby_jungle_plant"
+    },
+    "5": {
+      "item": "perodiumcraft:ruby_jungle_plant"
+    },
+    "6": {
+      "item": "perodiumcraft:stripped_ruby_jungle"
+    },
+    "7": {
+      "item": "perodiumcraft:ruby_jungle_plant"
+    },
+    "8": {
+      "item": "perodiumcraft:stripped_ruby_jungle"
+    }
+  },
+  "result": {
+    "item": "perodiumcraft:ruby_box",
+    "count": 1
+  }
+}

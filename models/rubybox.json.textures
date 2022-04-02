@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "strippedrubyjunglelog",
+        "1": "rubywoodplanks"
+      },
+      "name": "default"
+    }
+  }
+}

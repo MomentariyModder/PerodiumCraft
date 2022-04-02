@@ -27,7 +27,6 @@ public class PerodiumStonePressurePlateBlock extends PressurePlateBlock {
 	public PerodiumStonePressurePlateBlock() {
 		super(Sensitivity.MOBS, BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.5f).requiresCorrectToolForDrops()
 				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_stone_pressure_plate");
 	}
 
 	@Override
@@ -52,6 +51,7 @@ public class PerodiumStonePressurePlateBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_STONE_PRESSURE_PLATE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_STONE_PRESSURE_PLATE.get(),
+				renderType -> renderType == RenderType.cutout());
 	}
 }

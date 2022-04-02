@@ -19,7 +19,6 @@ import java.util.Collections;
 public class RubyDirtBlock extends Block {
 	public RubyDirtBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_dirt");
 	}
 
 	@Override

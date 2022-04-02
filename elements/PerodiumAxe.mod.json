@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "perodiumaxe",
     "customModelName": "Normal",
-    "name": "§8Perodium Axe",
+    "name": "Perodium Axe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

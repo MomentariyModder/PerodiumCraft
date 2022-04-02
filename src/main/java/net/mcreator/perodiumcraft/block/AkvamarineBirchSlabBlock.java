@@ -20,7 +20,6 @@ import java.util.Collections;
 public class AkvamarineBirchSlabBlock extends SlabBlock {
 	public AkvamarineBirchSlabBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f, 9f).requiresCorrectToolForDrops());
-		setRegistryName("akvamarine_birch_slab");
 	}
 
 	@Override

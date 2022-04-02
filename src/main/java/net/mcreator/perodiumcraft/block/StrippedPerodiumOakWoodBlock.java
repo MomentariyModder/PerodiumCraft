@@ -28,7 +28,6 @@ public class StrippedPerodiumOakWoodBlock extends Block {
 	public StrippedPerodiumOakWoodBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
-		setRegistryName("stripped_perodium_oak_wood");
 	}
 
 	@Override

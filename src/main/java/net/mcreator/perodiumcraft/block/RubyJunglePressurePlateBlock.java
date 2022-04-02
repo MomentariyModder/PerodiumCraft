@@ -27,7 +27,6 @@ public class RubyJunglePressurePlateBlock extends PressurePlateBlock {
 	public RubyJunglePressurePlateBlock() {
 		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.5f).requiresCorrectToolForDrops()
 				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("ruby_jungle_pressure_plate");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class RubyJunglePressurePlateBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_JUNGLE_PRESSURE_PLATE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_JUNGLE_PRESSURE_PLATE.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

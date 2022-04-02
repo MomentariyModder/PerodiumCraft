@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "food",
   "definition": {
     "renderType": 0,
     "texture": "akvamarineberries",
     "customModelName": "Normal",
-    "name": "§3Akvamarine Berries",
+    "name": "Akvamarine Berries",
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {

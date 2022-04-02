@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class NetherAkvamarineOreBlock extends Block {
 	public NetherAkvamarineOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("nether_akvamarine_ore");
 	}
 
 	@Override

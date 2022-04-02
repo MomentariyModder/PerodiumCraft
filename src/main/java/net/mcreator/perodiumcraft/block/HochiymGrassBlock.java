@@ -22,7 +22,6 @@ import java.util.Collections;
 public class HochiymGrassBlock extends Block {
 	public HochiymGrassBlock() {
 		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("hochiym_grass");
 	}
 
 	@Override

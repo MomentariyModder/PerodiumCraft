@@ -41,7 +41,7 @@ public abstract class InfinitiiArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PerodiumcraftModItems.INFINITI));
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.INFINITI.get()));
 			}
 
 			@Override
@@ -64,7 +64,6 @@ public abstract class InfinitiiArmorItem extends ArmorItem {
 	public static class Helmet extends InfinitiiArmorItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-			setRegistryName("infinitii_armor_helmet");
 		}
 
 		@Override
@@ -76,7 +75,6 @@ public abstract class InfinitiiArmorItem extends ArmorItem {
 	public static class Chestplate extends InfinitiiArmorItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-			setRegistryName("infinitii_armor_chestplate");
 		}
 
 		@Override
@@ -88,7 +86,6 @@ public abstract class InfinitiiArmorItem extends ArmorItem {
 	public static class Leggings extends InfinitiiArmorItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-			setRegistryName("infinitii_armor_leggings");
 		}
 
 		@Override
@@ -100,7 +97,6 @@ public abstract class InfinitiiArmorItem extends ArmorItem {
 	public static class Boots extends InfinitiiArmorItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-			setRegistryName("infinitii_armor_boots");
 		}
 
 		@Override

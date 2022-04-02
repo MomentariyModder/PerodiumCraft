@@ -19,7 +19,6 @@ import java.util.Collections;
 public class HochiymDirtBlock extends Block {
 	public HochiymDirtBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("hochiym_dirt");
 	}
 
 	@Override

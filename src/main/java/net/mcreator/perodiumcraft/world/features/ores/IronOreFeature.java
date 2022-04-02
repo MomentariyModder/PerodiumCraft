@@ -1,33 +1,59 @@
 
 package net.mcreator.perodiumcraft.world.features.ores;
 
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTestType;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
-import net.minecraft.world.level.levelgen.heightproviders.UniformHeight;
-import net.minecraft.world.level.levelgen.feature.configurations.RangeDecoratorConfiguration;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
+import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraft.world.level.levelgen.feature.OreFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
+import net.minecraft.core.Holder;
 
 import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 
 import java.util.Set;
 import java.util.Random;
+import java.util.List;
 
 public class IronOreFeature extends OreFeature {
-	public static final IronOreFeature FEATURE = (IronOreFeature) new IronOreFeature().setRegistryName("perodiumcraft:iron_ore");
-	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
-			.configured(new OreConfiguration(IronOreFeatureRuleTest.INSTANCE, PerodiumcraftModBlocks.IRON_ORE.defaultBlockState(), 9))
-			.range(new RangeDecoratorConfiguration(UniformHeight.of(VerticalAnchor.absolute(5), VerticalAnchor.absolute(40)))).squared().count(1);
+	public static IronOreFeature FEATURE = null;
+	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
+	public static Holder<PlacedFeature> PLACED_FEATURE = null;
+
+	public static Feature<?> feature() {
+		FEATURE = new IronOreFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("perodiumcraft:iron_ore", FEATURE,
+				new OreConfiguration(IronOreFeatureRuleTest.INSTANCE, PerodiumcraftModBlocks.IRON_ORE.get().defaultBlockState(), 9));
+		PLACED_FEATURE = PlacementUtils.register("perodiumcraft:iron_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(1), HeightRangePlacement.uniform(VerticalAnchor.absolute(5), VerticalAnchor.absolute(40))));
+		return FEATURE;
+	}
+
+	public static Holder<PlacedFeature> placedFeature() {
+		return PLACED_FEATURE;
+	}
+
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	private final Set<ResourceKey<Level>> generate_dimensions = Set
+			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("perodiumcraft:perodium_land")));
 
 	public IronOreFeature() {
 		super(OreConfiguration.CODEC);
@@ -35,26 +61,29 @@ public class IronOreFeature extends OreFeature {
 
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
-		ResourceKey<Level> dimensionType = world.getLevel().dimension();
-		boolean dimensionCriteria = false;
-		if (dimensionType == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("perodiumcraft:perodium_land")))
-			dimensionCriteria = true;
-		if (!dimensionCriteria)
+		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
 		return super.place(context);
 	}
 
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	private static class IronOreFeatureRuleTest extends RuleTest {
 		static final IronOreFeatureRuleTest INSTANCE = new IronOreFeatureRuleTest();
-		static final com.mojang.serialization.Codec<IronOreFeatureRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		static final RuleTestType<IronOreFeatureRuleTest> CUSTOM_MATCH = Registry.register(Registry.RULE_TEST,
-				new ResourceLocation("perodiumcraft:iron_ore_match"), () -> codec);
+		private static final com.mojang.serialization.Codec<IronOreFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
+		private static final RuleTestType<IronOreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
+
+		@SubscribeEvent
+		public static void init(FMLCommonSetupEvent event) {
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("perodiumcraft:iron_ore_match"), CUSTOM_MATCH);
+		}
+
+		private List<Block> base_blocks = null;
 
 		public boolean test(BlockState blockAt, Random random) {
-			boolean blockCriteria = false;
-			if (blockAt.getBlock() == PerodiumcraftModBlocks.PERODIUM_STONE)
-				blockCriteria = true;
-			return blockCriteria;
+			if (base_blocks == null) {
+				base_blocks = List.of(PerodiumcraftModBlocks.PERODIUM_STONE.get());
+			}
+			return base_blocks.contains(blockAt.getBlock());
 		}
 
 		protected RuleTestType<?> getType() {

@@ -24,7 +24,6 @@ import java.util.Collections;
 public class PerodiumGrassBlock extends Block {
 	public PerodiumGrassBlock() {
 		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_grass");
 	}
 
 	@Override
@@ -49,6 +48,6 @@ public class PerodiumGrassBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.PERODIUM_DIRT));
+		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.PERODIUM_DIRT.get()));
 	}
 }

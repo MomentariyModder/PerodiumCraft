@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "structure",
   "definition": {
     "structure": "mushroom1",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 900000,
+    "spawnProbability": 650000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -15,7 +15,11 @@
     "spawnWorldTypes": [
       "CUSTOM:PerodiumLand"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:InfinitiGrass"
+      }
+    ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:InfinitiSwamp"

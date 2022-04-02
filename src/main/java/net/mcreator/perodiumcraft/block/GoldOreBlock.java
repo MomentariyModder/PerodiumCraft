@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class GoldOreBlock extends Block {
 	public GoldOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("gold_ore");
 	}
 
 	@Override

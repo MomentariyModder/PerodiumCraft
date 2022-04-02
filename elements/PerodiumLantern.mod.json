@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "lantern",
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Lantern",
+    "name": "Perodium Lantern",
     "specialInfo": [],
     "hardness": 10.5,
     "resistance": 10.5,

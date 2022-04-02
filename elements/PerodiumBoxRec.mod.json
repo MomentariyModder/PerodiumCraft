@@ -1,0 +1,46 @@
+{
+  "_fv": 25,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:StrippedPerodiumOak"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakPlant"
+      },
+      {
+        "value": "CUSTOM:StrippedPerodiumOak"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakPlant"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PerodiumOakPlant"
+      },
+      {
+        "value": "CUSTOM:StrippedPerodiumOak"
+      },
+      {
+        "value": "CUSTOM:PerodiumOakPlant"
+      },
+      {
+        "value": "CUSTOM:StrippedPerodiumOak"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PerodiumBox"
+    },
+    "name": "perodium_box_rec",
+    "namespace": "mod"
+  }
+}

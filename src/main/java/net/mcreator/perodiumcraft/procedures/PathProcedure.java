@@ -37,10 +37,9 @@ import java.util.Map;
 public class PathProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-		Player entity = event.getPlayer();
-		if (event.getHand() != entity.getUsedItemHand())
+		if (event.getHand() != event.getPlayer().getUsedItemHand())
 			return;
-		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), entity);
+		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -50,16 +49,16 @@ public class PathProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.PERODIUM_GRASS
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.PERODIUM_GRASS.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -93,7 +92,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.PERODIUM_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.PERODIUM_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -106,7 +105,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -121,16 +120,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.PERODIUM_DIRT
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.PERODIUM_DIRT.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -164,7 +163,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.PERODIUM_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.PERODIUM_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -177,7 +176,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -192,16 +191,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.AKVAMARINE_GRASS
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.AKVAMARINE_GRASS.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -235,7 +234,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.AKVAMARINE_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.AKVAMARINE_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -248,7 +247,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -263,16 +262,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.AKVAMARINE_DIRT
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.AKVAMARINE_DIRT.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -306,7 +305,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.AKVAMARINE_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.AKVAMARINE_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -319,7 +318,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -334,16 +333,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.HOCHIYM_GRASS
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.HOCHIYM_GRASS.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -377,7 +376,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.HOCHIYM_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.HOCHIYM_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -390,7 +389,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -405,16 +404,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.HOCHIYM_DIRT
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.HOCHIYM_DIRT.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -448,7 +447,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.HOCHIYM_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.HOCHIYM_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -461,7 +460,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -476,16 +475,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.INFINITI_GRASS
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.INFINITI_GRASS.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -519,7 +518,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.INFINITI_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.INFINITI_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -532,7 +531,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -547,16 +546,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.INFINITI_DIRT
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.INFINITI_DIRT.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -590,7 +589,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.INFINITI_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.INFINITI_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -603,7 +602,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -618,16 +617,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.RUBY_GRASS
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.RUBY_GRASS.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -661,7 +660,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.RUBY_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.RUBY_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -674,7 +673,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);
@@ -689,16 +688,16 @@ public class PathProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.RUBY_DIRT
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.RUBY_DIRT.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_SHOVEL
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_SHOVEL
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_shovel"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_shovel")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_shovel"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_shovel"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -732,7 +731,7 @@ public class PathProcedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.RUBY_PATH.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.RUBY_PATH.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -745,7 +744,7 @@ public class PathProcedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);

@@ -6,11 +6,10 @@ import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorTy
 import net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelSimulatedReader;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-
-import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 
 import java.util.function.BiConsumer;
 import java.util.Random;
@@ -49,7 +48,7 @@ public class PerodiumOakForestFruitDecorator extends CocoaDecorator {
 						Direction direction1 = direction.getOpposite();
 						BlockPos blockpos = p_161728_.offset(direction1.getStepX(), 0, direction1.getStepZ());
 						if (Feature.isAir(level, blockpos)) {
-							biConsumer.accept(blockpos, PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_1.defaultBlockState());
+							biConsumer.accept(blockpos, Blocks.AIR.defaultBlockState());
 						}
 					}
 				}

@@ -34,9 +34,8 @@ public class RubyyHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PerodiumcraftModItems.RUBY));
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.RUBY.get()));
 			}
 		}, 0, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-		setRegistryName("rubyy_hoe");
 	}
 }

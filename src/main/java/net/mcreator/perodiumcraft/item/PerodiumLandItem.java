@@ -15,7 +15,6 @@ import net.mcreator.perodiumcraft.block.PerodiumLandPortalBlock;
 public class PerodiumLandItem extends Item {
 	public PerodiumLandItem() {
 		super(new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_ITEM).durability(64));
-		setRegistryName("perodium_land");
 	}
 
 	@Override

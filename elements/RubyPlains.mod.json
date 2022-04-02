@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
-    "name": "§4Ruby Plains",
+    "name": "Ruby Plains",
     "groundBlock": {
       "value": "CUSTOM:RubyGrass"
     },
@@ -48,9 +48,6 @@
     },
     "particlesProbability": 0.0,
     "biomeCategory": "PLAINS",
-    "parent": {
-      "value": "CUSTOM:RubyJungleForest"
-    },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -107,11 +104,8 @@
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
-      "Caves",
-      "MonsterRooms",
       "Ores",
-      "Lakes",
-      "FrozenTopLayer"
+      "Caves"
     ],
     "spawnEntries": []
   }

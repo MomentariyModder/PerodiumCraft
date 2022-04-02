@@ -29,7 +29,6 @@ public class PerodiumAppleStage1Block extends Block {
 	public PerodiumAppleStage1Block() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(1f).noCollission().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_apple_stage_1");
 	}
 
 	@Override
@@ -53,7 +52,7 @@ public class PerodiumAppleStage1Block extends Block {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 100);
+		world.scheduleTick(pos, this, 100);
 	}
 
 	@Override
@@ -64,11 +63,11 @@ public class PerodiumAppleStage1Block extends Block {
 		int z = pos.getZ();
 
 		PerodiumAppleStage1ProcedureProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 100);
+		world.scheduleTick(pos, this, 100);
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_1, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_1.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

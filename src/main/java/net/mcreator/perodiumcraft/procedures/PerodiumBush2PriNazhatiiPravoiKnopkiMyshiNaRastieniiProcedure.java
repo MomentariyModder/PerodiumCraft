@@ -21,7 +21,7 @@ public class PerodiumBush2PriNazhatiiPravoiKnopkiMyshiNaRastieniiProcedure {
 			return;
 		{
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-			BlockState _bs = PerodiumcraftModBlocks.PERODIUM_BUSH.defaultBlockState();
+			BlockState _bs = PerodiumcraftModBlocks.PERODIUM_BUSH.get().defaultBlockState();
 			BlockState _bso = world.getBlockState(_bp);
 			for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 				Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -34,7 +34,7 @@ public class PerodiumBush2PriNazhatiiPravoiKnopkiMyshiNaRastieniiProcedure {
 			world.setBlock(_bp, _bs, 3);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(PerodiumcraftModItems.PERODIUM_BERRIES);
+			ItemStack _setstack = new ItemStack(PerodiumcraftModItems.PERODIUM_BERRIES.get());
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}

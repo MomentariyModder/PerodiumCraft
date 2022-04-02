@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
-    "name": "§8Perodium Oak Forest",
+    "name": "Perodium Oak Forest",
     "groundBlock": {
       "value": "CUSTOM:PerodiumGrass"
     },
@@ -48,9 +48,6 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "FOREST",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -82,7 +79,7 @@
       "value": ""
     },
     "treeFruits": {
-      "value": "CUSTOM:PerodiumAppleStage1"
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -106,8 +103,7 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Ores"
     ],
     "spawnEntries": []
   }

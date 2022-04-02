@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "perodiumsword",
     "customModelName": "Normal",
-    "name": "§8Perodium Sword",
+    "name": "Perodium Sword",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

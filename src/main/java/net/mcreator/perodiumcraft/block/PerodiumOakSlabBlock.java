@@ -20,7 +20,6 @@ import java.util.Collections;
 public class PerodiumOakSlabBlock extends SlabBlock {
 	public PerodiumOakSlabBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f, 9f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_oak_slab");
 	}
 
 	@Override

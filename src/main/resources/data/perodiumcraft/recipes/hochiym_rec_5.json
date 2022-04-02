@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "perodiumcraft:hochiym_dust"
   },
-  "result": {
-    "item": "perodiumcraft:hochiym"
-  }
+  "result": "perodiumcraft:hochiym"
 }

@@ -13,6 +13,5 @@ public class PerodiumMushroomSoupItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(10).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("perodium_mushroom_soup");
 	}
 }

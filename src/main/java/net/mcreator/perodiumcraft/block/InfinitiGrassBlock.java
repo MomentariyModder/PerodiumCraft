@@ -22,7 +22,6 @@ import java.util.Collections;
 public class InfinitiGrassBlock extends Block {
 	public InfinitiGrassBlock() {
 		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("infiniti_grass");
 	}
 
 	@Override

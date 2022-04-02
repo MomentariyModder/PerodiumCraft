@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "perodiumcraft:akvamarine_dust"
   },
-  "result": {
-    "item": "perodiumcraft:akvamarine"
-  }
+  "result": "perodiumcraft:akvamarine"
 }

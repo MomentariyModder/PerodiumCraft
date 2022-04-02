@@ -23,7 +23,6 @@ import java.util.Collections;
 public class PerodiumDeadBushBlock extends FlowerBlock {
 	public PerodiumDeadBushBlock() {
 		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).strength(3f, 3f));
-		setRegistryName("perodium_dead_bush");
 	}
 
 	@Override
@@ -36,6 +35,6 @@ public class PerodiumDeadBushBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_DEAD_BUSH, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_DEAD_BUSH.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

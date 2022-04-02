@@ -27,7 +27,6 @@ public class RubyJungleFenceBlock extends FenceBlock {
 	public RubyJungleFenceBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f, 9f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("ruby_jungle_fence");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class RubyJungleFenceBlock extends FenceBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_JUNGLE_FENCE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_JUNGLE_FENCE.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

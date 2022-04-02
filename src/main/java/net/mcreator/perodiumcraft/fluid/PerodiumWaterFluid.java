@@ -17,14 +17,13 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModFluids;
 import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 
 public abstract class PerodiumWaterFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> PerodiumcraftModFluids.PERODIUM_WATER,
-			() -> PerodiumcraftModFluids.FLOWING_PERODIUM_WATER,
-			FluidAttributes.builder(new ResourceLocation("perodiumcraft:blocks/perodiumwaterstill"),
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(PerodiumcraftModFluids.PERODIUM_WATER,
+			PerodiumcraftModFluids.FLOWING_PERODIUM_WATER, FluidAttributes.builder(new ResourceLocation("perodiumcraft:blocks/perodiumwaterstill"),
 					new ResourceLocation("perodiumcraft:blocks/perodiumwaterflow")).luminosity(15)
 
-	).explosionResistance(100f)
+	).explosionResistance(100f).canMultiply()
 
-			.bucket(() -> PerodiumcraftModItems.PERODIUM_WATER_BUCKET).block(() -> (LiquidBlock) PerodiumcraftModBlocks.PERODIUM_WATER);
+			.bucket(PerodiumcraftModItems.PERODIUM_WATER_BUCKET).block(() -> (LiquidBlock) PerodiumcraftModBlocks.PERODIUM_WATER.get());
 
 	private PerodiumWaterFluid() {
 		super(PROPERTIES);
@@ -38,7 +37,6 @@ public abstract class PerodiumWaterFluid extends ForgeFlowingFluid {
 	public static class Source extends PerodiumWaterFluid {
 		public Source() {
 			super();
-			setRegistryName("perodium_water");
 		}
 
 		public int getAmount(FluidState state) {
@@ -53,7 +51,6 @@ public abstract class PerodiumWaterFluid extends ForgeFlowingFluid {
 	public static class Flowing extends PerodiumWaterFluid {
 		public Flowing() {
 			super();
-			setRegistryName("flowing_perodium_water");
 		}
 
 		protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> builder) {

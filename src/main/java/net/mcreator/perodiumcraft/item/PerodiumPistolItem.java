@@ -28,7 +28,6 @@ import com.google.common.collect.ImmutableMultimap;
 public class PerodiumPistolItem extends Item {
 	public PerodiumPistolItem() {
 		super(new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS).durability(100));
-		setRegistryName("perodium_pistol");
 	}
 
 	@Override
@@ -69,11 +68,11 @@ public class PerodiumPistolItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == PerodiumcraftModItems.PERODIUM_AMMO);
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == PerodiumcraftModItems.PERODIUM_AMMO.get());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == PerodiumcraftModItems.PERODIUM_AMMO) {
+						if (teststack != null && teststack.getItem() == PerodiumcraftModItems.PERODIUM_AMMO.get()) {
 							stack = teststack;
 							break;
 						}
@@ -85,7 +84,7 @@ public class PerodiumPistolItem extends Item {
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 					} else {
-						if (new ItemStack(PerodiumcraftModItems.PERODIUM_AMMO).isDamageableItem()) {
+						if (new ItemStack(PerodiumcraftModItems.PERODIUM_AMMO.get()).isDamageableItem()) {
 							if (stack.hurt(1, world.getRandom(), entity)) {
 								stack.shrink(1);
 								stack.setDamageValue(0);

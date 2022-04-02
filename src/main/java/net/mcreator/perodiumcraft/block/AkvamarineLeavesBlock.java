@@ -17,7 +17,6 @@ import java.util.Collections;
 public class AkvamarineLeavesBlock extends Block {
 	public AkvamarineLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(1f, 10f));
-		setRegistryName("akvamarine_leaves");
 	}
 
 	@Override

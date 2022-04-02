@@ -18,12 +18,11 @@ public class PerodiumPieItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(1f)
 
 						.build()));
-		setRegistryName("perodium_pie");
 	}
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(PerodiumcraftModItems.PERODIUM_PIE_7);
+		ItemStack retval = new ItemStack(PerodiumcraftModItems.PERODIUM_PIE_7.get());
 		super.finishUsingItem(itemstack, world, entity);
 		if (itemstack.isEmpty()) {
 			return retval;

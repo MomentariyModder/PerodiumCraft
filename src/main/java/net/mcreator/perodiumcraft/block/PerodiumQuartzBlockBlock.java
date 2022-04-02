@@ -19,7 +19,6 @@ import java.util.Collections;
 public class PerodiumQuartzBlockBlock extends Block {
 	public PerodiumQuartzBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_quartz_block");
 	}
 
 	@Override

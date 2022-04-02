@@ -27,7 +27,6 @@ public class AkvamarineBirchButtonBlock extends WoodButtonBlock {
 	public AkvamarineBirchButtonBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.5f, 2.5f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("akvamarine_birch_button");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class AkvamarineBirchButtonBlock extends WoodButtonBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BIRCH_BUTTON, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BIRCH_BUTTON.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

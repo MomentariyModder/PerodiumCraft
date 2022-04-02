@@ -29,7 +29,6 @@ public class RubyJungleDoorBlock extends DoorBlock {
 	public RubyJungleDoorBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("ruby_jungle_door");
 	}
 
 	@Override
@@ -56,6 +55,6 @@ public class RubyJungleDoorBlock extends DoorBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_JUNGLE_DOOR, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_JUNGLE_DOOR.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

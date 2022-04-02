@@ -37,10 +37,9 @@ import java.util.Map;
 public class Stripped4Procedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-		Player entity = event.getPlayer();
-		if (event.getHand() != entity.getUsedItemHand())
+		if (event.getHand() != event.getPlayer().getUsedItemHand())
 			return;
-		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), entity);
+		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -50,16 +49,16 @@ public class Stripped4Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_WOOD
+		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_WOOD.get()
 				&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.WOODEN_AXE
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.STONE_AXE
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.IRON_AXE
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_AXE
 						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND_AXE
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("right_click_tools_example:internal_axe"))
-								.contains((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true
-						|| ItemTags.getAllTags().getTagOrEmpty(new ResourceLocation("forge:external_axe")).contains(
-								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) == true)) {
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("right_click_tools_example:internal_axe"))) == true
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+								.is(ItemTags.create(new ResourceLocation("forge:external_axe"))) == true)) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (!(new Object() {
@@ -93,7 +92,7 @@ public class Stripped4Procedure {
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = PerodiumcraftModBlocks.STRIPPED_AKVAMARINE_BIRCH_WOOD.defaultBlockState();
+				BlockState _bs = PerodiumcraftModBlocks.STRIPPED_AKVAMARINE_BIRCH_WOOD.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
@@ -106,7 +105,7 @@ public class Stripped4Procedure {
 				BlockEntity _be = world.getBlockEntity(_bp);
 				CompoundTag _bnbt = null;
 				if (_be != null) {
-					_bnbt = _be.save(new CompoundTag());
+					_bnbt = _be.saveWithFullMetadata();
 					_be.setRemoved();
 				}
 				world.setBlock(_bp, _bs, 3);

@@ -26,7 +26,6 @@ import java.util.Collections;
 public class AkvamarineCornflowerBlock extends FlowerBlock {
 	public AkvamarineCornflowerBlock() {
 		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("akvamarine_cornflower");
 	}
 
 	@Override
@@ -49,6 +48,6 @@ public class AkvamarineCornflowerBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_CORNFLOWER, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_CORNFLOWER.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

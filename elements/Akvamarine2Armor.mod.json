@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -14,10 +14,10 @@
       "value": "CUSTOM:PerodiumCraftToolsandArmors"
     },
     "armorTextureFile": "akvamarine2",
-    "helmetName": "§3Akvamarine Helmet",
-    "bodyName": "§3Akvamarine Chestplate",
-    "leggingsName": "§3Akvamarine Leggings",
-    "bootsName": "§3Akvamarine Boots",
+    "helmetName": "Akvamarine Helmet",
+    "bodyName": "Akvamarine Chestplate",
+    "leggingsName": "Akvamarine Leggings",
+    "bootsName": "Akvamarine Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

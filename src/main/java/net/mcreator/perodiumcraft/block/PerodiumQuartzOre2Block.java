@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class PerodiumQuartzOre2Block extends Block {
 	public PerodiumQuartzOre2Block() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(9f, 45f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_quartz_ore_2");
 	}
 
 	@Override

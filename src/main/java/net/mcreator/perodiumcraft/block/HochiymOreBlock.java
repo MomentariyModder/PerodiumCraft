@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class HochiymOreBlock extends Block {
 	public HochiymOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("hochiym_ore");
 	}
 
 	@Override

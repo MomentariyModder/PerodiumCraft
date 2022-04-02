@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "perodiumsandstonebottom",
@@ -31,7 +31,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Sandstone Stairs",
+    "name": "Perodium Sandstone Stairs",
     "specialInfo": [],
     "hardness": 2.4,
     "resistance": 12.0,

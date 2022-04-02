@@ -2,7 +2,7 @@
   "display": {
     "background": "perodiumcraft:textures/background.png",
     "icon": {
-      "item": "perodiumcraft:guide_book"
+      "item": "perodiumcraft:perodium_guide"
     },
     "title": {
       "translate": "advancements.test.title"
@@ -23,7 +23,7 @@
   "rewards": {
     "experience": 0,
     "loot": [
-      "perodiumcraft:gameplay/guide_lt"
+      "perodiumcraft:gameplay/guide"
     ],
     "recipes": [
       "perodiumcraft:perodium_ingot_rec"

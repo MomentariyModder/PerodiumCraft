@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "achievement",
   "definition": {
     "achievementName": "PerodiumCraft - Start!",
     "achievementDescription": "Get any gem from PerodiumCraft.",
     "achievementIcon": {
-      "value": "CUSTOM:GuideBook"
+      "value": "CUSTOM:PerodiumGuide"
     },
     "background": "background.png",
     "disableDisplay": false,
@@ -13,7 +13,7 @@
     "announceToChat": true,
     "hideIfNotCompleted": false,
     "rewardLoot": [
-      "GuideLT"
+      "Guide"
     ],
     "rewardRecipes": [
       "PerodiumIngotRec"

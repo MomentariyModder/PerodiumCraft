@@ -27,7 +27,6 @@ public class AkvamarineBirchPressurePlateBlock extends PressurePlateBlock {
 	public AkvamarineBirchPressurePlateBlock() {
 		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.5f).requiresCorrectToolForDrops()
 				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("akvamarine_birch_pressure_plate");
 	}
 
 	@Override
@@ -52,6 +51,7 @@ public class AkvamarineBirchPressurePlateBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BIRCH_PRESSURE_PLATE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BIRCH_PRESSURE_PLATE.get(),
+				renderType -> renderType == RenderType.cutout());
 	}
 }

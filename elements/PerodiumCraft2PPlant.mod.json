@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tab",
   "definition": {
-    "name": "§8PerodiumCraft[§7Plant§8]",
+    "name": "PerodiumCraft[Plant]",
     "icon": {
       "value": "CUSTOM:PerodiumDeadBush"
     },

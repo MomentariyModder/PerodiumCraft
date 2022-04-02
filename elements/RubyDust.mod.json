@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "rubydust",
     "customModelName": "Normal",
-    "name": "§4Ruby Dust",
+    "name": "Ruby Dust",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftItem"

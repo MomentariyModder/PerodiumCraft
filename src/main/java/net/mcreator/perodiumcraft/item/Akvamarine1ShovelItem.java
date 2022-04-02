@@ -34,9 +34,8 @@ public class Akvamarine1ShovelItem extends ShovelItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PerodiumcraftModItems.AKVAMARINE));
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.AKVAMARINE.get()));
 			}
 		}, 1, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-		setRegistryName("akvamarine_1_shovel");
 	}
 }

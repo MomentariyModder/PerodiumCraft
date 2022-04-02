@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class DeepslateHochiymOreBlock extends Block {
 	public DeepslateHochiymOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE).strength(9f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("deepslate_hochiym_ore");
 	}
 
 	@Override

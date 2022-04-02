@@ -22,7 +22,6 @@ import java.util.Collections;
 public class AkvamarineGrassBlock extends Block {
 	public AkvamarineGrassBlock() {
 		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("akvamarine_grass");
 	}
 
 	@Override

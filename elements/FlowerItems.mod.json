@@ -1,0 +1,23 @@
+{
+  "_fv": 25,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PerodiumTulip"
+      },
+      {
+        "value": "CUSTOM:AkvamarineCornflower"
+      },
+      {
+        "value": "CUSTOM:RubyDandeleon"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "flowers",
+    "namespace": "minecraft"
+  }
+}

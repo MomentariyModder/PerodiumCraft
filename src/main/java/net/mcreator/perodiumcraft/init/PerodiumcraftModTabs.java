@@ -21,7 +21,7 @@ public class PerodiumcraftModTabs {
 		TAB_PERODIUM_CRAFT_ITEM = new CreativeModeTab("tabperodium_craft_item") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PerodiumcraftModItems.PERODIUM_INGOT);
+				return new ItemStack(PerodiumcraftModItems.PERODIUM_INGOT.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -32,7 +32,7 @@ public class PerodiumcraftModTabs {
 		TAB_PERODIUM_CRAFT_BLOCKS = new CreativeModeTab("tabperodium_craft_blocks") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PerodiumcraftModBlocks.PERODIUM_BLOCK);
+				return new ItemStack(PerodiumcraftModBlocks.PERODIUM_BLOCK.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -43,7 +43,7 @@ public class PerodiumcraftModTabs {
 		TAB_PERODIUM_CRAFT_2_P_PLANT = new CreativeModeTab("tabperodium_craft_2_p_plant") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PerodiumcraftModBlocks.PERODIUM_DEAD_BUSH);
+				return new ItemStack(PerodiumcraftModBlocks.PERODIUM_DEAD_BUSH.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -54,7 +54,7 @@ public class PerodiumcraftModTabs {
 		TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS = new CreativeModeTab("tabperodium_craft_toolsand_armors") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PerodiumcraftModItems.PERODIUM_MULTI_TOOL);
+				return new ItemStack(PerodiumcraftModItems.PERODIUM_MULTI_TOOL.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -65,7 +65,7 @@ public class PerodiumcraftModTabs {
 		TAB_PERODIUM_CRAFT_FOOD = new CreativeModeTab("tabperodium_craft_food") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PerodiumcraftModItems.PERODIUM_BERRIES);
+				return new ItemStack(PerodiumcraftModItems.PERODIUM_BERRIES.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

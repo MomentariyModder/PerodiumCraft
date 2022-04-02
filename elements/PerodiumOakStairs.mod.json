@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "perodiumwoodplanks",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Oak Stairs",
+    "name": "Perodium Oak Stairs",
     "specialInfo": [],
     "hardness": 6.0,
     "resistance": 9.0,

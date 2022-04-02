@@ -34,9 +34,8 @@ public class InfinitiiShovelItem extends ShovelItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PerodiumcraftModItems.INFINITI));
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.INFINITI.get()));
 			}
 		}, 1, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-		setRegistryName("infinitii_shovel");
 	}
 }

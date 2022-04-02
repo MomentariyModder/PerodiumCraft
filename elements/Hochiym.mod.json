@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nochiym",
+    "texture": "hochiym",
     "customModelName": "Normal",
-    "name": "§1Hochiym",
+    "name": "Hochiym",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftItem"
@@ -30,7 +30,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
-      "name": "GuideJoin"
+      "name": "GuideADV"
     },
     "hasDispenseBehavior": false
   }

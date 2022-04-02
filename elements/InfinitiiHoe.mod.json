@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "infinitii_hoe",
     "customModelName": "Normal",
-    "name": "§2Infiniti Hoe",
+    "name": "Infiniti Hoe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

@@ -1,0 +1,177 @@
+{
+  "_fv": 25,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "bestiary.png",
+          "use1Xscale": true,
+          "name": "bestiary.png",
+          "x": 87,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Perodium Ingot",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Perodium Ingot",
+          "x": 96,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Perodium Block",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Perodium Block",
+          "x": 96,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Perodium Plate",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Perodium Plate",
+          "x": 222,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Perodium Brick",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Perodium Brick",
+          "x": 222,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Crafting Table",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "Crafting Table",
+          "x": 114,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rec1.png",
+          "use1Xscale": false,
+          "name": "rec1.png",
+          "x": 96,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rec2.png",
+          "use1Xscale": false,
+          "name": "rec2.png",
+          "x": 96,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rec3.png",
+          "use1Xscale": false,
+          "name": "rec3.png",
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rec4.png",
+          "use1Xscale": false,
+          "name": "rec4.png",
+          "x": 222,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "GuidePageProcedure1"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 222,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "2",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "2",
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "2",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "2",
+          "x": 330,
+          "y": 161
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

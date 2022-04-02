@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class DeepslateAkvamarineOreBlock extends Block {
 	public DeepslateAkvamarineOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.DEEPSLATE).strength(9f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("deepslate_akvamarine_ore");
 	}
 
 	@Override

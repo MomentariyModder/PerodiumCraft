@@ -12,47 +12,47 @@ import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 public class PerodiumcraftModFuels {
 	@SubscribeEvent
 	public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
-		if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_OAK.asItem())
+		if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_OAK.get().asItem())
 			event.setBurnTime(3200);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_PLANKS.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_PLANKS.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_SLAB.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_SLAB.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_STAIRS.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_STAIRS.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_FENCE.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_FENCE.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_PLANT.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_PLANT.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_FENCE.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_FENCE.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_SLAB.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_SLAB.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_STAIRS.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_STAIRS.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_PLANT.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_PLANT.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_SLAB.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_SLAB.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_STAIRS.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_STAIRS.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_FENCE.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_FENCE.get().asItem())
 			event.setBurnTime(1600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_FENCE_GATE.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_FENCE_GATE.get().asItem())
 			event.setBurnTime(600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_FENCE_GATE.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_FENCE_GATE.get().asItem())
 			event.setBurnTime(600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_FENCE_GATE.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_FENCE_GATE.get().asItem())
 			event.setBurnTime(600);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_DOOR.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.PERODIUM_OAK_DOOR.get().asItem())
 			event.setBurnTime(400);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_DOOR.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.AKVAMARINE_BIRCH_DOOR.get().asItem())
 			event.setBurnTime(400);
-		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_DOOR.asItem())
+		else if (event.getItemStack().getItem() == PerodiumcraftModBlocks.RUBY_JUNGLE_DOOR.get().asItem())
 			event.setBurnTime(400);
 	}
 }

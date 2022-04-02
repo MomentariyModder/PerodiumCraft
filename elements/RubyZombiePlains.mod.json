@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
-    "name": "§4Ruby Zombie Plains",
+    "name": "Ruby Zombie Plains",
     "groundBlock": {
       "value": "CUSTOM:RubyDirt"
     },
@@ -48,9 +48,6 @@
     },
     "particlesProbability": 0.0,
     "biomeCategory": "PLAINS",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -108,10 +105,7 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "MonsterRooms",
-      "Ores",
-      "Lakes",
-      "FrozenTopLayer"
+      "Ores"
     ],
     "spawnEntries": []
   }

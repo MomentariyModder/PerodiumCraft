@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "biome",
   "definition": {
-    "name": "§3Akvamarine Birch Forest",
+    "name": "Akvamarine Birch Forest",
     "groundBlock": {
       "value": "CUSTOM:AkvamarineGrass"
     },
@@ -48,9 +48,6 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "FOREST",
-    "parent": {
-      "value": "No parent"
-    },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -106,8 +103,7 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Ores"
     ],
     "spawnEntries": []
   }

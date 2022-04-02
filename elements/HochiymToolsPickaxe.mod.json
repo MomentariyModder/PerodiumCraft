@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "hochiymtools_pickaxe",
     "customModelName": "Normal",
-    "name": "§1Hochiym Pickaxe",
+    "name": "Hochiym Pickaxe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

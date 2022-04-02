@@ -29,7 +29,6 @@ public class PerodiumDoorBlock extends DoorBlock {
 	public PerodiumDoorBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(10f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_door");
 	}
 
 	@Override
@@ -56,6 +55,6 @@ public class PerodiumDoorBlock extends DoorBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_DOOR, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_DOOR.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

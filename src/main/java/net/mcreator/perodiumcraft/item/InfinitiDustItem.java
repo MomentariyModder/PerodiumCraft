@@ -10,7 +10,6 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
 public class InfinitiDustItem extends Item {
 	public InfinitiDustItem() {
 		super(new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_ITEM).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("infiniti_dust");
 	}
 
 	@Override

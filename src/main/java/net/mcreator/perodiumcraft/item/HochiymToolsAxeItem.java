@@ -34,9 +34,8 @@ public class HochiymToolsAxeItem extends AxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PerodiumcraftModItems.HOCHIYM));
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.HOCHIYM.get()));
 			}
 		}, 1, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-		setRegistryName("hochiym_tools_axe");
 	}
 }

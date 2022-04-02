@@ -1,0 +1,46 @@
+{
+  "_fv": 25,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:StrippedAkvamarineBirch"
+      },
+      {
+        "value": "CUSTOM:AkvamarineBirchPlanks"
+      },
+      {
+        "value": "CUSTOM:StrippedAkvamarineBirch"
+      },
+      {
+        "value": "CUSTOM:AkvamarineBirchPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AkvamarineBirchPlanks"
+      },
+      {
+        "value": "CUSTOM:StrippedAkvamarineBirch"
+      },
+      {
+        "value": "CUSTOM:AkvamarineBirchPlanks"
+      },
+      {
+        "value": "CUSTOM:StrippedAkvamarineBirch"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AkvamarineBox"
+    },
+    "name": "akvamarine_box_rec",
+    "namespace": "mod"
+  }
+}

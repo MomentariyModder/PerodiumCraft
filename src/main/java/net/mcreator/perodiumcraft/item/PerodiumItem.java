@@ -63,7 +63,6 @@ public abstract class PerodiumItem extends ArmorItem {
 	public static class Helmet extends PerodiumItem {
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-			setRegistryName("perodium_helmet");
 		}
 
 		@Override
@@ -75,7 +74,6 @@ public abstract class PerodiumItem extends ArmorItem {
 	public static class Chestplate extends PerodiumItem {
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-			setRegistryName("perodium_chestplate");
 		}
 
 		@Override
@@ -87,7 +85,6 @@ public abstract class PerodiumItem extends ArmorItem {
 	public static class Leggings extends PerodiumItem {
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-			setRegistryName("perodium_leggings");
 		}
 
 		@Override
@@ -99,7 +96,6 @@ public abstract class PerodiumItem extends ArmorItem {
 	public static class Boots extends PerodiumItem {
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-			setRegistryName("perodium_boots");
 		}
 
 		@Override

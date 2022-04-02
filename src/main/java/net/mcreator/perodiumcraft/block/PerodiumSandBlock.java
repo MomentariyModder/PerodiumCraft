@@ -32,7 +32,6 @@ public class PerodiumSandBlock extends FallingBlock {
 	public PerodiumSandBlock() {
 		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(3f, 7.5f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-		setRegistryName("perodium_sand");
 	}
 
 	@Override

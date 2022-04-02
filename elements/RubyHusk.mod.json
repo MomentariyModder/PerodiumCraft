@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "livingentity",
   "definition": {
-    "mobName": "§4Ruby Husk",
+    "mobName": "Ruby Husk",
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "rubyhusk.png",

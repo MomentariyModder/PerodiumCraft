@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "rubywoodtop",
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "§4Ruby Jungle",
+    "name": "Ruby Jungle",
     "specialInfo": [],
     "hardness": 6.0,
     "resistance": 6.0,

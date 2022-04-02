@@ -1,0 +1,9 @@
+{
+  "parent": "perodiumcraft:custom/rubybox",
+  "textures": {
+    "all": "perodiumcraft:blocks/rubywoodplanks",
+    "particle": "perodiumcraft:blocks/rubywoodplanks",
+    "0": "perodiumcraft:blocks/strippedrubyjunglelog",
+    "1": "perodiumcraft:blocks/rubywoodplanks"
+  }
+}

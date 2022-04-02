@@ -19,7 +19,6 @@ import java.util.Collections;
 public class CopperOreBlock extends Block {
 	public CopperOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("copper_ore");
 	}
 
 	@Override

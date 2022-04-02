@@ -25,7 +25,6 @@ public class PerodiumGlassPaneBlock extends IronBarsBlock {
 	public PerodiumGlassPaneBlock() {
 		super(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(0.8999999999999999f, 4.5f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_glass_pane");
 	}
 
 	@Override
@@ -43,7 +42,7 @@ public class PerodiumGlassPaneBlock extends IronBarsBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_GLASS_PANE, renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_GLASS_PANE.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 
 }

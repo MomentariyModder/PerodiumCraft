@@ -19,7 +19,6 @@ import java.util.Collections;
 public class HochiymBlockBlock extends Block {
 	public HochiymBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(10f, 60f).requiresCorrectToolForDrops());
-		setRegistryName("hochiym_block");
 	}
 
 	@Override

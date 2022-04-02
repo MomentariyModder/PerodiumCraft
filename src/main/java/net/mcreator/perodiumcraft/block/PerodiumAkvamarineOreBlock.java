@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class PerodiumAkvamarineOreBlock extends Block {
 	public PerodiumAkvamarineOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(9f, 45f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_akvamarine_ore");
 	}
 
 	@Override

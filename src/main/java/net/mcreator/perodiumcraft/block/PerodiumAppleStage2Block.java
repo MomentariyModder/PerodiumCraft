@@ -29,7 +29,6 @@ public class PerodiumAppleStage2Block extends Block {
 	public PerodiumAppleStage2Block() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(1f).noCollission().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_apple_stage_2");
 	}
 
 	@Override
@@ -47,13 +46,13 @@ public class PerodiumAppleStage2Block extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_1));
+		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_1.get()));
 	}
 
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.getBlockTicks().scheduleTick(pos, this, 100);
+		world.scheduleTick(pos, this, 100);
 	}
 
 	@Override
@@ -64,11 +63,11 @@ public class PerodiumAppleStage2Block extends Block {
 		int z = pos.getZ();
 
 		PerodiumAppleStage2ProcedureProcedure.execute(world, x, y, z);
-		world.getBlockTicks().scheduleTick(pos, this, 100);
+		world.scheduleTick(pos, this, 100);
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_2, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_APPLE_STAGE_2.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

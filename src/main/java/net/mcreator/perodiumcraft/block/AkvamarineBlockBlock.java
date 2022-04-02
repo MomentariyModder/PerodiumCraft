@@ -19,7 +19,6 @@ import java.util.Collections;
 public class AkvamarineBlockBlock extends Block {
 	public AkvamarineBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(10f, 60f).requiresCorrectToolForDrops());
-		setRegistryName("akvamarine_block");
 	}
 
 	@Override

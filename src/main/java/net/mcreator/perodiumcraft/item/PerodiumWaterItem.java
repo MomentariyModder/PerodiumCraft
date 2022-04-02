@@ -11,8 +11,7 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModFluids;
 
 public class PerodiumWaterItem extends BucketItem {
 	public PerodiumWaterItem() {
-		super(() -> PerodiumcraftModFluids.PERODIUM_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON)
+		super(PerodiumcraftModFluids.PERODIUM_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON)
 				.tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_ITEM));
-		setRegistryName("perodium_water_bucket");
 	}
 }

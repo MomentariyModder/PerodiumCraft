@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tab",
   "definition": {
-    "name": "§8PerodiumCraft[§7Food§8]",
+    "name": "PerodiumCraft[Food]",
     "icon": {
       "value": "CUSTOM:PerodiumBerries"
     },

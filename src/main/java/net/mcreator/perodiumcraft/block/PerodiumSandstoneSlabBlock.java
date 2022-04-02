@@ -20,7 +20,6 @@ import java.util.Collections;
 public class PerodiumSandstoneSlabBlock extends SlabBlock {
 	public PerodiumSandstoneSlabBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.4f, 12f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_sandstone_slab");
 	}
 
 	@Override

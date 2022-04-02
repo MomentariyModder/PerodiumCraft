@@ -1,13 +1,13 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "fluid",
   "definition": {
-    "name": "§8Perodium Water",
-    "bucketName": "§8Perodium Water Bucket",
+    "name": "Perodium Water",
+    "bucketName": "Perodium Water Bucket",
     "textureStill": "perodiumwaterstill",
     "textureFlowing": "perodiumwaterflow",
     "tintType": "No tint",
-    "canMultiply": false,
+    "canMultiply": true,
     "flowRate": 5,
     "levelDecrease": 1,
     "slopeFindDistance": 4,

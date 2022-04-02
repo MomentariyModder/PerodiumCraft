@@ -19,7 +19,6 @@ import java.util.Collections;
 public class RubyBlockBlock extends Block {
 	public RubyBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_block");
 	}
 
 	@Override

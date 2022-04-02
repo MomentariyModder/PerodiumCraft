@@ -19,7 +19,6 @@ import java.util.Collections;
 public class InfinitiDirtBlock extends Block {
 	public InfinitiDirtBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("infiniti_dirt");
 	}
 
 	@Override

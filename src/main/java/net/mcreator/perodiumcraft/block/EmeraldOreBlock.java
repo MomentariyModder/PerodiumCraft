@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class EmeraldOreBlock extends Block {
 	public EmeraldOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("emerald_ore");
 	}
 
 	@Override

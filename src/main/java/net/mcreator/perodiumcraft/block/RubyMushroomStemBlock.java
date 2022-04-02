@@ -18,7 +18,6 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 public class RubyMushroomStemBlock extends Block {
 	public RubyMushroomStemBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.2f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_mushroom_stem");
 	}
 
 	@Override
@@ -27,8 +26,8 @@ public class RubyMushroomStemBlock extends Block {
 	}
 
 	@Override
-	public ItemStack getPickBlock(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(PerodiumcraftModBlocks.RUBY_MUSHROOM);
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		return new ItemStack(PerodiumcraftModBlocks.RUBY_MUSHROOM.get());
 	}
 
 	@Override

@@ -27,7 +27,6 @@ public class PerodiumOakPressurePlateBlock extends PressurePlateBlock {
 	public PerodiumOakPressurePlateBlock() {
 		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.5f).requiresCorrectToolForDrops()
 				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_oak_pressure_plate");
 	}
 
 	@Override
@@ -52,6 +51,7 @@ public class PerodiumOakPressurePlateBlock extends PressurePlateBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_OAK_PRESSURE_PLATE, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_OAK_PRESSURE_PLATE.get(),
+				renderType -> renderType == RenderType.cutout());
 	}
 }

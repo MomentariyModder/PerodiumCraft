@@ -1,6 +1,8 @@
 
 package net.mcreator.perodiumcraft.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,7 +22,6 @@ public class PerodiumGlowstoneBlock extends Block {
 	public PerodiumGlowstoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).sound(SoundType.GLASS).strength(0.3f, 0.5f).lightLevel(s -> 15)
 				.requiresCorrectToolForDrops());
-		setRegistryName("perodium_glowstone");
 	}
 
 	@Override

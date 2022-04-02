@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "perodiumblock",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Pressure Plate",
+    "name": "Perodium Pressure Plate",
     "specialInfo": [],
     "hardness": 0.5,
     "resistance": 0.5,

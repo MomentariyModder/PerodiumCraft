@@ -19,7 +19,6 @@ import java.util.Collections;
 public class PerodiumDirtBlock extends Block {
 	public PerodiumDirtBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_dirt");
 	}
 
 	@Override

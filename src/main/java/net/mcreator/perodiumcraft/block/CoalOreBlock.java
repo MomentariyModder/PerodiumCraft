@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class CoalOreBlock extends Block {
 	public CoalOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("coal_ore");
 	}
 
 	@Override

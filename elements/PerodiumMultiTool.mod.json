@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "perodiummultitool",
     "customModelName": "Normal",
-    "name": "§8Perodium Multi Tool",
+    "name": "Perodium Multi Tool",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

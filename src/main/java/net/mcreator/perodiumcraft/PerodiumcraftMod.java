@@ -16,15 +16,24 @@ package net.mcreator.perodiumcraft;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModItems;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModFluids;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModFeatures;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModEntities;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBlockEntities;
+import net.mcreator.perodiumcraft.init.PerodiumcraftModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,6 +50,15 @@ public class PerodiumcraftMod {
 
 	public PerodiumcraftMod() {
 		PerodiumcraftModTabs.load();
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		PerodiumcraftModBlocks.REGISTRY.register(bus);
+		PerodiumcraftModItems.REGISTRY.register(bus);
+		PerodiumcraftModEntities.REGISTRY.register(bus);
+		PerodiumcraftModBlockEntities.REGISTRY.register(bus);
+		PerodiumcraftModFeatures.REGISTRY.register(bus);
+		PerodiumcraftModFluids.REGISTRY.register(bus);
+
+		PerodiumcraftModBiomes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

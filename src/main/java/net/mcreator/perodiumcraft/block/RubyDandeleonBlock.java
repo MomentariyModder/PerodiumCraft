@@ -26,7 +26,6 @@ import java.util.Collections;
 public class RubyDandeleonBlock extends FlowerBlock {
 	public RubyDandeleonBlock() {
 		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("ruby_dandeleon");
 	}
 
 	@Override
@@ -49,6 +48,6 @@ public class RubyDandeleonBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_DANDELEON, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_DANDELEON.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

@@ -13,6 +13,5 @@ public class RubyMushroomSoupItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(10).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("ruby_mushroom_soup");
 	}
 }

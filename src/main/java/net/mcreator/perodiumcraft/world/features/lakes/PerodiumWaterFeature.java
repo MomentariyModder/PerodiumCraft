@@ -1,40 +1,63 @@
 
 package net.mcreator.perodiumcraft.world.features.lakes;
 
-import net.minecraft.world.level.levelgen.feature.configurations.BlockStateConfiguration;
+import net.minecraft.world.level.levelgen.placement.RarityFilter;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
+import net.minecraft.world.level.levelgen.placement.EnvironmentScanPlacement;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.LakeFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
+import net.minecraft.core.Holder;
+import net.minecraft.core.Direction;
 
 import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 
 import java.util.Set;
+import java.util.List;
 
 public class PerodiumWaterFeature extends LakeFeature {
-	public static final PerodiumWaterFeature FEATURE = (PerodiumWaterFeature) new PerodiumWaterFeature()
-			.setRegistryName("perodiumcraft:perodium_water");
-	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
-			.configured(new BlockStateConfiguration(PerodiumcraftModBlocks.PERODIUM_WATER.defaultBlockState()))
-			.rangeUniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.belowTop(0)).squared().rarity(3);
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	public static PerodiumWaterFeature FEATURE = null;
+	public static Holder<ConfiguredFeature<LakeFeature.Configuration, ?>> CONFIGURED_FEATURE = null;
+	public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
-	public PerodiumWaterFeature() {
-		super(BlockStateConfiguration.CODEC);
+	public static Feature<?> feature() {
+		FEATURE = new PerodiumWaterFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("perodiumcraft:perodium_water", FEATURE, new LakeFeature.Configuration(
+				BlockStateProvider.simple(PerodiumcraftModBlocks.PERODIUM_WATER.get()), BlockStateProvider.simple(Blocks.AIR)));
+		PLACED_FEATURE = PlacementUtils.register("perodiumcraft:perodium_water", CONFIGURED_FEATURE,
+				List.of(RarityFilter.onAverageOnceEvery(3), InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT,
+						EnvironmentScanPlacement.scanningFor(Direction.DOWN, BlockPredicate.not(BlockPredicate.ONLY_IN_AIR_PREDICATE), 32)));
+		return FEATURE;
 	}
 
-	public boolean place(FeaturePlaceContext<BlockStateConfiguration> context) {
+	public static Holder<PlacedFeature> placedFeature() {
+		return PLACED_FEATURE;
+	}
+
+	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	private final Set<ResourceKey<Level>> generate_dimensions = Set
+			.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("perodiumcraft:perodium_land")));
+
+	public PerodiumWaterFeature() {
+		super(LakeFeature.Configuration.CODEC);
+	}
+
+	@Override
+	public boolean place(FeaturePlaceContext<LakeFeature.Configuration> context) {
 		WorldGenLevel world = context.level();
-		ResourceKey<Level> dimensionType = world.getLevel().dimension();
-		boolean dimensionCriteria = false;
-		if (dimensionType == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("perodiumcraft:perodium_land")))
-			dimensionCriteria = true;
-		if (!dimensionCriteria)
+		if (!generate_dimensions.contains(world.getLevel().dimension()))
 			return false;
 		return super.place(context);
 	}

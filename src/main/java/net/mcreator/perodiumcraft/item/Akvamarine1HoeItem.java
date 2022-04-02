@@ -34,9 +34,8 @@ public class Akvamarine1HoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PerodiumcraftModItems.AKVAMARINE));
+				return Ingredient.of(new ItemStack(PerodiumcraftModItems.AKVAMARINE.get()));
 			}
 		}, 0, -3f, new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_TOOLSAND_ARMORS));
-		setRegistryName("akvamarine_1_hoe");
 	}
 }

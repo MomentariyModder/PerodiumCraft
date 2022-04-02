@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -14,10 +14,10 @@
       "value": "CUSTOM:PerodiumCraftToolsandArmors"
     },
     "armorTextureFile": "perodium",
-    "helmetName": "§8Perodium Helmet",
-    "bodyName": "§8Perodium Chestplace",
-    "leggingsName": "§8Perodium Leggings",
-    "bootsName": "§8Perodium Boots",
+    "helmetName": "Perodium Helmet",
+    "bodyName": "Perodium Chestplace",
+    "leggingsName": "Perodium Leggings",
+    "bootsName": "Perodium Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

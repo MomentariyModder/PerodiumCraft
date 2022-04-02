@@ -7,13 +7,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.perodiumcraft.procedures.GuideJoinProcedure;
+import net.mcreator.perodiumcraft.procedures.GuideADVProcedure;
 import net.mcreator.perodiumcraft.init.PerodiumcraftModTabs;
 
 public class HochiymItem extends Item {
 	public HochiymItem() {
 		super(new Item.Properties().tab(PerodiumcraftModTabs.TAB_PERODIUM_CRAFT_ITEM).stacksTo(64).rarity(Rarity.COMMON));
-		setRegistryName("hochiym");
 	}
 
 	@Override
@@ -24,6 +23,6 @@ public class HochiymItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		GuideJoinProcedure.execute(entity);
+		GuideADVProcedure.execute(entity);
 	}
 }

@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "livingentity",
   "definition": {
-    "mobName": "§8Perodium Husk",
+    "mobName": "Perodium Husk",
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "perodiumhusk.png",

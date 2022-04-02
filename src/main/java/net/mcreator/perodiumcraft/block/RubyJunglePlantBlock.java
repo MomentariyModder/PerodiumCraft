@@ -19,7 +19,6 @@ import java.util.Collections;
 public class RubyJunglePlantBlock extends Block {
 	public RubyJunglePlantBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_jungle_plant");
 	}
 
 	@Override

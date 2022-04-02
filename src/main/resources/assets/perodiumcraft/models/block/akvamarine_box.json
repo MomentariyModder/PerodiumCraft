@@ -1,0 +1,9 @@
+{
+  "parent": "perodiumcraft:custom/akvamarinebox",
+  "textures": {
+    "all": "perodiumcraft:blocks/akvamarinewoodplanks",
+    "particle": "perodiumcraft:blocks/akvamarinewoodplanks",
+    "0": "perodiumcraft:blocks/strippedakvamarinebirchlog",
+    "1": "perodiumcraft:blocks/akvamarinewoodplanks"
+  }
+}

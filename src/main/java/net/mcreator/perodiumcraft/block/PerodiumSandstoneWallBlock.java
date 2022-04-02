@@ -27,7 +27,6 @@ public class PerodiumSandstoneWallBlock extends WallBlock {
 	public PerodiumSandstoneWallBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.4f, 12f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_sandstone_wall");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class PerodiumSandstoneWallBlock extends WallBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_SANDSTONE_WALL, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_SANDSTONE_WALL.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

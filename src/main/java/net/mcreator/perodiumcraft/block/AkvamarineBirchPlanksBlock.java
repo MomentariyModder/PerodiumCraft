@@ -19,7 +19,6 @@ import java.util.Collections;
 public class AkvamarineBirchPlanksBlock extends Block {
 	public AkvamarineBirchPlanksBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(6f, 9f).requiresCorrectToolForDrops());
-		setRegistryName("akvamarine_birch_planks");
 	}
 
 	@Override

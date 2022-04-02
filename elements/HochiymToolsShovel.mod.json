@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "hochiymtools_shovel",
     "customModelName": "Normal",
-    "name": "§1Hochiym Shovel",
+    "name": "Hochiym Shovel",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

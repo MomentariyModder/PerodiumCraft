@@ -30,7 +30,6 @@ public class PerodiumBushBlock extends FlowerBlock {
 	public PerodiumBushBlock() {
 		super(MobEffects.SATURATION, 0,
 				BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH).instabreak());
-		setRegistryName("perodium_bush");
 	}
 
 	@Override
@@ -59,6 +58,6 @@ public class PerodiumBushBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_BUSH, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_BUSH.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

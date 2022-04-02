@@ -28,7 +28,6 @@ public class PerodiumCactusBlock extends Block {
 	public PerodiumCactusBlock() {
 		super(BlockBehaviour.Properties.of(Material.CACTUS).sound(SoundType.GRASS).strength(1f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_cactus");
 	}
 
 	@Override
@@ -57,6 +56,6 @@ public class PerodiumCactusBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_CACTUS, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_CACTUS.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

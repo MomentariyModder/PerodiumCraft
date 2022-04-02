@@ -27,7 +27,6 @@ public class RubyJungleButtonBlock extends WoodButtonBlock {
 	public RubyJungleButtonBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.5f, 2.5f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("ruby_jungle_button");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class RubyJungleButtonBlock extends WoodButtonBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_JUNGLE_BUTTON, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_JUNGLE_BUTTON.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

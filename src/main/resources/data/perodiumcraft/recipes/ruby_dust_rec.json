@@ -1,8 +1,15 @@
 {
-  "type": "minecraft:stonecutting",
-  "count": 9,
-  "ingredient": {
-    "item": "perodiumcraft:ruby_block"
-  },
-  "result": "perodiumcraft:ruby_dust"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft:perodium_hammer"
+    },
+    {
+      "item": "perodiumcraft:ruby_block"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft:ruby_dust",
+    "count": 9
+  }
 }

@@ -17,7 +17,7 @@ public class CactusGenerateProcedure {
 					.getMaterial() == net.minecraft.world.level.material.Material.SAND) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-					BlockState _bs = PerodiumcraftModBlocks.PERODIUM_CACTUS.defaultBlockState();
+					BlockState _bs = PerodiumcraftModBlocks.PERODIUM_CACTUS.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

@@ -28,7 +28,6 @@ public class PerodiumOakLeavesBlock extends Block {
 	public PerodiumOakLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_oak_leaves");
 	}
 
 	@Override
@@ -57,6 +56,6 @@ public class PerodiumOakLeavesBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_OAK_LEAVES, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_OAK_LEAVES.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

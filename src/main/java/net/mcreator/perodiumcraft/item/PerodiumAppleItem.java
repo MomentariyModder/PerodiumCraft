@@ -13,6 +13,5 @@ public class PerodiumAppleItem extends Item {
 				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.3f)
 
 						.build()));
-		setRegistryName("perodium_apple");
 	}
 }

@@ -28,7 +28,6 @@ public class PerodiumQuartzPillarBlock extends Block {
 	public PerodiumQuartzPillarBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
-		setRegistryName("perodium_quartz_pillar");
 	}
 
 	@Override

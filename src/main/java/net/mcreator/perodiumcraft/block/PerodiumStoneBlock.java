@@ -21,7 +21,6 @@ import java.util.Collections;
 public class PerodiumStoneBlock extends Block {
 	public PerodiumStoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f, 12f).requiresCorrectToolForDrops());
-		setRegistryName("perodium_stone");
 	}
 
 	@Override
@@ -41,6 +40,6 @@ public class PerodiumStoneBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.PERODIUM_COBBLESTONE));
+		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.PERODIUM_COBBLESTONE.get()));
 	}
 }

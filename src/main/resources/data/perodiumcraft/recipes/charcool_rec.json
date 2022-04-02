@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "perodiumcraft:akvamarine_oak"
   },
-  "result": {
-    "item": "minecraft:charcoal"
-  }
+  "result": "minecraft:charcoal"
 }

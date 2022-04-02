@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class EndRubyOreBlock extends Block {
 	public EndRubyOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("end_ruby_ore");
 	}
 
 	@Override

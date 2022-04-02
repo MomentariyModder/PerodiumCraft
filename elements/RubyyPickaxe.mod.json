@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "rubyy_pickaxe",
     "customModelName": "Normal",
-    "name": "§4Ruby Pickaxe",
+    "name": "Ruby Pickaxe",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftToolsandArmors"

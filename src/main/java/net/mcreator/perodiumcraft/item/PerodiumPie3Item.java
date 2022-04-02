@@ -16,12 +16,11 @@ public class PerodiumPie3Item extends Item {
 		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(1f)
 
 				.build()));
-		setRegistryName("perodium_pie_3");
 	}
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(PerodiumcraftModItems.PERODIUM_PIE_2);
+		ItemStack retval = new ItemStack(PerodiumcraftModItems.PERODIUM_PIE_2.get());
 		super.finishUsingItem(itemstack, world, entity);
 		if (itemstack.isEmpty()) {
 			return retval;

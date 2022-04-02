@@ -22,7 +22,6 @@ import java.util.Collections;
 public class RubyGrassBlock extends Block {
 	public RubyGrassBlock() {
 		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_grass");
 	}
 
 	@Override

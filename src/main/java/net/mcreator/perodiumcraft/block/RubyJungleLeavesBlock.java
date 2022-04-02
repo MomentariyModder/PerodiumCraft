@@ -17,7 +17,6 @@ import java.util.Collections;
 public class RubyJungleLeavesBlock extends Block {
 	public RubyJungleLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(3f));
-		setRegistryName("ruby_jungle_leaves");
 	}
 
 	@Override

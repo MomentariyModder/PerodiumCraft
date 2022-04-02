@@ -5,7 +5,5 @@
   "ingredient": {
     "item": "perodiumcraft:perodium_quartz_block"
   },
-  "result": {
-    "item": "perodiumcraft:smooth_perodium_quartz_block"
-  }
+  "result": "perodiumcraft:smooth_perodium_quartz_block"
 }

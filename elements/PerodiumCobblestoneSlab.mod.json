@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "perodiumcobblestone",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Cobblestone Slab",
+    "name": "Cobbled Perodstone Slab",
     "specialInfo": [],
     "hardness": 4.0,
     "resistance": 12.0,

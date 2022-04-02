@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -14,10 +14,10 @@
       "value": "CUSTOM:PerodiumCraftToolsandArmors"
     },
     "armorTextureFile": "infinitii",
-    "helmetName": "§2Infiniti Helmet",
-    "bodyName": "§2Infiniti Chestplate",
-    "leggingsName": "§2Infiniti Leggings",
-    "bootsName": "§2Infiniti Boots",
+    "helmetName": "Infiniti Helmet",
+    "bodyName": "Infiniti Chestplate",
+    "leggingsName": "Infiniti Leggings",
+    "bootsName": "Infiniti Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],

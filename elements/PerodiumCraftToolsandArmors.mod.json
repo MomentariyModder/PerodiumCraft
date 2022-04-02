@@ -1,8 +1,8 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "tab",
   "definition": {
-    "name": "§8PerodiumCraft[§7Tools and Armors§8]",
+    "name": "PerodiumCraft[Tools and Armors]",
     "icon": {
       "value": "CUSTOM:PerodiumMultiTool"
     },

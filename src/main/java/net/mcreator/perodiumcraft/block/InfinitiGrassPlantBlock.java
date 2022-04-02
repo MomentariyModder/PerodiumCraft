@@ -17,11 +17,10 @@ import net.mcreator.perodiumcraft.init.PerodiumcraftModBlocks;
 public class InfinitiGrassPlantBlock extends FlowerBlock {
 	public InfinitiGrassPlantBlock() {
 		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).noCollission().sound(SoundType.GRASS).instabreak());
-		setRegistryName("infiniti_grass_plant");
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.INFINITI_GRASS_PLANT, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.INFINITI_GRASS_PLANT.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

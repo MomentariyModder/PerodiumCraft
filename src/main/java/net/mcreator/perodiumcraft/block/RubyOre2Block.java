@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class RubyOre2Block extends Block {
 	public RubyOre2Block() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("ruby_ore_2");
 	}
 
 	@Override

@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class LapisLazuliOreBlock extends Block {
 	public LapisLazuliOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("lapis_lazuli_ore");
 	}
 
 	@Override

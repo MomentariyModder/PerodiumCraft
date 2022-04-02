@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class DiamondoreBlock extends Block {
 	public DiamondoreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("diamondore");
 	}
 
 	@Override

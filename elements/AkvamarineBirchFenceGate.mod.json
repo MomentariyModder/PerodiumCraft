@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "akvamarinewoodplanks",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "§3Akvamarine Birch Fence Gate",
+    "name": "Akvamarine Birch Fence Gate",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,

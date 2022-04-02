@@ -20,7 +20,6 @@ import java.util.Collections;
 public class SmoothPerodiumQuartzSlabBlock extends SlabBlock {
 	public SmoothPerodiumQuartzSlabBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 30f).requiresCorrectToolForDrops());
-		setRegistryName("smooth_perodium_quartz_slab");
 	}
 
 	@Override

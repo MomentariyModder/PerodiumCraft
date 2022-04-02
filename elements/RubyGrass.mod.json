@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "rubydirt",
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "§4Ruby Grass",
+    "name": "Ruby Grass",
     "specialInfo": [],
     "hardness": 3.0,
     "resistance": 3.0,

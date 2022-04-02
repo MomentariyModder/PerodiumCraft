@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -20,7 +20,7 @@
     "customBoundingBox": false,
     "disableOffset": false,
     "boundingBoxes": [],
-    "name": "§2Infiniti Grass Plant",
+    "name": "Infiniti Grass Plant",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraft2PPlant"

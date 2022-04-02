@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -13,25 +13,25 @@
         "value": "CUSTOM:PerodiumIngot"
       },
       {
-        "value": "CUSTOM:HochiymBlock"
+        "value": "CUSTOM:PerodiumIngot"
       },
       {
         "value": "CUSTOM:PerodiumIngot"
       },
       {
-        "value": "CUSTOM:RubyBlock"
+        "value": "CUSTOM:PerodiumIngot"
       },
       {
         "value": "CUSTOM:PerodiumIngot"
       },
       {
-        "value": "CUSTOM:AkvamarineBlock"
+        "value": "CUSTOM:PerodiumIngot"
       },
       {
         "value": "CUSTOM:PerodiumIngot"
       },
       {
-        "value": "CUSTOM:InfinitiBlock"
+        "value": "CUSTOM:PerodiumIngot"
       },
       {
         "value": "CUSTOM:PerodiumIngot"

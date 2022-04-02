@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "block",
   "definition": {
     "texture": "glass",
@@ -31,7 +31,7 @@
         "subtract": false
       }
     ],
-    "name": "§8Perodium Glass Pane",
+    "name": "Perodium Glass Pane",
     "specialInfo": [],
     "hardness": 0.8999999999999999,
     "resistance": 4.5,

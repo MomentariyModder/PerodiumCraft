@@ -30,7 +30,6 @@ public class InfinitiPathBlock extends Block {
 	public InfinitiPathBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(0.65f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("infiniti_path");
 	}
 
 	@Override
@@ -61,11 +60,11 @@ public class InfinitiPathBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.INFINITI_DIRT));
+		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.INFINITI_DIRT.get()));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.INFINITI_PATH, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.INFINITI_PATH.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

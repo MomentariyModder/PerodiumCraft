@@ -27,7 +27,6 @@ public class PerodiumCobblestoneWallBlock extends WallBlock {
 	public PerodiumCobblestoneWallBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(4f, 12f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("perodium_cobblestone_wall");
 	}
 
 	@Override
@@ -52,6 +51,6 @@ public class PerodiumCobblestoneWallBlock extends WallBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_COBBLESTONE_WALL, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.PERODIUM_COBBLESTONE_WALL.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

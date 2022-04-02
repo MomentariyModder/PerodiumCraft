@@ -30,7 +30,6 @@ public class RubyPathBlock extends Block {
 	public RubyPathBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(0.65f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("ruby_path");
 	}
 
 	@Override
@@ -61,11 +60,11 @@ public class RubyPathBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.RUBY_DIRT));
+		return Collections.singletonList(new ItemStack(PerodiumcraftModBlocks.RUBY_DIRT.get()));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_PATH, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.RUBY_PATH.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

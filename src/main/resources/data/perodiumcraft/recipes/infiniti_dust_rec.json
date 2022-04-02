@@ -1,8 +1,15 @@
 {
-  "type": "minecraft:stonecutting",
-  "count": 9,
-  "ingredient": {
-    "item": "perodiumcraft:infiniti_block"
-  },
-  "result": "perodiumcraft:infiniti_dust"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "perodiumcraft:perodium_hammer"
+    },
+    {
+      "item": "perodiumcraft:infiniti_block"
+    }
+  ],
+  "result": {
+    "item": "perodiumcraft:infiniti_dust",
+    "count": 9
+  }
 }

@@ -31,7 +31,6 @@ public class AkvamarineBush2Block extends FlowerBlock {
 	public AkvamarineBush2Block() {
 		super(MobEffects.SATURATION, 0,
 				BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.GRASS).strength(3f, 3f));
-		setRegistryName("akvamarine_bush_2");
 	}
 
 	@Override
@@ -51,6 +50,6 @@ public class AkvamarineBush2Block extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BUSH_2, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PerodiumcraftModBlocks.AKVAMARINE_BUSH_2.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

@@ -19,7 +19,6 @@ import java.util.Collections;
 public class RedstoneOreBlock extends Block {
 	public RedstoneOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
-		setRegistryName("redstone_ore");
 	}
 
 	@Override

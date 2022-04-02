@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 public class NetherInfinitiOreBlock extends Block {
 	public NetherInfinitiOreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(6f, 10f).requiresCorrectToolForDrops());
-		setRegistryName("nether_infiniti_ore");
 	}
 
 	@Override

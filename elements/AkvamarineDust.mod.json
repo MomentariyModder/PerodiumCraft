@@ -1,11 +1,11 @@
 {
-  "_fv": 24,
+  "_fv": 25,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "akvamarinedust",
     "customModelName": "Normal",
-    "name": "§3Akvamarine Dust",
+    "name": "Akvamarine Dust",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:PerodiumCraftItem"
